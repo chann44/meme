@@ -36,7 +36,7 @@ export async function embedMemes(batchSize = 10) {
     const transaction = db.transaction(() => {
       for (const { memeId, embedding } of results) {
         const embeddingBlob = Buffer.from(new Float32Array(embedding).buffer);
-        insertStmt.run(memeId, embeddingBlob, "text-embedding-004");
+        insertStmt.run(memeId, embeddingBlob, "gemini-embedding-2");
       }
     });
 
