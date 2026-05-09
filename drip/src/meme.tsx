@@ -1,24 +1,26 @@
-import { Action, ActionPanel, useNavigation, Detail, Clipboard, open, List } from "@raycast/api";
+import { Action, ActionPanel, useNavigation, Detail, Clipboard, open, Grid } from "@raycast/api";
 import { useState } from "react";
 
-interface MemeResponse {
+interface Meme {
   id: string;
   image_path: string;
   image_url: string;
 }
 
 export default function Command() {
-  const [meme, setMeme] = useState<MemeResponse | null>(null);
+  const [memes, setMemes] = useState<Meme[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const { push } = useNavigation();
 
-  const fetchMeme = async () => {
+  const fetchMemes = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/random-meme");
-      const data = (await response.json()) as MemeResponse;
-      setMeme(data);
-      push(<MemeDetail meme={data} onGetAnother={fetchMeme} />);
+      const response = await fetch("http://localhost:3000/memes");
+      const data = (await response.json()) as { memes: Meme[] };
+      setMemes(data.memes);
+      if (data.memes.length > 0) {
+        push(<MemeGrid memes={data.memes} onRefresh={fetchMemes} />);
+      }
     } catch (err) {
       console.error(err);
     } finally {
@@ -27,21 +29,66 @@ export default function Command() {
   };
 
   return (
-    <List isLoading={isLoading}>
-      <List.Item
-        title="Get Random Meme"
-        subtitle="Tap to get a random meme from the server"
+    <Grid
+      isLoading={isLoading}
+      searchBarPlaceholder="Search memes..."
+      onSearchTextChange={(text) => {
+        if (text) fetchMemes();
+      }}
+    >
+      <Grid.EmptyView
+        title="No Memes Yet"
+        description="Type something to search for memes"
         actions={
           <ActionPanel>
-            <Action title="Get Meme" onAction={fetchMeme} />
+            <Action title="Get Memes" onAction={fetchMemes} />
           </ActionPanel>
         }
       />
-    </List>
+      {memes.map((meme) => (
+        <Grid.Item
+          key={meme.id}
+          content={`http://localhost:3000${meme.image_url}`}
+          title={meme.image_path}
+          actions={
+            <ActionPanel>
+              <Action
+                title="View & Save"
+                onAction={() => push(<MemeDetail meme={meme} onGetAnother={fetchMemes} />)}
+              />
+            </ActionPanel>
+          }
+        />
+      ))}
+    </Grid>
   );
 }
 
-function MemeDetail({ meme, onGetAnother }: { meme: MemeResponse; onGetAnother: () => void }) {
+function MemeGrid({ memes, onRefresh }: { memes: Meme[]; onRefresh: () => void }) {
+  const { push } = useNavigation();
+
+  return (
+    <Grid columns={2}>
+      {memes.map((meme) => (
+        <Grid.Item
+          key={meme.id}
+          content={`http://localhost:3000${meme.image_url}`}
+          title={meme.image_path}
+          actions={
+            <ActionPanel>
+              <Action
+                title="View & Save"
+                onAction={() => push(<MemeDetail meme={meme} onGetAnother={onRefresh} />)}
+              />
+            </ActionPanel>
+          }
+        />
+      ))}
+    </Grid>
+  );
+}
+
+function MemeDetail({ meme, onGetAnother }: { meme: Meme; onGetAnother: () => void }) {
   const imageUrl = `http://localhost:3000${meme.image_url}`;
 
   return (
@@ -55,13 +102,13 @@ function MemeDetail({ meme, onGetAnother }: { meme: MemeResponse; onGetAnother: 
             onAction={() => open(imageUrl)}
           />
           <Action
-            title="Save Image As..."
+            title="Save Image"
             onAction={() => {
               Clipboard.copy(imageUrl);
             }}
           />
           <Action
-            title="Get Another Meme"
+            title="Get More Memes"
             onAction={onGetAnother}
           />
         </ActionPanel>
