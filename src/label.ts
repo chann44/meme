@@ -5,27 +5,128 @@ import { MemeLabel, type MemeLabel as MemeLabelType } from "./types.ts";
 import { LABELING_PROMPT } from "./prompts.ts";
 import { OLLAMA_URL, OLLAMA_MODEL } from "./ai.ts";
 
-function extractJSON(text: string): string {
-  const fenceMatch = text.match(/```(?:json)?\s*([\s\S]*?)```/);
-  if (fenceMatch) return fixJSON(fenceMatch[1]!.trim());
-  const braceMatch = text.match(/\{[\s\S]*\}/);
-  if (braceMatch) return fixJSON(braceMatch[0]);
-  return fixJSON(text);
+function parseTOONToJSON(toonText: string): any {
+  const lines = toonText.trim().split('\n');
+  const result: any = {};
+  const stack: any[] = [result];
+  const indentStack: number[] = [0];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    if (!line.trim() || line.trim().startsWith('#')) continue;
+
+    const indent = line.search(/\S/);
+    const content = line.slice(indent);
+
+    while (indentStack.length > 1 && indent <= indentStack[indentStack.length - 1]!) {
+      indentStack.pop();
+      stack.pop();
+    }
+
+    const current = stack[stack.length - 1]!;
+
+    if (content.includes('[') && content.includes(']') && content.includes('{') && content.includes('}')) {
+      const match = content.match(/^(\w+)\[(\d+)\]\{([^}]+)\}:$/);
+      if (match) {
+        const arrayName = match[1]!;
+        const fields = match[3]!;
+        const fieldList = fields.split(',').map(f => f.trim());
+        current[arrayName] = [];
+
+        const dataIndent = indent + 2;
+        let j = i + 1;
+        while (j < lines.length) {
+          const dataLine = lines[j]!;
+          const dataLineIndent = dataLine.search(/\S/);
+          if (dataLineIndent !== dataIndent) break;
+
+          const values = dataLine.trim().split(',').map(v => parseValue(v.trim()));
+          const obj: any = {};
+          fieldList.forEach((field, idx) => {
+            obj[field] = values[idx];
+          });
+          current[arrayName].push(obj);
+          j++;
+        }
+        i = j - 1;
+        continue;
+      }
+    }
+
+    if (content.includes('[') && content.includes(']:')) {
+      const match = content.match(/^(\w+)\[(\d+)\]:(.*)$/);
+      if (match) {
+        const arrayName = match[1]!;
+        const values = match[3]!;
+        current[arrayName] = values.trim().split(',').map(v => parseValue(v.trim()));
+        continue;
+      }
+    }
+
+    if (content.includes(':')) {
+      const colonIndex = content.indexOf(':');
+      const key = content.slice(0, colonIndex).trim();
+      const value = content.slice(colonIndex + 1).trim();
+
+      if (value === '') {
+        const newObj: any = {};
+        current[key] = newObj;
+        stack.push(newObj);
+        indentStack.push(indent);
+      } else {
+        current[key] = parseValue(value);
+      }
+    }
+  }
+
+  return result;
 }
 
-function fixJSON(text: string): string {
-  let out = text;
-  out = out.replace(/,\s*([}\]])/g, "$1");
-  out = out.replace(/(\{|,|\[)\s*'([^']*)'\s*:/g, '$1"$2":');
-  out = out.replace(/:\s*'([^']*)'\s*([,}\]])/g, ':"$1"$2');
-  out = out.replace(/[\x00-\x1f]/g, (ch) => {
-    if (ch === "\n" || ch === "\r" || ch === "\t") return ch;
-    return "";
-  });
-  out = out.replace(/\/\/.*$/gm, "");
-  out = out.replace(/\/\*[\s\S]*?\*\//g, "");
+const ARRAY_FIELDS = new Set([
+  'supported_languages', 'emotion', 'humor_type', 'tone', 'regions',
+  'english', 'hindi', 'hinglish', 'tamil', 'telugu',
+]);
 
-  return out;
+function toArray(value: any): any {
+  if (Array.isArray(value)) return value;
+  if (typeof value === 'string' && value.includes(',')) {
+    return value.split(',').map(v => parseValue(v.trim())).filter(v => v !== '');
+  }
+  return [value];
+}
+
+function normalizeTOON(obj: any): any {
+  if (obj.supported_languages) obj.supported_languages = toArray(obj.supported_languages);
+  if (obj.emotion) obj.emotion = toArray(obj.emotion);
+  if (obj.intent && typeof obj.intent === 'string') obj.intent = [obj.intent];
+  if (obj.humor_type) obj.humor_type = toArray(obj.humor_type);
+  if (obj.tone) obj.tone = toArray(obj.tone);
+  if (obj.regions) obj.regions = toArray(obj.regions);
+
+  for (const section of ['tags', 'query_examples', 'negative_examples']) {
+    if (obj[section]) {
+      for (const lang of ['english', 'hindi', 'hinglish', 'tamil', 'telugu']) {
+        if (obj[section][lang]) obj[section][lang] = toArray(obj[section][lang]);
+      }
+    }
+  }
+
+  return obj;
+}
+
+function parseValue(value: string): any {
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  if (value === 'null') return null;
+
+  if (value.startsWith('"') && value.endsWith('"')) {
+    return value.slice(1, -1);
+  }
+
+  const num = Number(value);
+  if (!isNaN(num)) return num;
+
+  return value;
 }
 
 const MAX_RETRIES = 3;
@@ -47,7 +148,7 @@ async function callOllama(imagePath: string, memeId: string): Promise<string> {
           role: "user",
           content: [
             { type: "image_url", image_url: { url: `data:${mimeType};base64,${base64Image}` } },
-            { type: "text", text: `Analyze this meme and return the JSON label. Set id to: ${memeId}` },
+            { type: "text", text: `Analyze this meme and return the TOON label. Set id to: ${memeId}` },
           ],
         },
       ],
@@ -69,8 +170,8 @@ export async function labelMeme(imagePath: string, memeId: string): Promise<Meme
     const text = await callOllama(imagePath, memeId);
     console.log(`[ollama] Response length: ${text.length} chars`);
 
-    if (!text.trim().endsWith("}")) {
-      console.error(`[parse] Response appears truncated (doesn't end with '}'), retrying...`);
+    if (!text.trim().includes('multilingual_embedding_text:')) {
+      console.error(`[parse] Response appears truncated (missing multilingual_embedding_text), retrying...`);
       if (attempt === MAX_RETRIES) throw new Error("Response truncated after max retries");
       await new Promise((r) => setTimeout(r, 2000));
       continue;
@@ -83,8 +184,8 @@ export async function labelMeme(imagePath: string, memeId: string): Promise<Meme
     } catch {}
 
     try {
-      const raw = extractJSON(text);
-      const parsed = JSON.parse(raw);
+      const raw = parseTOONToJSON(text);
+      const parsed = normalizeTOON(raw);
       console.log(`[parse] Parsed keys: ${Object.keys(parsed).join(", ")}`);
       const label = MemeLabel.parse(parsed);
       console.log(`[zod] Validated: id=${label.id}, language=${label.primary_language}, intent=${label.intent}`);
