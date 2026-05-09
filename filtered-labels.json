@@ -1,0 +1,183 @@
+[
+  {
+    "id": "meme_1778322227547",
+    "image_path": "memes/63.jpg",
+    "primary_language": "hinglish",
+    "supported_languages": [
+      "hinglish",
+      "english",
+      "hindi",
+      "tamil",
+      "telugu"
+    ],
+    "caption": {
+      "original": "*sad insaan*",
+      "translations": {
+        "english": "*sad person*",
+        "hindi": "उदास इंसान",
+        "hinglish": "*sad insaan*",
+        "tamil": "சோகமான மனிதன்",
+        "telugu": "విచారమైన వ్యక్తి"
+      }
+    },
+    "meaning": {
+      "english": "When your life/mood is so dramatic and sad that it feels like it belongs in a movie musical sequence.",
+      "hindi": "जब आपकी ज़िंदगी या मूड इतना नाटकीय और उदास हो कि वह किसी फिल्मी गाने के म्यूजिकल सीक्वेंस जैसा लगे।",
+      "hinglish": "When your life/mood is so dramatic and sad that it feels like it belongs in a cinematic musical sequence.",
+      "tamil": "உங்கள் வாழ்க்கை மிகவும் சோகமாகவும் நாடகத்தன்மையுடனும் இருக்கும்போது, அது ஒரு திரைப்படப் பாடல் காட்சியைப் போல தோன்றும்.",
+      "telugu": "మీ జీవితం లేదా మూడ్ చాలా నాటకీయంగా, విచారంగా ఉండి, సినిమా పాటలా అనిపించినప్పుడు."
+    },
+    "tags": {
+      "english": [],
+      "hindi": [],
+      "hinglish": [],
+      "tamil": [],
+      "telugu": []
+    },
+    "query_examples": {
+      "english": [],
+      "hindi": [],
+      "hinglish": [],
+      "tamil": [],
+      "telugu": []
+    },
+    "emotion": [],
+    "intent": [
+      "react_to_absurdity,show_sarcasm,tease,unknown"
+    ],
+    "regions": [],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.95
+    },
+    "multilingual_embedding_text": "English: When your life/mood is so dramatic and sad that it feels like it belongs in a movie musical sequence. Hindi: जब आपकी ज़िंदगी या मूड इतना नाटकीय और उदास हो कि वह किसी फिल्मी गाने के म्यूजिकल सीक्वेंस जैसा लगे। Hinglish: When your life/mood is so dramatic and sad that it feels like it belongs in a cinematic musical sequence. Tamil: உங்கள் வாழ்க்கை மிகவும் சோகமாகவும் நாடகத்தன்மையுடனும் இருக்கும்போது, அது ஒரு திரைப்படப் பாடல் காட்சியைப் போல தோன்றும். Telugu: మీ జీవితం లేదా మూడ్ చాలా నాటకీయంగా, విచారంగా ఉండి, సినిమా పాటలా అనిపించినప్పుడు. Queries: my mood right now, this is me, when i feel artsy and sad, sad life vibes; Mera mood इस समय, ये मैं हूँ, जब मुझे बहुत उदास और कलात्मक महसूस होता है, मेरी उदास लाइफ; इப்போ என் மனநிலை, இது என்னைப் போல, நான் மிகவும் சோகமாகவும் கலைத்தன்மையுடனும் இருக்கும்போது; నా మూడ్ ఇప్పుడే, ఇది నేనే, నాకు చాలా విచారంగా మరియు కళాత్మకంగా అనిపించినప్పుడు. Tags: sad,dramatic,bollywood,cokesudio,funny,meme,indian; उदास,भावनात्मक,bollywood,कॉकेस्टूडियो,हास्य,मेम,भारतीय; sad,dramatic,bollywood,coke studio,funny,meme,indian; சோகம், நாடகம், சினிமா, கோக் ஸ்டுடியோ, நகைச்சுவை, மீம்; విచారం, నాటకీయత, సినిమా, కోక్ స్టూడియో, హాస్యం, మీమ్. Emotion: confusion,embarrassment,sarcasm,sadness | Intent: react_to_absurdity,show_sarcasm,tease,unknown | Region: pan_india,north_india,karnataka,kerala",
+    "labeled_at": "2026-05-09T10:24:47.648Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778322288650",
+    "image_path": "memes/189.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hinglish",
+      "hindi",
+      "tamil",
+      "telugu"
+    ],
+    "caption": {
+      "original": "my exams after plans",
+      "translations": {
+        "english": "my exams after plans",
+        "hindi": "योजनाओं के बाद मेरी परीक्षाएँ",
+        "hinglish": "mere exams after plans",
+        "tamil": "திட்டங்களுக்குப் பிறகு என் தேர்வுகள்",
+        "telugu": "ప్లాన్ల తర్వాత నా పరీక్షలు"
+      }
+    },
+    "meaning": {
+      "english": "The meme compares how happy or optimistic things are before a setback (like exams or rules), versus how sad or disappointing they become after the setback occurs, especially referencing the impact of coronavirus.",
+      "hindi": "यह मेम दिखाता है कि चीजों के एक झटके (जैसे परीक्षा या नियम) से पहले वे कितनी खुश और आशावादी लगती हैं, और वह झटका लगने के बाद वे कितनी नीरस या निराशाजनक हो जाती हैं, विशेष रूप से कोरोनावायरस के प्रभाव का उल्लेख करते हुए।",
+      "hinglish": "This meme shows how happy and optimistic things appear before a setback (like exams or rules), versus how dull or disappointing they become after the setback occurs, especially referencing the impact of coronavirus.",
+      "tamil": "இது எந்தத் தடுமாற்றத்திற்கு (தேர்வுகள் அல்லது விதிகள் போன்றவை) முன்னால் விஷயங்கள் எவ்வளவு மகிழ்ச்சியாகவும் நம்பிக்கையாகவும் இருக்கின்றன என்பதையும், அந்தத் தடுமாற்றம் ஏற்பட்ட பிறகு அவை எவ்வளவு சலிப்பாகவும் ஏமாற்றமாகவும் மாறுகின்றன என்பதையும் ஒப்பிடுகிறது, குறிப்பாக கொரோனா வைரஸின் தாக்கத்தைக் குறிப்பிடுகிறது.",
+      "telugu": "ఈ మీమ్ ఒక ఎదురుదెబ్బ (పరీక్షలు లేదా నియమాలు వంటివి) రాకముందు విషయాలు ఎంత సంతోషంగా మరియు ఆశావాదంగా కనిపిస్తాయో, ఆ ఎదురుదెబ్బ జరిగిన తర్వాత అవి ఎంత విసుగుగా లేదా నిరాశగా మారుతాయో పోలుస్తుంది, ముఖ్యంగా కరోనావైరస్‌ ప్రభావను ప్రస్తావిస్తుంది."
+    },
+    "tags": {
+      "english": [
+        "exams",
+        "corona",
+        "life",
+        "disappointment",
+        "plans",
+        "funny",
+        "relatable"
+      ],
+      "hindi": [
+        "परीक्षा",
+        "कोरोना",
+        "जीवन",
+        "निराशा",
+        "प्लान",
+        "मजाकिया",
+        "संबंधित"
+      ],
+      "hinglish": [
+        "exam",
+        "corona",
+        "life",
+        "disappointment",
+        "plan",
+        "funny",
+        "relatable"
+      ],
+      "tamil": [
+        "தேர்வுகள்",
+        "கொரோனா",
+        "வாழ்க்கை",
+        "ஏமாற்றம்",
+        "திட்டம்",
+        "நகைச்சுவை",
+        "தொடர்புடைய"
+      ],
+      "telugu": [
+        "పరీక్షలు",
+        "కరోనా",
+        "జీవితం",
+        "నిరాశ",
+        "ప్రణాళిక",
+        "హాస్యం",
+        "సంబంధిత"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "When things are good until the rules change."
+      ],
+      "hindi": [
+        "कोरोना के कारण पढ़ाई का मूड खराब होना।"
+      ],
+      "hinglish": [
+        "Jab sab set tha aur suddenly rules badal gaye."
+      ],
+      "tamil": [
+        "விதிகள் மாறும் முன் விஷயங்கள் எப்படி இருந்தன அப்புறம் எப்படி இருக்கும்."
+      ],
+      "telugu": [
+        "ప్లాన్స్ ఉన్నప్పుడు ఎంత బాగున్నా",
+        "తర్వాత పరిస్థితి."
+      ]
+    },
+    "emotion": [
+      "joy",
+      "disappointment",
+      "sadness"
+    ],
+    "intent": [
+      "react_to_absurdity, show_disappointment"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.98
+    },
+    "multilingual_embedding_text": "English: The meme compares how happy or optimistic things are before a setback (like exams or rules), versus how sad or disappointing they become after the setback occurs, especially referencing the impact of coronavirus. Hindi: यह मेम दिखाता है कि चीजों के एक झटके (जैसे परीक्षा या नियम) से पहले वे कितनी खुश और आशावादी लगती हैं, और वह झटका लगने के बाद वे कितनी नीरस या निराशाजनक हो जाती हैं, विशेष रूप से कोरोनावायरस के प्रभाव का उल्लेख करते हुए। Hinglish: This meme shows how happy and optimistic things appear before a setback (like exams or rules), versus how dull or disappointing they become after the setback occurs, especially referencing the impact of coronavirus. Tamil: இது எந்தத் தடுமாற்றத்திற்கு (தேர்வுகள் அல்லது விதிகள் போன்றவை) முன்னால் விஷயங்கள் எவ்வளவு மகிழ்ச்சியாகவும் நம்பிக்கையாகவும் இருக்கின்றன என்பதையும், அந்தத் தடுமாற்றம் ஏற்பட்ட பிறகு அவை எவ்வளவு சலிப்பாகவும் ஏமாற்றமாகவும் மாறுகின்றன என்பதையும் ஒப்பிடுகிறது, குறிப்பாக கொரோனா வைரஸின் தாக்கத்தைக் குறிப்பிடுகிறது. Telugu: ఈ మీమ్ ఒక ఎదురుదెబ్బ (పరీక్షలు లేదా నియమాలు వంటివి) రాకముందు విషయాలు ఎంత సంతోషంగా మరియు ఆశావాదంగా కనిపిస్తాయో, ఆ ఎదురుదెబ్బ జరిగిన తర్వాత అవి ఎంత విసుగుగా లేదా నిరాశగా మారుతాయో పోలుస్తుంది, ముఖ్యంగా కరోనావైరస్‌ ప్రభావను ప్రస్తావిస్తుంది. Queries: Exams were fun before, but now?, When things are good until the rules change., जब चीज़ें ठीक हों और फिर नियम बदल जाएँ।, कोरोना के कारण पढ़ाई का मूड खराब होना।, Jab sab set tha aur suddenly rules badal gaye., விதிகள் மாறும் முன் விஷயங்கள் எப்படி இருந்தன அப்புறம் எப்படி இருக்கும்., ప్లాన్స్ ఉన్నప్పుడు ఎంత బాగున్నా, తర్వాత పరిస్థితి. Tags: exams, corona, life, disappointment, plans, funny, relatable, परीक्षा, कोरोना, जीवन, निराशा, प्लान, मजाकिया, संबंधित, தேர்வுகள், கொரோனா, வாழ்க்கை, ஏமாற்றம், திட்டம், நகைச்சுவை, தொடர்புடைய, పరీక్షలు, కరోనా, జీవితం, నిరాశ, ప్రణాళిక, హాస్యం, సంబంధిత | Emotion: joy, disappointment, sadness | Intent: react_to_absurdity, show_disappointment | Region: pan_india",
+    "labeled_at": "2026-05-09T10:25:41.613Z",
+    "reviewed": false
+  }
+]
