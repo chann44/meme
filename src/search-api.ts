@@ -10,6 +10,15 @@ import db from "./db/index.ts";
 const app = new Hono();
 const vectorStore = new VectorStore("memes.db");
 
+app.use("/memes/*", async (c, next) => {
+  const path = c.req.path.replace("/memes/", "");
+  const file = Bun.file(`memes/${path}`);
+  if (await file.exists()) {
+    return new Response(file);
+  }
+  return c.json({ error: "File not found" }, 404);
+});
+
 const SearchRequest = z.object({
   query: z.string().min(1),
   language: z.string().optional(),
@@ -178,6 +187,24 @@ app.post("/pipeline", async (c) => {
     const message = err instanceof Error ? err.message : String(err);
     return c.json({ success: false, error: message }, 500);
   }
+});
+
+app.get("/random-meme", (c) => {
+  const allFiles = Array.from({ length: 200 }, (_, i) => `${i}.jpg`).filter((name) => {
+    return Bun.file(`memes/${name}`).exists();
+  });
+
+  if (allFiles.length === 0) {
+    return c.json({ error: "No memes found" }, 404);
+  }
+
+  const randomFile = allFiles[Math.floor(Math.random() * allFiles.length)]!;
+
+  return c.json({
+    id: randomFile,
+    image_path: randomFile,
+    image_url: `/memes/${randomFile}`,
+  });
 });
 
 export default app;
