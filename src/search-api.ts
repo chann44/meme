@@ -10,6 +10,27 @@ import db from "./db/index.ts";
 const app = new Hono();
 const vectorStore = new VectorStore("memes.db");
 
+app.get("/memes", (c) => {
+  const allFiles = Array.from({ length: 200 }, (_, i) => `${i}.jpg`).filter((name) => {
+    return Bun.file(`memes/${name}`).exists();
+  });
+
+  if (allFiles.length === 0) {
+    return c.json({ error: "No memes found" }, 404);
+  }
+
+  const shuffled = allFiles.sort(() => Math.random() - 0.5);
+  const selected = shuffled.slice(0, 4);
+
+  const memes = selected.map((file) => ({
+    id: file,
+    image_path: file,
+    image_url: `/memes/${file}`,
+  }));
+
+  return c.json({ memes });
+});
+
 app.use("/memes/*", async (c, next) => {
   const path = c.req.path.replace("/memes/", "");
   const file = Bun.file(`memes/${path}`);
