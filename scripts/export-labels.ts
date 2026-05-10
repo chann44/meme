@@ -1,7 +1,7 @@
-import Database from "bun:sqlite";
+import db from "../src/db/index.ts";
 
 /**
- * Export labeled memes from SQLite to JSON (same shape as labels.json).
+ * Export labeled memes from Turso to JSON (same shape as labels.json).
  *
  * Usage:
  *   bun run scripts/export-labels.ts [output.json] [image_path_prefix]
@@ -10,25 +10,27 @@ import Database from "bun:sqlite";
  *   bun run scripts/export-labels.ts labels.json
  *   bun run scripts/export-labels.ts labels.json memes/
  */
-const db = new Database("memes.db");
 const outputPath = process.argv[2] || "./labels.json";
 const pathPrefix = process.argv[3]?.trim();
 
 const baseSql = `
-  SELECT 
+  SELECT
     id, image_path, primary_language, supported_languages,
     caption, meaning, tags, query_examples, emotion, intent,
     regions, safety, quality, multilingual_embedding_text,
     labeled_at, reviewed
-  FROM memes 
+  FROM memes
   WHERE labeled_at IS NOT NULL
 `;
 
-const rows = pathPrefix
-  ? (db.query(`${baseSql} AND image_path LIKE ?`).all(`${pathPrefix}%`) as any[])
-  : (db.query(baseSql).all() as any[]);
+const { rows } = pathPrefix
+  ? await db.execute({
+      sql: `${baseSql} AND image_path LIKE ?`,
+      args: [`${pathPrefix}%`],
+    })
+  : await db.execute(baseSql);
 
-const labels = rows.map((row) => ({
+const labels = (rows as unknown as any[]).map((row) => ({
   id: row.id,
   image_path: row.image_path,
   primary_language: row.primary_language,

@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS memes (
 
 CREATE TABLE IF NOT EXISTS embeddings (
   meme_id TEXT PRIMARY KEY,
-  embedding BLOB NOT NULL,
+  embedding F32_BLOB(3072) NOT NULL,
   model TEXT DEFAULT 'text-embedding-004',
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY(meme_id) REFERENCES memes(id)
@@ -28,3 +28,5 @@ CREATE TABLE IF NOT EXISTS embeddings (
 
 CREATE INDEX IF NOT EXISTS idx_memes_language ON memes(primary_language);
 CREATE INDEX IF NOT EXISTS idx_memes_reviewed ON memes(reviewed);
+CREATE INDEX IF NOT EXISTS embeddings_vec_idx
+  ON embeddings(libsql_vector_idx(embedding));

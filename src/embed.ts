@@ -36,11 +36,13 @@ function cachePathForLabels(labelsPath: string): string {
 }
 
 export async function embedMemes(batchSize = 10) {
-  const memes = db
-    .prepare(
-      `SELECT id, multilingual_embedding_text FROM memes WHERE id NOT IN (SELECT meme_id FROM embeddings)`
-    )
-    .all() as { id: string; multilingual_embedding_text: string }[];
+  const { rows } = await db.execute(
+    `SELECT id, multilingual_embedding_text FROM memes WHERE id NOT IN (SELECT meme_id FROM embeddings)`
+  );
+  const memes = rows as unknown as {
+    id: string;
+    multilingual_embedding_text: string;
+  }[];
 
   console.log(`Found ${memes.length} memes to embed`);
 
@@ -62,18 +64,13 @@ export async function embedMemes(batchSize = 10) {
       })
     );
 
-    const insertStmt = db.prepare(
-      `INSERT INTO embeddings (meme_id, embedding, model) VALUES (?, ?, ?)`
+    await db.batch(
+      results.map(({ memeId, embedding }) => ({
+        sql: `INSERT INTO embeddings (meme_id, embedding, model) VALUES (?, vector32(?), ?)`,
+        args: [memeId, JSON.stringify(Array.from(embedding)), EMBED_MODEL_ID],
+      })),
+      "write"
     );
-
-    const transaction = db.transaction(() => {
-      for (const { memeId, embedding } of results) {
-        const embeddingBlob = Buffer.from(new Float32Array(embedding).buffer);
-        insertStmt.run(memeId, embeddingBlob, EMBED_MODEL_ID);
-      }
-    });
-
-    transaction();
 
     console.log(`Embedded batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(memes.length / batchSize)}`);
   }

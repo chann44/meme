@@ -6,9 +6,10 @@ import { labelFolder } from "./label.ts";
 import { embedMemes } from "./embed.ts";
 import { embeddingModel } from "./ai.ts";
 import db from "./db/index.ts";
+import { analyzeQuery } from "./query-analysis.ts";
 
 const app = new Hono();
-const vectorStore = new VectorStore("memes.db");
+const vectorStore = new VectorStore();
 
 app.get("/memes", (c) => {
   const allFiles = Array.from({ length: 200 }, (_, i) => `${i}.jpg`).filter((name) => {
@@ -53,43 +54,60 @@ app.post("/search", async (c) => {
     const body = await c.req.json();
     const { query, language, region, emotion, limit } = SearchRequest.parse(body);
 
+    console.time("analyze");
+    const analysis = await analyzeQuery(query);
+    console.timeEnd("analyze");
+
     console.time("embed");
     const result = await embed({
       model: embeddingModel,
-      value: query,
+      value: analysis.expanded_text,
     });
     const queryEmbedding = new Float32Array(result.embedding);
     console.timeEnd("embed");
 
     console.time("vector-search");
-    const rawResults = vectorStore.search(queryEmbedding, {
-      language,
-      region,
-      emotion,
+    const rawResults = await vectorStore.search(queryEmbedding, {
+      language: language ?? analysis.language,
+      region:   region   ?? analysis.regions[0],
+      emotion:  emotion  ?? analysis.emotions[0],
       limit: limit * 2,
-      minSimilarity: 0.3,
+      minSimilarity: 0.25,
     });
     console.timeEnd("vector-search");
 
     console.time("rank");
-    const rankedResults = vectorStore.rank(rawResults, { language, region });
+    const rankedResults = vectorStore.rank(rawResults, {
+      language: language ?? analysis.language,
+      region:   region   ?? analysis.regions[0],
+    });
     console.timeEnd("rank");
 
-    const memes = rankedResults.slice(0, limit).map((r) => ({
-      id: r.meme_id,
-      image_path: r.image_path,
-      caption: r.caption,
-      primary_language: r.primary_language,
+    const memes = rankedResults.slice(0, limit).map((r) => {
+      const cap = r.caption as { original?: string; translations?: Record<string, string> } | null;
+      const caption = cap?.translations?.english ?? cap?.original ?? "";
+      return {
+        id: r.meme_id,
+        image_path: r.image_path,
+        caption,
+        primary_language: r.primary_language,
       emotion: r.emotion,
       regions: r.regions,
       intent: r.intent,
       similarity: r.similarity,
       score: r.score,
-    }));
+      };
+    });
+
+    console.log(`[search] "${query}" → ${memes.length} results (of ${rankedResults.length} raw)`);
+    memes.forEach((m, i) =>
+      console.log(`  [${i + 1}] ${m.image_path} | score=${m.score?.toFixed(3)} sim=${m.similarity?.toFixed(3)} | ${String(m.caption).slice(0, 60)}`)
+    );
 
     return c.json({
       memes,
       query,
+      analysis,
       total_results: rankedResults.length,
     });
   } catch (err: unknown) {
@@ -114,7 +132,7 @@ app.post("/batch-search", async (c) => {
         });
 
         const queryEmbedding = new Float32Array(result.embedding);
-        const rawResults = vectorStore.search(queryEmbedding, {
+        const rawResults = await vectorStore.search(queryEmbedding, {
           language,
           region,
           limit: limit * 2,
@@ -141,21 +159,22 @@ app.post("/batch-search", async (c) => {
   }
 });
 
-app.get("/stats", (c) => {
-  const vectorStats = vectorStore.getStats();
-  const totalMemes = db.prepare("SELECT COUNT(*) as count FROM memes").get() as { count: number };
-  const totalEmbedded = db.prepare("SELECT COUNT(*) as count FROM embeddings").get() as { count: number };
+app.get("/stats", async (c) => {
+  const vectorStats = await vectorStore.getStats();
+  const memesRes = await db.execute("SELECT COUNT(*) as count FROM memes");
+  const embedRes = await db.execute("SELECT COUNT(*) as count FROM embeddings");
+  const totalMemes = Number((memesRes.rows[0] as unknown as { count: number | bigint }).count);
+  const totalEmbedded = Number((embedRes.rows[0] as unknown as { count: number | bigint }).count);
 
   return c.json({
     ...vectorStats,
-    total_memes: totalMemes.count,
-    total_labeled: totalEmbedded.count,
+    total_memes: totalMemes,
+    total_labeled: totalEmbedded,
   });
 });
 
-app.post("/reload", (c) => {
-  vectorStore.reload();
-  return c.json({ status: "reloaded", stats: vectorStore.getStats() });
+app.post("/reload", async (c) => {
+  return c.json({ status: "reloaded", stats: await vectorStore.getStats() });
 });
 
 app.post("/label", async (c) => {
@@ -175,7 +194,6 @@ app.post("/embed", async (c) => {
 
   try {
     const result = await embedMemes(batchSize as number);
-    vectorStore.reload();
     return c.json({ success: true, ...result });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
@@ -184,7 +202,7 @@ app.post("/embed", async (c) => {
 });
 
 app.post("/pipeline", async (c) => {
-  const { folder = "./memes", labelConcurrency = 4, embedBatchSize = 10 } = await c.req.json().catch(() => ({}) as Record<string, unknown>);
+  const { folder = "./memes", embedBatchSize = 10 } = await c.req.json().catch(() => ({}) as Record<string, unknown>);
 
   try {
     console.log("=== Starting pipeline: label → embed ===");
@@ -197,8 +215,6 @@ app.post("/pipeline", async (c) => {
     const embedResult = await embedMemes(embedBatchSize as number);
     console.log(`Embedded ${embedResult.embedded} memes`);
 
-    vectorStore.reload();
-
     return c.json({
       success: true,
       label: labelResult,
@@ -208,24 +224,6 @@ app.post("/pipeline", async (c) => {
     const message = err instanceof Error ? err.message : String(err);
     return c.json({ success: false, error: message }, 500);
   }
-});
-
-app.get("/random-meme", (c) => {
-  const allFiles = Array.from({ length: 200 }, (_, i) => `${i}.jpg`).filter((name) => {
-    return Bun.file(`memes/${name}`).exists();
-  });
-
-  if (allFiles.length === 0) {
-    return c.json({ error: "No memes found" }, 404);
-  }
-
-  const randomFile = allFiles[Math.floor(Math.random() * allFiles.length)]!;
-
-  return c.json({
-    id: randomFile,
-    image_path: randomFile,
-    image_url: `/memes/${randomFile}`,
-  });
 });
 
 export default app;

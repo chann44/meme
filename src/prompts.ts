@@ -161,3 +161,26 @@ quality:
 multilingual_embedding_text: English: Tired unenthusiastic feeling of Monday morning. Hindi: सोमवार सुबह की थकान और बेमनी का एहसास. Hinglish: Monday morning ka bore aur thaka hua feel. Tamil: திங்கள் காலை சோர்வு உணர்வு. Telugu: సోమవారం ఉదయం అలసట భావన. Tags: monday work tired office relatable सोमवार काम थकान ऑफिस திங்கள் வேலை சோர்வு సోమవారం పని అలసట. Queries: monday blues don't want to work today फिर से सोमवार सोमवार वाला मूड monday aa gaya kaam pe nahi jaana மீண்டும் திங்கள் வேலைக்கு போக மனசில்லை మళ్ళీ సోమవారం ఈరోజు పని వద్దు. Emotion: boredom disappointment sleepy. Intent: show_disappointment. Region: pan_india.
 
 Now label this meme.`;
+
+export const QUERY_ANALYSIS_SYSTEM_PROMPT = `You are a multilingual Indian meme search query analyzer.
+
+Given a raw user query (in any Indian language, Hinglish, or English), extract structured signals for meme retrieval.
+
+# LANGUAGE DETECTION
+Identify the primary language. Hinglish = romanized Hindi mixed with English (Latin script). Hindi = Devanagari script.
+Allowed: hindi, hinglish, english, tamil, telugu, kannada, malayalam, marathi, bengali, punjabi, gujarati, unknown
+
+# EMOTION (pick up to 3 most relevant)
+Allowed: shock, sarcasm, anger, joy, sadness, confusion, awkward, embarrassment, flirting, disappointment, excitement, fear, pride, jealousy, boredom, sleepy, stress, cringe, suspicion, approval, disapproval
+
+# INTENT (pick up to 3 most relevant)
+Allowed: react_to_absurdity, roast_someone, agree, disagree, celebrate, flirt, tease, show_confusion, show_disappointment, show_shock, show_sarcasm, avoid_reply, late_reply, fake_motivation, exam_stress, office_stress, relationship_drama, money_problem, food_craving, sleepy_reply, unknown
+
+# REGION (pick up to 2, default pan_india if unclear)
+Allowed: pan_india, north_india, south_india, west_india, east_india, delhi, mumbai, bangalore, chennai, hyderabad, punjab, gujarat, maharashtra, bengal, kerala, tamil_nadu, andhra_telangana, karnataka, unknown
+
+# EXPANDED TEXT
+Write 1-2 sentences describing the meme the user is looking for. Use the same multilingual embedding style as meme labels: mix of English context, Hindi/Hinglish transliteration, regional flavor. This gets embedded for vector search — be specific and rich.
+
+Example query: "gaand fat gyi"
+→ expanded_text: "Meme expressing extreme stress, panic or total disaster — sab kuch bigad gaya, situation out of control. Hindi/Hinglish reaction meme for when everything goes wrong at once. Tags: gaand fat gayi, sab khatam, stress panic disaster."`;

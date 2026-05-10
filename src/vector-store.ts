@@ -1,4 +1,5 @@
-import Database from "bun:sqlite";
+import type { Client } from "@libsql/client";
+import db from "./db/index.ts";
 
 interface SearchResult {
   meme_id: string;
@@ -23,94 +24,16 @@ interface SearchOptions {
 }
 
 export class VectorStore {
-  private db: Database;
-  private memoryIndex: Map<string, Float32Array>;
-  private metadata: Map<string, Record<string, unknown>>;
-  private ready: boolean = false;
+  private db: Client;
 
-  constructor(dbPath: string = "memes.db") {
-    this.db = new Database(dbPath);
-    this.memoryIndex = new Map();
-    this.metadata = new Map();
-
-    this.db.exec("PRAGMA journal_mode = WAL");
-    this.db.exec("PRAGMA synchronous = NORMAL");
-    this.db.exec("PRAGMA cache_size = 10000");
-
-    this.loadToMemory();
+  constructor(client: Client = db) {
+    this.db = client;
   }
 
-  private loadToMemory() {
-    console.time("Loading embeddings to memory");
-
-    const rows = this.db.prepare(`
-      SELECT
-        e.meme_id,
-        e.embedding,
-        m.image_path,
-        m.primary_language,
-        m.supported_languages,
-        m.caption,
-        m.emotion,
-        m.regions,
-        m.intent,
-        m.popularity_score
-      FROM embeddings e
-      JOIN memes m ON m.id = e.meme_id
-      WHERE m.reviewed = 1
-    `).all() as {
-      meme_id: string;
-      embedding: ArrayBuffer;
-      image_path: string;
-      primary_language: string;
-      supported_languages: string;
-      caption: string;
-      emotion: string;
-      regions: string;
-      intent: string;
-      popularity_score: number;
-    }[];
-
-    for (const row of rows) {
-      const embedding = new Float32Array(row.embedding);
-      this.memoryIndex.set(row.meme_id, embedding);
-      this.metadata.set(row.meme_id, {
-        image_path: row.image_path,
-        primary_language: row.primary_language,
-        supported_languages: JSON.parse(row.supported_languages),
-        caption: JSON.parse(row.caption),
-        emotion: JSON.parse(row.emotion),
-        regions: JSON.parse(row.regions),
-        intent: row.intent,
-        popularity_score: row.popularity_score || 0,
-      });
-    }
-
-    this.ready = true;
-    console.timeEnd("Loading embeddings to memory");
-    console.log(`Loaded ${this.memoryIndex.size} embeddings into memory`);
-  }
-
-  private cosineSimilarity(a: Float32Array, b: Float32Array): number {
-    let dotProduct = 0;
-    let normA = 0;
-    let normB = 0;
-
-    for (let i = 0; i < a.length; i++) {
-      dotProduct += a[i]! * b[i]!;
-      normA += a[i]! * a[i]!;
-      normB += b[i]! * b[i]!;
-    }
-
-    if (normA === 0 || normB === 0) return 0;
-    return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
-  }
-
-  search(queryEmbedding: Float32Array, options: SearchOptions = {}): SearchResult[] {
-    if (!this.ready) {
-      throw new Error("VectorStore not ready");
-    }
-
+  async search(
+    queryEmbedding: Float32Array,
+    options: SearchOptions = {}
+  ): Promise<SearchResult[]> {
     const {
       language,
       region,
@@ -119,47 +42,82 @@ export class VectorStore {
       minSimilarity = 0.3,
     } = options;
 
+    const vec = JSON.stringify(Array.from(queryEmbedding));
+    const k = limit * 5;
+
+    const { rows } = await this.db.execute({
+      sql: `
+        SELECT
+          m.id            AS meme_id,
+          m.image_path    AS image_path,
+          m.primary_language,
+          m.supported_languages,
+          m.caption,
+          m.emotion,
+          m.regions,
+          m.intent,
+          m.popularity_score,
+          vector_distance_cos(e.embedding, vector32(:vec)) AS distance
+        FROM vector_top_k('embeddings_vec_idx', vector32(:vec), :k) v
+        JOIN embeddings e ON e.rowid = v.id
+        JOIN memes      m ON m.id    = e.meme_id
+        ORDER BY distance ASC
+      `,
+      args: { vec, k },
+    });
+
     const results: SearchResult[] = [];
 
-    for (const [memeId, embedding] of this.memoryIndex) {
-      const meta = this.metadata.get(memeId)!;
+    for (const row of rows as unknown as {
+      meme_id: string;
+      image_path: string;
+      primary_language: string;
+      supported_languages: string;
+      caption: string;
+      emotion: string;
+      regions: string;
+      intent: string;
+      popularity_score: number | null;
+      distance: number;
+    }[]) {
+      const supported_languages = JSON.parse(row.supported_languages) as string[];
+      const regions_arr = JSON.parse(row.regions) as string[];
+      const emotion_arr = JSON.parse(row.emotion) as string[];
 
       if (language) {
-        const isSupported = (meta.supported_languages as string[]).includes(language);
-        if (!isSupported && meta.primary_language !== language) {
+        if (!supported_languages.includes(language) && row.primary_language !== language) {
           continue;
         }
       }
 
-      if (region && !(meta.regions as string[]).includes(region) && !(meta.regions as string[]).includes("pan_india")) {
+      if (region && !regions_arr.includes(region) && !regions_arr.includes("pan_india")) {
         continue;
       }
 
-      if (emotion && !(meta.emotion as string[]).includes(emotion)) {
+      if (emotion && !emotion_arr.includes(emotion)) {
         continue;
       }
 
-      const similarity = this.cosineSimilarity(queryEmbedding, embedding);
-
+      const similarity = 1 - row.distance;
       if (similarity < minSimilarity) continue;
 
       results.push({
-        meme_id: memeId,
+        meme_id: row.meme_id,
         similarity,
-        image_path: meta.image_path as string,
-        caption: meta.caption as Record<string, unknown>,
-        primary_language: meta.primary_language as string,
-        supported_languages: meta.supported_languages as string[],
-        emotion: meta.emotion as string[],
-        regions: meta.regions as string[],
-        intent: meta.intent as string,
-        popularity_score: meta.popularity_score as number,
+        image_path: row.image_path,
+        caption: JSON.parse(row.caption),
+        primary_language: row.primary_language,
+        supported_languages,
+        emotion: emotion_arr,
+        regions: regions_arr,
+        intent: row.intent,
+        popularity_score: row.popularity_score ?? 0,
       });
+
+      if (results.length >= limit) break;
     }
 
-    results.sort((a, b) => b.similarity - a.similarity);
-
-    return results.slice(0, limit);
+    return results;
   }
 
   rank(results: SearchResult[], options: SearchOptions = {}): SearchResult[] {
@@ -188,17 +146,15 @@ export class VectorStore {
       .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
   }
 
-  reload() {
-    this.memoryIndex.clear();
-    this.metadata.clear();
-    this.loadToMemory();
-  }
-
-  getStats() {
+  async getStats() {
+    const { rows } = await this.db.execute(
+      `SELECT COUNT(*) AS count FROM embeddings`
+    );
+    const count = Number((rows[0] as unknown as { count: number | bigint }).count);
     return {
-      total_embeddings: this.memoryIndex.size,
-      memory_mb: (this.memoryIndex.size * 768 * 4) / (1024 * 1024),
-      ready: this.ready,
+      total_embeddings: count,
+      memory_mb: (count * 3072 * 4) / (1024 * 1024),
+      ready: true,
     };
   }
 }

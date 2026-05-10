@@ -1,12 +1,22 @@
-import Database from "bun:sqlite";
+import { createClient, type Client } from "@libsql/client";
 
-const db = new Database("memes.db");
+const url = process.env.TURSO_DATABASE_URL;
+const authToken = process.env.TURSO_AUTH_TOKEN;
 
-db.exec("PRAGMA journal_mode = WAL");
-db.exec("PRAGMA synchronous = NORMAL");
-db.exec("PRAGMA cache_size = 10000");
+if (!url) {
+  throw new Error("TURSO_DATABASE_URL is not set (add it to .env)");
+}
+
+const db: Client = createClient({ url, authToken });
 
 const schema = await Bun.file("src/db/schema.sql").text();
-db.exec(schema);
+const statements = schema
+  .split(/;\s*(?:\r?\n|$)/)
+  .map((s) => s.trim())
+  .filter((s) => s.length > 0);
+
+for (const stmt of statements) {
+  await db.execute(stmt);
+}
 
 export default db;

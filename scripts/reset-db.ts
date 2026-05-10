@@ -1,11 +1,9 @@
-import Database from "bun:sqlite";
+import db from "../src/db/index.ts";
 
 /**
  * Remove all rows from `memes` and `embeddings` (keeps schema).
  * Run from repo root: `bun run scripts/reset-db.ts`
  */
-const db = new Database("memes.db");
-db.exec("DELETE FROM embeddings");
-db.exec("DELETE FROM memes");
-db.exec("VACUUM");
-console.log("SQLite cleared: embeddings + memes.");
+await db.execute("DELETE FROM embeddings");
+await db.execute("DELETE FROM memes");
+console.log("Turso cleared: embeddings + memes.");

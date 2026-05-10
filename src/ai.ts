@@ -15,6 +15,7 @@ const google = createGoogleGenerativeAI({
 });
 
 export const geminiModel = google("gemini-1.0-pro");
+export const analysisChatModel = google("gemini-2.5-flash-lite");
 export const embeddingModel = google.embedding("gemini-embedding-2");
 
 /** OpenRouter (OpenAI-compatible) for vision labeling — set `OPENROUTER_API_KEY` in `.env`. */

@@ -278,38 +278,39 @@ export async function labelOneImageFile(imagePathAbs: string): Promise<{
   console.log(`\n=== single image ===`);
   console.log(resolved);
   const label = await labelMeme(resolved, memeId);
-  saveMemeLabel(label, resolved);
+  await saveMemeLabel(label, resolved);
   console.log(`✓ Saved to DB: ${resolved}`);
   return { label, imagePath: resolved };
 }
 
-export function saveMemeLabel(label: MemeLabelType, imagePath: string) {
-  const stmt = db.prepare(`
-    INSERT INTO memes (
-      id, image_path, primary_language, supported_languages,
-      caption, meaning, tags, query_examples,
-      emotion, intent, regions, safety, quality,
-      multilingual_embedding_text, labeled_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  stmt.run(
-    String(label.id),
-    String(imagePath),
-    String(label.primary_language),
-    JSON.stringify(label.supported_languages),
-    JSON.stringify(label.caption),
-    JSON.stringify(label.meaning),
-    JSON.stringify(label.tags),
-    JSON.stringify(label.query_examples),
-    JSON.stringify(label.emotion),
-    JSON.stringify(label.intent),
-    JSON.stringify(label.regions),
-    JSON.stringify(label.safety),
-    JSON.stringify(label.quality),
-    String(label.multilingual_embedding_text),
-    new Date().toISOString()
-  );
+export async function saveMemeLabel(label: MemeLabelType, imagePath: string) {
+  await db.execute({
+    sql: `
+      INSERT INTO memes (
+        id, image_path, primary_language, supported_languages,
+        caption, meaning, tags, query_examples,
+        emotion, intent, regions, safety, quality,
+        multilingual_embedding_text, labeled_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `,
+    args: [
+      String(label.id),
+      String(imagePath),
+      String(label.primary_language),
+      JSON.stringify(label.supported_languages),
+      JSON.stringify(label.caption),
+      JSON.stringify(label.meaning),
+      JSON.stringify(label.tags),
+      JSON.stringify(label.query_examples),
+      JSON.stringify(label.emotion),
+      JSON.stringify(label.intent),
+      JSON.stringify(label.regions),
+      JSON.stringify(label.safety),
+      JSON.stringify(label.quality),
+      String(label.multilingual_embedding_text),
+      new Date().toISOString(),
+    ],
+  });
 }
 
 export type LabelFolderOptions = {
@@ -342,7 +343,7 @@ export async function labelFolder(folderPath: string, options: LabelFolderOption
     try {
       console.log(`\n=== [${succeeded + failed + 1}/${allFiles.length}] ${file} ===`);
       const label = await labelMeme(imagePath, memeId);
-      saveMemeLabel(label, imagePath);
+      await saveMemeLabel(label, imagePath);
       succeeded++;
       console.log(`✓ Saved ${file}`);
     } catch (err) {
