@@ -6,7 +6,6 @@ import { labelFolder } from "./label.ts";
 import { embedMemes } from "./embed.ts";
 import { embeddingModel } from "./ai.ts";
 import db from "./db/index.ts";
-import { analyzeQuery } from "./query-analysis.ts";
 
 const app = new Hono();
 const vectorStore = new VectorStore();
@@ -55,34 +54,23 @@ app.post("/search", async (c) => {
     const body = await c.req.json();
     const { query, language, region, emotion, limit, rerank } = SearchRequest.parse(body);
 
-    console.time("analyze");
-    const analysis = await analyzeQuery(query);
-    console.timeEnd("analyze");
-
     console.time("embed");
     const result = await embed({
       model: embeddingModel,
-      value: analysis.expanded_text,
+      value: query,
     });
     const queryEmbedding = new Float32Array(result.embedding);
     console.timeEnd("embed");
 
-    // Build BM25 query text — use expanded_text plus detected people/source for keyword matching
-    const bm25Text = [
-      analysis.expanded_text,
-      ...analysis.detected_people,
-      analysis.source_reference,
-    ].filter(Boolean).join(' ');
-
     console.time("fused-search");
     const fusedResults = await vectorStore.fusedSearch(
       queryEmbedding,
-      bm25Text,
-      analysis.detected_people,
+      query,
+      [],
       {
-        language: language ?? analysis.language,
-        region: region ?? analysis.regions[0],
-        emotion: emotion ?? analysis.emotions[0],
+        language,
+        region,
+        emotion,
         limit: limit * 3,
         minSimilarity: 0.30,
       }
@@ -95,16 +83,13 @@ app.post("/search", async (c) => {
       console.time("cross-encode");
       finalResults = await vectorStore.crossEncode(
         fusedResults,
-        analysis.expanded_text,
+        query,
         Math.min(15, fusedResults.length)
       );
       console.timeEnd("cross-encode");
     }
 
-    const ranked = vectorStore.rank(finalResults, {
-      language: language ?? analysis.language,
-      region: region ?? analysis.regions[0],
-    });
+    const ranked = vectorStore.rank(finalResults, { language, region });
 
     const memes = ranked.slice(0, limit).map((r) => {
       const cap = r.caption as { original?: string; translations?: Record<string, string> } | null;
@@ -134,7 +119,6 @@ app.post("/search", async (c) => {
     return c.json({
       memes,
       query,
-      analysis,
       total_results: ranked.length,
     });
   } catch (err: unknown) {

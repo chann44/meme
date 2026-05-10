@@ -315,7 +315,7 @@ export class VectorStore {
     }));
 
     return [...scored, ...rest]
-      .filter(r => (r.cross_score ?? 0) >= 3)
+      .filter(r => (r.cross_score ?? 0) >= 2)
       .sort((a, b) => (b.cross_score ?? 0) - (a.cross_score ?? 0));
   }
 
