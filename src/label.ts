@@ -149,8 +149,10 @@ function normalizeTOON(obj: any): any {
   if (obj.humor_type) obj.humor_type = toArray(obj.humor_type);
   if (obj.tone) obj.tone = toArray(obj.tone);
   if (obj.regions) obj.regions = toArray(obj.regions);
+  if (obj.people) obj.people = toArray(obj.people);
+  if (obj.cultural_references) obj.cultural_references = toArray(obj.cultural_references);
 
-  for (const section of ['tags', 'query_examples', 'negative_examples']) {
+  for (const section of ['tags', 'query_examples', 'negative_examples', 'do_not_show_when']) {
     if (obj[section]) {
       for (const lang of ['english', 'hindi', 'hinglish', 'tamil', 'telugu']) {
         if (obj[section][lang]) obj[section][lang] = toArray(obj[section][lang]);
@@ -283,6 +285,32 @@ export async function labelOneImageFile(imagePathAbs: string): Promise<{
   return { label, imagePath: resolved };
 }
 
+function buildFTSSearchText(label: MemeLabelType): string {
+  const parts: string[] = [];
+  if (label.caption.original) parts.push(label.caption.original);
+  if (label.caption.translations.english) parts.push(label.caption.translations.english);
+  if (label.ocr_text) parts.push(label.ocr_text);
+  if (label.image_description) parts.push(label.image_description);
+  if (label.scene_description) parts.push(label.scene_description);
+  if (label.meaning.english) parts.push(label.meaning.english);
+  if (label.meaning.hinglish) parts.push(label.meaning.hinglish);
+  if (label.source) parts.push(label.source);
+  parts.push(...label.people);
+  parts.push(...label.cultural_references);
+  parts.push(...label.tags.english);
+  parts.push(...label.tags.hinglish);
+  parts.push(...label.query_examples.english);
+  parts.push(...label.query_examples.hinglish);
+  return parts.filter(Boolean).join(' ');
+}
+
+function normalizePeopleName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/\s*\(.*?\)/g, '') // strip parenthetical variants
+    .trim();
+}
+
 export async function saveMemeLabel(label: MemeLabelType, imagePath: string) {
   await db.execute({
     sql: `
@@ -290,8 +318,10 @@ export async function saveMemeLabel(label: MemeLabelType, imagePath: string) {
         id, image_path, primary_language, supported_languages,
         caption, meaning, tags, query_examples,
         emotion, intent, regions, safety, quality,
-        multilingual_embedding_text, labeled_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        multilingual_embedding_text, labeled_at,
+        ocr_text, image_description,
+        people, source, cultural_references, scene_description
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `,
     args: [
       String(label.id),
@@ -309,8 +339,34 @@ export async function saveMemeLabel(label: MemeLabelType, imagePath: string) {
       JSON.stringify(label.quality),
       String(label.multilingual_embedding_text),
       new Date().toISOString(),
+      String(label.ocr_text),
+      String(label.image_description),
+      JSON.stringify(label.people),
+      String(label.source),
+      JSON.stringify(label.cultural_references),
+      String(label.scene_description),
     ],
   });
+
+  // Populate inverted people index
+  if (label.people.length > 0) {
+    const peopleInserts = label.people.map((rawName) => ({
+      sql: `INSERT OR IGNORE INTO meme_people(person_name, meme_id) VALUES (?, ?)`,
+      args: [normalizePeopleName(rawName), String(label.id)],
+    }));
+    try {
+      await db.batch(peopleInserts, "write");
+    } catch {}
+  }
+
+  // Populate FTS index
+  try {
+    const searchText = buildFTSSearchText(label);
+    await db.execute({
+      sql: `INSERT OR REPLACE INTO memes_fts(meme_id, search_text) VALUES (?, ?)`,
+      args: [String(label.id), searchText],
+    });
+  } catch {}
 }
 
 export type LabelFolderOptions = {

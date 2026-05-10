@@ -51,6 +51,11 @@ export const MemeLabel = z.object({
     english: arr,
     hinglish: arr,
   }).default({ english: [], hinglish: [] }),
+  // New: people/source/cultural context
+  people: arr,
+  source: str,
+  cultural_references: arr,
+  scene_description: str,
   safety: z.object({
     nsfw: bool,
     abusive: bool,

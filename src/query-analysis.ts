@@ -27,6 +27,8 @@ const QueryAnalysisSchema = z.object({
     "maharashtra", "bengal", "kerala", "tamil_nadu", "andhra_telangana",
     "karnataka", "unknown",
   ])).max(2),
+  detected_people: z.array(z.string()).default([]),
+  source_reference: z.string().default(""),
   expanded_text: z.string(),
 });
 
