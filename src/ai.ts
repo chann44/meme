@@ -1,7 +1,17 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 
+/** Supports `GEMINI_API_KEY` (project convention) or Google AI SDK env names. */
+export function getGoogleApiKey(): string | undefined {
+  return (
+    process.env.GEMINI_API_KEY ||
+    process.env.GOOGLE_GENERATIVE_AI_API_KEY ||
+    process.env.GOOGLE_API_KEY ||
+    undefined
+  );
+}
+
 const google = createGoogleGenerativeAI({
-  apiKey: process.env.GEMINI_API_KEY,
+  apiKey: getGoogleApiKey(),
 });
 
 export const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434/v1/chat/completions";

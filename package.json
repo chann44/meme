@@ -5,6 +5,8 @@
     "dev": "bun run src/index.ts",
     "label": "bun run src/label.ts",
     "embed": "bun run src/embed.ts",
+    "test": "bun test",
+    "test:embed": "bun test src/embed.labels.stress.test.ts",
     "pipeline": "bun run src/pipeline.ts",
     "pipeline:remote": "SERVER_URL=$SERVER_URL bun run src/pipeline.ts"
   },
