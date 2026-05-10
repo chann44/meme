@@ -9,6 +9,9 @@ import { queryLabelsJson, type LabelsQueryHit } from "./embed.ts";
  * cosine similarity against `labels.json.embeddings.json`. There is no keyword,
  * full-text, or database fallback anywhere in that path.
  *
+ * Golden + cross-lingual cases are derived from the **current** `labels.json`
+ * (e.g. your `memes/0.jpg` … `memes/9.jpg` export), not hardcoded meme ids.
+ *
  * Set `EMBED_TEST_VERBOSE=0` to silence per-query logs (e.g. CI).
  */
 const REPO_ROOT = join(import.meta.dir, "..");
@@ -21,6 +24,7 @@ const CONCURRENCY = 8;
 
 type LabelRow = {
   id: string;
+  image_path?: string;
   query_examples?: Partial<Record<"english" | "hindi" | "hinglish", string[]>>;
 };
 
@@ -45,10 +49,38 @@ function buildGoldenCases(): { id: string; lang: (typeof LANGS)[number]; query: 
   return cases;
 }
 
+/** One first query per language — only rows that have EN + HI + Hinglish examples (dataset-driven, no hardcoded meme ids). */
+function buildCrossLingualClusters(rows: LabelRow[]): {
+  id: string;
+  theme: string;
+  queries: { english: string; hindi: string; hinglish: string };
+}[] {
+  const out: {
+    id: string;
+    theme: string;
+    queries: { english: string; hindi: string; hinglish: string };
+  }[] = [];
+  for (const row of rows) {
+    const qe = row.query_examples;
+    if (!qe) continue;
+    const en = qe.english?.map((q) => String(q).trim()).find((s) => s.length > 0);
+    const hi = qe.hindi?.map((q) => String(q).trim()).find((s) => s.length > 0);
+    const hg = qe.hinglish?.map((q) => String(q).trim()).find((s) => s.length > 0);
+    if (!en || !hi || !hg) continue;
+    out.push({
+      id: row.id,
+      theme: row.image_path ?? row.id,
+      queries: { english: en, hindi: hi, hinglish: hg },
+    });
+  }
+  return out;
+}
+
 const hasGemini = !!getGoogleApiKey();
 const hasCache = existsSync(CACHE_PATH);
 const runLiveEmbeddingTests = hasGemini && hasCache;
 const goldenCases = buildGoldenCases();
+const crossLingualClusters = buildCrossLingualClusters(labels);
 
 const logVerbose = process.env.EMBED_TEST_VERBOSE !== "0";
 
@@ -69,61 +101,6 @@ function logEmbeddingSearch(
     );
   }
 }
-
-/** Same meme, semantically aligned queries across EN / HI / Roman Hinglish (themes from labels.json). */
-const CROSS_LINGUAL_CLUSTERS: {
-  id: string;
-  theme: string;
-  queries: { english: string; hindi: string; hinglish: string };
-}[] = [
-  {
-    id: "meme_1778322288650",
-    theme: "exams, corona, plans before vs after",
-    queries: {
-      english:
-        "Things were happy and optimistic until exams and coronavirus hit and everything became disappointing",
-      hindi: "कोरोना के कारण पढ़ाई का मूड खराब होना",
-      hinglish: "Jab sab set tha aur suddenly rules badal gaye",
-    },
-  },
-  {
-    id: "meme_1778332163900",
-    theme: "Netflix / streaming — can't afford while friends hype shows",
-    queries: {
-      english: "My friends keep talking about the new Netflix series but I cannot afford a subscription",
-      hindi:
-        "जब आपके दोस्त नेटफ्लिक्स पर नए शो के बारे में बात कर रहे हैं लेकिन आप इसे वहन नहीं कर सकते",
-      hinglish: "Jab dost Netflix pe naye show ki baat kar rahe hon aur aapko paisa na ho",
-    },
-  },
-  {
-    id: "meme_1778332094290",
-    theme: "STEM / maths / science difficulty",
-    queries: {
-      english: "Maths physics chemistry syllabus feels impossible as a science student",
-      hindi: "विज्ञान के विषय बहुत मुश्किल लग रहे हैं और परीक्षा की तैयारी मुश्किल है",
-      hinglish: "Maths Science ke subjects kitne tough hain padhai mein stress",
-    },
-  },
-  {
-    id: "meme_1778332022271",
-    theme: "low Instagram / social engagement",
-    queries: {
-      english: "when my Instagram post gets almost no likes and low engagement",
-      hindi: "सोशल मीडिया पर मेरी पोस्ट को बहुत कम लाइक्स और एंगेजमेंट मिला",
-      hinglish: "mere post pe sirf 3 likes aaye instagram pe",
-    },
-  },
-  {
-    id: "meme_1778331864323",
-    theme: "Bollywood-style overreaction / dramatic insaan",
-    queries: {
-      english: "My dramatic reaction when someone shares my photo as a joke like a movie scene",
-      hindi: "छोटी सी बात पर बहुत ज़्यादा नाटक और इमोशन दिखाना जैसे बॉलीवुड परफॉर्मेंस",
-      hinglish: "main choti si baat par zyada overreact kar raha hun coke studio wali vibe",
-    },
-  },
-];
 
 async function mapPool<T, R>(items: T[], concurrency: number, fn: (item: T) => Promise<R>): Promise<R[]> {
   const out: R[] = [];
@@ -166,10 +143,10 @@ describe.skipIf(!runLiveEmbeddingTests)("labels embedding stress (English / Hind
     );
   }
 
-  test(
-    `cross-lingual themes: same meme in top ${TOP_CLUSTER} for EN, HI, Hinglish paraphrases`,
+  test.skipIf(crossLingualClusters.length === 0)(
+    `cross-lingual: first EN/HI/Hinglish query_examples per meme in top ${TOP_CLUSTER} (${crossLingualClusters.length} memes)`,
     async () => {
-      for (const { id, theme, queries } of CROSS_LINGUAL_CLUSTERS) {
+      for (const { id, theme, queries } of crossLingualClusters) {
         for (const [qlang, q] of Object.entries(queries)) {
           const hits = await queryLabelsJson(LABELS_JSON, q, TOP_CLUSTER);
           const rank = hits.findIndex((h) => h.id === id);

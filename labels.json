@@ -1,166 +1,106 @@
 [
   {
-    "id": "meme_1778322227547",
-    "image_path": "memes/63.jpg",
-    "primary_language": "hinglish",
-    "supported_languages": [
-      "hinglish",
-      "english",
-      "hindi",
-      "tamil",
-      "telugu"
-    ],
-    "caption": {
-      "original": "*sad insaan*",
-      "translations": {
-        "english": "*sad person*",
-        "hindi": "उदास इंसान",
-        "hinglish": "*sad insaan*",
-        "tamil": "சோகமான மனிதன்",
-        "telugu": "విచారమైన వ్యక్తి"
-      }
-    },
-    "meaning": {
-      "english": "When your life/mood is so dramatic and sad that it feels like it belongs in a movie musical sequence.",
-      "hindi": "जब आपकी ज़िंदगी या मूड इतना नाटकीय और उदास हो कि वह किसी फिल्मी गाने के म्यूजिकल सीक्वेंस जैसा लगे।",
-      "hinglish": "When your life/mood is so dramatic and sad that it feels like it belongs in a cinematic musical sequence.",
-      "tamil": "உங்கள் வாழ்க்கை மிகவும் சோகமாகவும் நாடகத்தன்மையுடனும் இருக்கும்போது, அது ஒரு திரைப்படப் பாடல் காட்சியைப் போல தோன்றும்.",
-      "telugu": "మీ జీవితం లేదా మూడ్ చాలా నాటకీయంగా, విచారంగా ఉండి, సినిమా పాటలా అనిపించినప్పుడు."
-    },
-    "tags": {
-      "english": [],
-      "hindi": [],
-      "hinglish": [],
-      "tamil": [],
-      "telugu": []
-    },
-    "query_examples": {
-      "english": [],
-      "hindi": [],
-      "hinglish": [],
-      "tamil": [],
-      "telugu": []
-    },
-    "emotion": [],
-    "intent": [
-      "react_to_absurdity,show_sarcasm,tease,unknown"
-    ],
-    "regions": [],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: When your life/mood is so dramatic and sad that it feels like it belongs in a movie musical sequence. Hindi: जब आपकी ज़िंदगी या मूड इतना नाटकीय और उदास हो कि वह किसी फिल्मी गाने के म्यूजिकल सीक्वेंस जैसा लगे। Hinglish: When your life/mood is so dramatic and sad that it feels like it belongs in a cinematic musical sequence. Tamil: உங்கள் வாழ்க்கை மிகவும் சோகமாகவும் நாடகத்தன்மையுடனும் இருக்கும்போது, அது ஒரு திரைப்படப் பாடல் காட்சியைப் போல தோன்றும். Telugu: మీ జీవితం లేదా మూడ్ చాలా నాటకీయంగా, విచారంగా ఉండి, సినిమా పాటలా అనిపించినప్పుడు. Queries: my mood right now, this is me, when i feel artsy and sad, sad life vibes; Mera mood इस समय, ये मैं हूँ, जब मुझे बहुत उदास और कलात्मक महसूस होता है, मेरी उदास लाइफ; इப்போ என் மனநிலை, இது என்னைப் போல, நான் மிகவும் சோகமாகவும் கலைத்தன்மையுடனும் இருக்கும்போது; నా మూడ్ ఇప్పుడే, ఇది నేనే, నాకు చాలా విచారంగా మరియు కళాత్మకంగా అనిపించినప్పుడు. Tags: sad,dramatic,bollywood,cokesudio,funny,meme,indian; उदास,भावनात्मक,bollywood,कॉकेस्टूडियो,हास्य,मेम,भारतीय; sad,dramatic,bollywood,coke studio,funny,meme,indian; சோகம், நாடகம், சினிமா, கோக் ஸ்டுடியோ, நகைச்சுவை, மீம்; విచారం, నాటకీయత, సినిమా, కోక్ స్టూడియో, హాస్యం, మీమ్. Emotion: confusion,embarrassment,sarcasm,sadness | Intent: react_to_absurdity,show_sarcasm,tease,unknown | Region: pan_india,north_india,karnataka,kerala",
-    "labeled_at": "2026-05-09T10:24:47.648Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778322288650",
-    "image_path": "memes/189.jpg",
+    "id": "meme_1778398600626",
+    "image_path": "memes/0.jpg",
     "primary_language": "english",
     "supported_languages": [
       "english",
-      "hinglish",
-      "hindi",
-      "tamil",
-      "telugu"
+      "hinglish"
     ],
     "caption": {
-      "original": "my exams after plans",
+      "original": "Boards | OBJECTS IN MIRROR ARE CLOSER THAN THEY APPEAR",
       "translations": {
-        "english": "my exams after plans",
-        "hindi": "योजनाओं के बाद मेरी परीक्षाएँ",
-        "hinglish": "mere exams after plans",
-        "tamil": "திட்டங்களுக்குப் பிறகு என் தேர்வுகள்",
-        "telugu": "ప్లాన్ల తర్వాత నా పరీక్షలు"
+        "english": "Boards | OBJECTS IN MIRROR ARE CLOSER THAN THEY APPEAR",
+        "hindi": "बोर्ड्स | शीशे में दिख रही वस्तुएं असल से ज्यादा करीब हैं",
+        "hinglish": "Boards | Mirror mein dikh rahi cheezein asal se zyada kareeb hain",
+        "tamil": "பாடங்கள் | கண்ணாடியில் உள்ள பொருட்கள் தோன்றுவதை விட நெருக்கமாக உள்ளன",
+        "telugu": "బోర్డులు | అద్దంలో వస్తువులు కనిపించే దానికంటే దగ్గరగా ఉంటాయి"
       }
     },
     "meaning": {
-      "english": "The meme compares how happy or optimistic things are before a setback (like exams or rules), versus how sad or disappointing they become after the setback occurs, especially referencing the impact of coronavirus.",
-      "hindi": "यह मेम दिखाता है कि चीजों के एक झटके (जैसे परीक्षा या नियम) से पहले वे कितनी खुश और आशावादी लगती हैं, और वह झटका लगने के बाद वे कितनी नीरस या निराशाजनक हो जाती हैं, विशेष रूप से कोरोनावायरस के प्रभाव का उल्लेख करते हुए।",
-      "hinglish": "This meme shows how happy and optimistic things appear before a setback (like exams or rules), versus how dull or disappointing they become after the setback occurs, especially referencing the impact of coronavirus.",
-      "tamil": "இது எந்தத் தடுமாற்றத்திற்கு (தேர்வுகள் அல்லது விதிகள் போன்றவை) முன்னால் விஷயங்கள் எவ்வளவு மகிழ்ச்சியாகவும் நம்பிக்கையாகவும் இருக்கின்றன என்பதையும், அந்தத் தடுமாற்றம் ஏற்பட்ட பிறகு அவை எவ்வளவு சலிப்பாகவும் ஏமாற்றமாகவும் மாறுகின்றன என்பதையும் ஒப்பிடுகிறது, குறிப்பாக கொரோனா வைரஸின் தாக்கத்தைக் குறிப்பிடுகிறது.",
-      "telugu": "ఈ మీమ్ ఒక ఎదురుదెబ్బ (పరీక్షలు లేదా నియమాలు వంటివి) రాకముందు విషయాలు ఎంత సంతోషంగా మరియు ఆశావాదంగా కనిపిస్తాయో, ఆ ఎదురుదెబ్బ జరిగిన తర్వాత అవి ఎంత విసుగుగా లేదా నిరాశగా మారుతాయో పోలుస్తుంది, ముఖ్యంగా కరోనావైరస్‌ ప్రభావను ప్రస్తావిస్తుంది."
+      "english": "This meme uses the common car mirror warning to humorously suggest that exams or difficult tasks (\"Boards\") are much closer and more imminent than they might seem. It's a relatable feeling for students facing major exams.",
+      "hindi": "यह मीम कार के साइड मिरर पर लगे चेतावनी संदेश का उपयोग करके मजाकिया ढंग से बताता है कि परीक्षा या कठिन कार्य (\"बोर्ड्स\") जितना लगता है, उससे कहीं ज़्यादा करीब और आसन्न हैं। यह बड़ी परीक्षाओं का सामना कर रहे छात्रों के लिए एक relatable एहसास है।",
+      "hinglish": "This meme car mirror wali warning use karke mazak mein batata hai ki exams ya mushkil kaam (\"Boards\") jitna lag raha hai usse kaafi zyada nazdeek aur aa gaye hain. Students ke liye relatable hai jo boards dene wale hain.",
+      "tamil": "இந்த மீம் கார் கண்ணாடியின் எச்சரிக்கை வாசகத்தை வேடிக்கையாகப் பயன்படுத்தி, பரீட்சைகள் அல்லது கடினமான பணிகள் (\"பாடங்கள்\") தோன்றுவதை விட மிக நெருக்கமாக இருப்பதை உணர்த்துகிறது. இது முக்கிய தேர்வுகளை எதிர்கொள்ளும் மாணவர்களுக்குப் பொருந்தும்.",
+      "telugu": "ఈ మీమ్ కారు మిర్రర్ హెచ్చరికను ఉపయోగించి, పరీక్షలు లేదా కష్టమైన పనులు (\"బోర్డులు\") అవి కనిపించే దానికంటే చాలా దగ్గరగా మరియు ఆసన్నంగా ఉన్నాయని హాస్యాస్పదంగా సూచిస్తుంది. ఇది ముఖ్యమైన పరీక్షలను ఎదుర్కొంటున్న విద్యార్థులకు సంబంధించిన భావన."
     },
     "tags": {
       "english": [
         "exams",
-        "corona",
-        "life",
-        "disappointment",
-        "plans",
-        "funny",
-        "relatable"
+        "boards",
+        "school",
+        "student",
+        "fear",
+        "stress"
       ],
       "hindi": [
         "परीक्षा",
-        "कोरोना",
-        "जीवन",
-        "निराशा",
-        "प्लान",
-        "मजाकिया",
-        "संबंधित"
+        "बोर्ड",
+        "स्कूल",
+        "छात्र",
+        "डर",
+        "तनाव"
       ],
       "hinglish": [
-        "exam",
-        "corona",
-        "life",
-        "disappointment",
-        "plan",
-        "funny",
-        "relatable"
+        "exams",
+        "boards",
+        "school",
+        "student",
+        "darr",
+        "stress"
       ],
       "tamil": [
         "தேர்வுகள்",
-        "கொரோனா",
-        "வாழ்க்கை",
-        "ஏமாற்றம்",
-        "திட்டம்",
-        "நகைச்சுவை",
-        "தொடர்புடைய"
+        "பாடங்கள்",
+        "பள்ளி",
+        "மாணவர்",
+        "பயம்"
       ],
       "telugu": [
         "పరీక్షలు",
-        "కరోనా",
-        "జీవితం",
-        "నిరాశ",
-        "ప్రణాళిక",
-        "హాస్యం",
-        "సంబంధిత"
+        "బోర్డులు",
+        "పాఠశాల",
+        "విద్యార్థి",
+        "భయం"
       ]
     },
     "query_examples": {
       "english": [
-        "When things are good until the rules change."
+        "boards ki taiyari kaise karu",
+        "exam date is so close",
+        "i'm not ready for boards",
+        "feeling anxious about boards"
       ],
       "hindi": [
-        "कोरोना के कारण पढ़ाई का मूड खराब होना।"
+        "बोर्ड्स की तैयारी कैसे होगी",
+        "एग्जाम डेट इतनी करीब है",
+        "मैं बोर्ड्स के लिए रेडी नहीं हूँ",
+        "बोर्ड्स को लेकर घबराहट हो रही है"
       ],
       "hinglish": [
-        "Jab sab set tha aur suddenly rules badal gaye."
+        "boards ki date aa gayi",
+        "kaise hoga ye sab",
+        "exam ka stress ho raha hai",
+        "boards ke liye tension"
       ],
       "tamil": [
-        "விதிகள் மாறும் முன் விஷயங்கள் எப்படி இருந்தன அப்புறம் எப்படி இருக்கும்."
+        "பரீட்சைக்கு எப்படி தயாராவது",
+        "தேர்வு தேதி ரொம்ப நெருக்கமாக இருக்கு",
+        "நான் பரீட்சைக்கு தயாரா இல்லை"
       ],
       "telugu": [
-        "ప్లాన్స్ ఉన్నప్పుడు ఎంత బాగున్నా",
-        "తర్వాత పరిస్థితి."
+        "బోర్డుల కోసం ఎలా సిద్ధం అవ్వాలి",
+        "పరీక్ష తేదీ చాలా దగ్గరగా ఉంది",
+        "నేను బోర్డులకు సిద్ధంగా లేను"
       ]
     },
     "emotion": [
-      "joy",
-      "disappointment",
-      "sadness"
+      "stress",
+      "fear",
+      "awkward"
     ],
     "intent": [
-      "react_to_absurdity, show_disappointment"
+      "exam_stress"
     ],
     "regions": [
       "pan_india"
@@ -176,203 +116,120 @@
       "is_meme": true,
       "label_confidence": 0.98
     },
-    "multilingual_embedding_text": "English: The meme compares how happy or optimistic things are before a setback (like exams or rules), versus how sad or disappointing they become after the setback occurs, especially referencing the impact of coronavirus. Hindi: यह मेम दिखाता है कि चीजों के एक झटके (जैसे परीक्षा या नियम) से पहले वे कितनी खुश और आशावादी लगती हैं, और वह झटका लगने के बाद वे कितनी नीरस या निराशाजनक हो जाती हैं, विशेष रूप से कोरोनावायरस के प्रभाव का उल्लेख करते हुए। Hinglish: This meme shows how happy and optimistic things appear before a setback (like exams or rules), versus how dull or disappointing they become after the setback occurs, especially referencing the impact of coronavirus. Tamil: இது எந்தத் தடுமாற்றத்திற்கு (தேர்வுகள் அல்லது விதிகள் போன்றவை) முன்னால் விஷயங்கள் எவ்வளவு மகிழ்ச்சியாகவும் நம்பிக்கையாகவும் இருக்கின்றன என்பதையும், அந்தத் தடுமாற்றம் ஏற்பட்ட பிறகு அவை எவ்வளவு சலிப்பாகவும் ஏமாற்றமாகவும் மாறுகின்றன என்பதையும் ஒப்பிடுகிறது, குறிப்பாக கொரோனா வைரஸின் தாக்கத்தைக் குறிப்பிடுகிறது. Telugu: ఈ మీమ్ ఒక ఎదురుదెబ్బ (పరీక్షలు లేదా నియమాలు వంటివి) రాకముందు విషయాలు ఎంత సంతోషంగా మరియు ఆశావాదంగా కనిపిస్తాయో, ఆ ఎదురుదెబ్బ జరిగిన తర్వాత అవి ఎంత విసుగుగా లేదా నిరాశగా మారుతాయో పోలుస్తుంది, ముఖ్యంగా కరోనావైరస్‌ ప్రభావను ప్రస్తావిస్తుంది. Queries: Exams were fun before, but now?, When things are good until the rules change., जब चीज़ें ठीक हों और फिर नियम बदल जाएँ।, कोरोना के कारण पढ़ाई का मूड खराब होना।, Jab sab set tha aur suddenly rules badal gaye., விதிகள் மாறும் முன் விஷயங்கள் எப்படி இருந்தன அப்புறம் எப்படி இருக்கும்., ప్లాన్స్ ఉన్నప్పుడు ఎంత బాగున్నా, తర్వాత పరిస్థితి. Tags: exams, corona, life, disappointment, plans, funny, relatable, परीक्षा, कोरोना, जीवन, निराशा, प्लान, मजाकिया, संबंधित, தேர்வுகள், கொரோனா, வாழ்க்கை, ஏமாற்றம், திட்டம், நகைச்சுவை, தொடர்புடைய, పరీక్షలు, కరోనా, జీవితం, నిరాశ, ప్రణాళిక, హాస్యం, సంబంధిత | Emotion: joy, disappointment, sadness | Intent: react_to_absurdity, show_disappointment | Region: pan_india",
-    "labeled_at": "2026-05-09T10:25:41.613Z",
+    "multilingual_embedding_text": "English: Exams are closer than they appear. Hindi: परीक्षाएँ असल में जितनी दिखती हैं, उससे ज़्यादा करीब हैं। Hinglish: Boards itne nazdeek aa gaye hain jitna lagta nahi hai. Tamil: தேர்வுகள் தோன்றுவதை விட நெருக்கமாக உள்ளன. Telugu: పరీక్షలు కనిపించే దానికంటే దగ్గరగా ఉంటాయి. Tags: exams boards school student fear stress परीक्षा बोर्ड स्कूल छात्र तनाव boards exam date school student date ni najdeek exam stress tension pariksha mandal skola student timata bhayabharam exams boards school student fear stress. Queries: boards ki taiyari kaise karu exam date is so close i'm not ready for boards boards ki date aa gayi kaise hoga ye sab exam ka stress ho raha hai பரீட்சைக்கு எப்படி தயாராவது தேர்வு தேதி ரொம்ப நெருக்கமாக இருக்கு நான் பரீட்சைக்கு தயாரா இல்லை బోర్డుల కోసం ఎలా సిద్ధం అవ్వాలి పరీక్ష తేదీ చాలా దగ్గరగా ఉంది నేను బోర్డులకు సిద్ధంగా లేను. Emotion: stress fear awkward. Intent: exam_stress. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:36:47.565Z",
     "reviewed": false
   },
   {
-    "id": "meme_1778331864323",
-    "image_path": "memes/63.jpg",
-    "primary_language": "hinglish",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "*sad insaan* coke studio:",
-      "translations": {
-        "english": "*sad person* coke studio:",
-        "hindi": "*sad insaan* coke studio:",
-        "hinglish": "*sad insaan* coke studio:",
-        "tamil": "சோகமான மனிதன் கோக் ஸ்டுடியோ:",
-        "telugu": "విచారమైన వ్యక్తి కోక్ స్టూడియో:"
-      }
-    },
-    "meaning": {
-      "english": "The template is used when someone is overly dramatic, emotional, or exaggerates a simple situation, treating it like a grand cinematic performance.",
-      "hindi": "यह टेम्पलेट तब उपयोग होता है जब कोई व्यक्ति छोटी सी चीज़ पर बहुत ज़्यादा नाटक करता है, या बहुत ज़्यादा इमोशनल होता है, जैसे कोई बड़ा बॉलीवुड परफॉर्मर होता है।",
-      "hinglish": "Ye template use hota hai jab aap kisi choti si baat par zyada overreact karte ho, jaise koi epic Bollywood performance ho.",
-      "tamil": "ஒரு சிறிய விஷயத்திற்காக மிகைப்படுத்தப்பட்ட உணர்ச்சிவசப்படுதலை வெளிப்படுத்த இது பயன்படுத்தப்படுகிறது.",
-      "telugu": "చిన్న విషయానికి అతిగా భావోద్వేగంగా, నాటకీయంగా ప్రవర్తించే సందర్భంలో ఈ కంటెంట్ వాడతారు."
-    },
-    "tags": {
-      "english": [
-        "overreacting",
-        "bollywood",
-        "sad",
-        "dramatic",
-        "cope_studio",
-        "meme_format"
-      ],
-      "hindi": [
-        "overacting",
-        "drama",
-        "bollywod",
-        "funny",
-        "insaan",
-        "emotional"
-      ],
-      "hinglish": [
-        "dramatic",
-        "overacting",
-        "bollywod",
-        "sad",
-        "insaan",
-        "funny"
-      ],
-      "tamil": [
-        "உணர்ச்சிவசப்படுதல்",
-        "சினிமா",
-        "நகைச்சுவை",
-        "மிகைப்படுத்துதல்"
-      ],
-      "telugu": [
-        "అతినాటకం",
-        "సినీ",
-        "భావోద్వేగం",
-        "కామెడీ"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "My dramatic reaction when someone shares a photo of me."
-      ],
-      "hindi": [
-        "जब पता चला कि कोई काम आखिरी मिनट में करना है।"
-      ],
-      "hinglish": [
-        "When you react to a minor group chat argument like it's the end of the world."
-      ],
-      "tamil": [],
-      "telugu": []
-    },
-    "emotion": [
-      "melodrama",
-      "stress",
-      "cringe",
-      "sadness"
-    ],
-    "intent": [
-      "react_to_absurdity, show_sarcasm, roast_someone, tease"
-    ],
-    "regions": [
-      "pan_india",
-      "north_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: The meme is used to mock someone who is overly dramatic, emotional, or exaggerates a small situation, treating it like a grand cinematic performance. Hindi: यह टेम्पलेट तब उपयोग होता है जब कोई व्यक्ति छोटी सी चीज़ पर बहुत ज़्यादा नाटक करता है या बहुत ज़्यादा इमोशनल होता है। Hinglish: Ye template use hota hai jab aap kisi choti si baat par zyada overreact karte ho. Tamil: இதை சிறிய விஷயத்திற்க்கான மிகைப்படுத்தப்பட்ட உணர்ச்சிகரமான வெளிப்பாட்டிற்குப் பயன்படுத்துதல். Telugu: చిన్న విషయానికి అతిగా భావోద్వేగంగా, నాటకీయంగా ప్రవర్తించే సందర్భంలో. Queries: When I react when my favourite show gets cancelled. My dramatic reaction when someone shares a photo of me. जब किसी ने मज़ाक में आपका कोई फोटो शेयर किया। जब पता चला कि कोई काम आखिरी मिनट में करना है। When you react to a minor group chat argument like it's the end of the world. Tags: overreacting, bollywood, sad, dramatic, meme_format, overacting, drama, bollywod, emotional, உணர்ச்சிவசப்படுதல், மிகைப்படுத்துதல், అతినాటకం, భావోద్వేగం | Emotion: melodrama, stress, cringe, sadness | Intent: react_to_absurdity, show_sarcasm, roast_someone, tease | Humor_Type: reaction, movie_reference, relatable, absurd | Tone: funny, dramatic, playful, self_deprecating | Region: pan_india, north_india",
-    "labeled_at": "2026-05-09T13:05:46.713Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778331947714",
-    "image_path": "memes/189.jpg",
+    "id": "meme_1778398608570",
+    "image_path": "memes/1.jpg",
     "primary_language": "english",
     "supported_languages": [
       "english",
-      "hindi",
       "hinglish"
     ],
     "caption": {
-      "original": "my exams after plans / coronavirus",
+      "original": "crush: hi | my brain:",
       "translations": {
-        "english": "my exams after plans",
-        "hindi": "योजनाओं के बाद मेरे एग्जाम / कोरोनावायरस",
-        "hinglish": "my exams after plans / coronavirus",
-        "tamil": "என்னைப் பத்தின எக்ஸாம்ஸ்க்கு அப்புறம் / கொரோனா",
-        "telugu": "ప్లాన్స్ తర్వాత పరీక్షలు / కరోనా"
+        "english": "crush: hi | my brain:",
+        "hindi": "क्रश: हाय | मेरा दिमाग:",
+        "hinglish": "crush: hi | mera brain:",
+        "tamil": "கிரஷ்: ஹாய் | என் மூளை:",
+        "telugu": "క్రష్: హాయ్ | నా మెదడు:"
       }
     },
     "meaning": {
-      "english": "The meme reflects the sudden disruption and disappointment of life plans (especially academic ones) caused by the appearance of the coronavirus pandemic.",
-      "hindi": "यह मीम कोरोनावायरस महामारी के कारण जीवन की योजनाओं में आई अचानक बाधा और निराशा को दर्शाता है, खासकर शैक्षणिक संदर्भ में।",
-      "hinglish": "This meme describes how the plans for life (especially studies and college life) got suddenly disrupted and disappointed by the arrival of the coronavirus.",
-      "tamil": "(The disappointment and disruption of normal life plans due to the pandemic)",
-      "telugu": "(Pandemic వల్ల ప్రణాళికలలో వచ్చిన మార్పు మరియు నిరాశ)"
+      "english": "This meme humorously depicts how someone's brain overreacts to a simple greeting (\"hi\") from their crush, imagining elaborate scenarios like a wedding.",
+      "hindi": "यह मीम मजाकिया तौर पर दिखाता है कि कैसे कोई व्यक्ति अपने क्रश से एक साधारण अभिवादन (\"हाय\") पर अत्यधिक प्रतिक्रिया करता है, शादी जैसे विस्तृत दृश्यों की कल्पना करता है।",
+      "hinglish": "This meme shows how someone's mind goes into overdrive with a simple \"hi\" from their crush, imagining crazy scenarios like getting married.",
+      "tamil": "இந்த மீம், ஒரு கிரஷ் ஒரு எளிய \"ஹாய்\" என்று சொல்லும்போது, ​​ஒருவர் எப்படி திருமண போன்ற விரிவான காட்சிகளை கற்பனை செய்கிறார்கள் என்பதைக் காட்டுகிறது.",
+      "telugu": "ఈ మీమ్, క్రష్ నుండి ఒక సాధారణ \"హాయ్\" అనే పదానికి, పెళ్లి వంటి అద్భుతమైన సంఘటనలను ఊహించుకుంటూ, ఒక వ్యక్తి మెదడు ఎలా అతిగా ప్రతిస్పందిస్తుందో హాస్యంగా వివరిస్తుంది."
     },
     "tags": {
       "english": [
-        "coronavirus",
-        "pandemic",
-        "exams",
-        "plans",
-        "relatable",
-        "disruption"
+        "crush",
+        "hi",
+        "brain",
+        "overthinking",
+        "wedding",
+        "love"
       ],
       "hindi": [
-        "कोरोनावायरस",
-        "एग्जाम",
-        "प्लान",
-        "महामारी",
-        "निराशा"
+        "क्रश",
+        "हाय",
+        "दिमाग",
+        "ओवरथिंकिंग",
+        "शादी",
+        "प्यार"
       ],
       "hinglish": [
-        "corona",
-        "exams",
-        "plans",
-        "pandemic",
-        "relatable"
+        "crush",
+        "hi",
+        "brain",
+        "overthinking",
+        "wedding",
+        "love"
       ],
       "tamil": [
-        "கொரோனா",
-        "எக்ஸாம்",
-        "கொரோனா வைரஸ்",
-        "திட்டம்"
+        "கிரஷ்",
+        "ஹாய்",
+        "மூளை",
+        "அதிக சிந்தனை",
+        "திருமணம்",
+        "காதல்"
       ],
       "telugu": [
-        "కరోనా",
-        "పరీక్షలు",
-        "ప్లాన్స్",
-        "వాయిదా"
+        "క్రష్",
+        "హాయ్",
+        "మెదడు",
+        "అతిగా ఆలోచించడం",
+        "పెళ్లి",
+        "ప్రేమ"
       ]
     },
     "query_examples": {
       "english": [
-        "I was so ready for my exams. / My plans for the summer break."
+        "when my crush says hi",
+        "my brain when someone attractive talks to me",
+        "me when my crush texts me",
+        "what to do when crush says hi",
+        "imagining wedding with crush"
       ],
       "hindi": [
-        "वीकेंड पर क्या प्लान है? / परीक्षा की तैयारी कैसे करें"
+        "जब मेरी क्रश ने हाय कहा",
+        "जब कोई पसंद का व्यक्ति बात करे",
+        "मेरी क्रश का मैसेज आया",
+        "क्रश हाय बोले तो क्या करें",
+        "क्रश के साथ शादी की कल्पना"
       ],
       "hinglish": [
-        "kya plans hain mere? / exam time stress"
+        "crush ne bye bola toh mera brain",
+        "mera brain when crush says hi",
+        "crush ke message par reaction",
+        "imagining marriage with crush",
+        "brain goes wild"
       ],
       "tamil": [
-        "வார இறுதித் திட்டம் என்ன? / தேர்வுக்கான ஏற்பாடு"
+        "கிரஷ் ஹாய் சொல்லும்போது",
+        "காதலர் செய்தி அனுப்பும்போது",
+        "என் மூளை",
+        "திருமண கற்பனை",
+        "என் கிரஷுடன் திருமணம்"
       ],
       "telugu": [
-        "ఈ వారం ప్లాన్స్ ఏంటి? / పరీక్షల ఒత్తిడి ఎలా తగ్గించాలి"
+        "క్రష్ హాయ్ చెప్పినప్పుడు",
+        "నా మెదడు",
+        "ఆకర్షణీయమైన వ్యక్తి మాట్లాడినప్పుడు",
+        "క్రష్ తో పెళ్లి ఊహించుకుంటే",
+        "నాకు క్రష్ మాట్లాడుతుంది"
       ]
     },
     "emotion": [
-      "disappointment",
-      "stress",
       "shock",
-      "sadness",
-      "cringe"
+      "excitement"
     ],
     "intent": [
-      "react_to_absurdity, show_disappointment, exam_stress"
+      "react_to_absurdity"
     ],
     "regions": [
       "pan_india"
@@ -388,14 +245,14 @@
       "is_meme": true,
       "label_confidence": 0.95
     },
-    "multilingual_embedding_text": "English: The meme reflects the sudden disruption and disappointment of life plans (especially academic ones) caused by the appearance of the coronavirus pandemic. Hindi: यह मीम कोरोनावायरस महामारी के कारण जीवन की योजनाओं में आई अचानक बाधा और निराशा को दर्शाता है, खासकर शैक्षणिक संदर्भ में। Hinglish: This meme describes how the plans for life (especially studies and college life) got suddenly disrupted and disappointed by the arrival of the coronavirus. Tamil: (The disappointment and disruption of normal life plans due to the pandemic) Telugu: (Pandemic వల్ల ప్రణాళికలలో వచ్చిన మార్పు మరియు నిరాశ) Queries: I was so ready for my exams., My plans for the summer break., वीकेंड पर क्या प्लान है?, परीक्षा की तैयारी कैसे करें, kya plans hain mere?, exam time stress, வார இறுதித் திட்டம் என்ன?, தேர்வுக்கான ஏற்பாடு, ఈ వారం ప్లాన్స్ ఏంటి?, పరీక్షల ఒత్తిడి ఎలా తగ్గించాలి Tags: coronavirus, pandemic, exams, plans, relatable, disruption, कोरोनावायरस, एग्जाम, प्लान, महामारी, निराशा, corona, exams, plans, pandemic, relatable, कोरोना, எக்ஸாம், கொரோனா வைரஸ், திட்டம், కరోనా, పరీక్షలు, ప్లాన్స్, వాయిదా Emotion: disappointment, stress, shock, sadness, cringe | Intent: react_to_absurdity | Region: pan_india",
-    "labeled_at": "2026-05-09T13:07:01.269Z",
+    "multilingual_embedding_text": "English: This meme humorously depicts how someone's brain overreacts to a simple greeting (\"hi\") from their crush, imagining elaborate scenarios like a wedding. Hindi: यह मीम मजाकिया तौर पर दिखाता है कि कैसे कोई व्यक्ति अपने क्रश से एक साधारण अभिवादन (\"हाय\") पर अत्यधिक प्रतिक्रिया करता है, शादी जैसे विस्तृत दृश्यों की कल्पना करता है। Hinglish: This meme shows how someone's mind goes into overdrive with a simple \"hi\" from their crush, imagining crazy scenarios like getting married. Tamil: இந்த மீம், ஒரு கிரஷ் ஒரு எளிய \"ஹாய்\" என்று சொல்லும்போது, ​​ஒருவர் எப்படி திருமண போன்ற விரிவான காட்சிகளை கற்பனை செய்கிறார்கள் என்பதைக் காட்டுகிறது. Telugu: ఈ మీమ్, క్రష్ నుండి ఒక సాధారణ \"హాయ్\" అనే పదానికి, పెళ్లి వంటి అద్భుతమైన సంఘటనలను ఊహించుకుంటూ, ఒక వ్యక్తి మెదడు ఎలా అతిగా ప్రతిస్పందిస్తుందో హాస్యంగా వివరిస్తుంది. Tags: crush hi brain overthinking wedding love क्रश हाय दिमाग ओवरथिंकिंग शादी प्यार crush hi brain overthinking wedding love கிரஷ் ஹாய் மூளை அதிக சிந்தனை திருமணம் காதல் క్రష్ హాయ్ మెదడు అతిగా ఆలోచించడం పెళ్లి ప్రేమ. Queries: when my crush says hi my brain when someone attractive talks to me me when my crush texts me what to do when crush says hi imagining wedding with crush जब मेरी क्रश ने हाय कहा जब कोई पसंद का व्यक्ति बात करे मेरी क्रश का मैसेज आया क्रश हाय बोले तो क्या करें क्रश के साथ शादी की कल्पना crush ne bye bola toh mera brain mera brain when crush says hi crush ke message par reaction imagining marriage with crush brain goes wild கிரஷ் ஹாய் சொல்லும்போது காதலர் செய்தி அனுப்பும்போது என் மூளை திருமண கற்பனை என் கிரஷுடன் திருமணம் క్రష్ హాయ్ చెప్పినప్పుడు నా మెదడు ఆకర్షణీయమైన వ్యక్తి మాట్లాడినప్పుడు క్రష్ తో పెళ్లి ఊహించుకుంటే నాకు క్రష్ మాట్లాడుతుంది. Emotion: shock excitement. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:36:54.874Z",
     "reviewed": false
   },
   {
-    "id": "meme_1778332022271",
-    "image_path": "memes/77.jpg",
-    "primary_language": "english",
+    "id": "meme_1778398615876",
+    "image_path": "memes/2.jpg",
+    "primary_language": "hinglish",
     "supported_languages": [
       "english",
       "hindi",
@@ -404,662 +261,111 @@
       "telugu"
     ],
     "caption": {
-      "original": "R.I.P Instagram Likes, REST IN PEACE",
+      "original": "Apni saari samasya mujhe de do",
       "translations": {
-        "english": "R.I.P Instagram Likes, REST IN PEACE",
-        "hindi": "आर.आई.पी इंस्टाग्राम लाइक्स, रेस्ट इन पीस",
-        "hinglish": "R.I.P Instagram Likes, REST IN PEACE",
-        "tamil": "ஐ.ஆர்.ஐ.பி இன்ஸ்டாகிராம் லைக்ஸஸ், ஓய்வுடைந்தது",
-        "telugu": "ఆర్.ఐ.పి ఇన్‌స్టాగ్రామ్ లైక్స్, విశ్రాంతిలో"
+        "english": "Give me all your problems",
+        "hindi": "अपनी सारी समस्या मुझे दे दो",
+        "hinglish": "Apni saari samasya mujhe de do",
+        "tamil": "உங்கள் எல்லா பிரச்சனைகளையும் எனக்கு கொடுங்கள்",
+        "telugu": "మీ సమస్యలన్నీ నాకు ఇవ్వండి"
       }
     },
     "meaning": {
-      "english": "A humorous commentary on receiving extremely low engagement or likes on social media content.",
-      "hindi": "सोशल मीडिया पर बहुत कम लाइक्स या एंगेजमेंट मिलने पर मज़ाक में इस्तेमाल किया जाने वाला मीम।",
-      "hinglish": "Used when someone receives very few likes or low engagement on their social media post.",
-      "tamil": "சமூக ஊடகங்களில் மிகக் குறைந்த ஈடுபாடு அல்லது லைக்குகள் கிடைத்தபோது பயன்படுத்தப்படும் நகைச்சுவை.",
-      "telugu": "సోషల్ మీడియా పోస్ట్‌కు చాలా తక్కువ లైక్‌లు లేదా ఎంగేజ్‌మెంట్ వచ్చినప్పుడు వాడుకునే జోక్."
+      "english": "This meme is used humorously to suggest that drinking Old Monk rum can solve or help forget all your problems.",
+      "hindi": "इस मीम का इस्तेमाल हास्यप्रद रूप से यह बताने के लिए किया जाता है कि ओल्ड मोंक रम पीने से आपकी सारी समस्याएं हल हो सकती हैं या भूलने में मदद मिल सकती है।",
+      "hinglish": "Ye meme mazak mein use hota hai ye batane ke liye ki Old Monk rum peene se sab problems solve ho jati hain ya bhool jaate hain.",
+      "tamil": "உங்கள் எல்லா பிரச்சனைகளையும் மறந்துவிட ஓல்ட் மங்க் ரம் குடிப்பது உதவும் என்று வேடிக்கையாக கூற இந்த மீம் பயன்படுத்தப்படுகிறது.",
+      "telugu": "మీ సమస్యలన్నీ మర్చిపోవడానికి ఓల్డ్ మాంక్ రమ్ తాగడం సహాయపడుతుంది అని తమాషాగా చెప్పడానికి ఈ మీమ్ ఉపయోగించబడుతుంది."
     },
     "tags": {
       "english": [
-        "social media",
-        "likes",
-        "engagement",
-        "disappointment",
-        "funny",
-        "memorial"
+        "old monk",
+        "rum",
+        "problems",
+        "drinking",
+        "solution",
+        "humor",
+        "india"
       ],
       "hindi": [
-        "इंस्टाग्राम",
-        "लाइक्स",
-        "मीम",
-        "कम एंगेजमेंट",
-        "मज़ाक"
+        "ओल्ड मोंक",
+        "रम",
+        "समस्या",
+        "पीना",
+        "समाधान",
+        "हास्य",
+        "भारत"
       ],
       "hinglish": [
-        "instagram",
-        "likes",
-        "meme",
-        "low engagement",
-        "funny"
+        "old monk",
+        "rum",
+        "samasya",
+        "peena",
+        "solution",
+        "mazak",
+        "india"
       ],
       "tamil": [
-        "சமூக ஊடகம்",
-        "லைக்குகள்",
+        "ஓல்ட் மாங்க்",
+        "ரம்",
+        "பிரச்சனைகள்",
+        "குடி",
+        "தீர்வு",
         "நகைச்சுவை",
-        "குறைந்த ஈடுபாடு"
+        "இந்தியா"
       ],
       "telugu": [
-        "ఇన్‌స్టాగ్రామ్",
-        "లైక్‌లు",
-        "మీమ్",
-        "తక్కువ ఎంగేజ్‌మెంట్"
+        "ఓల్డ్ మాంక్",
+        "రం",
+        "సమస్యలు",
+        "తాగడం",
+        "పరిష్కారం",
+        "వినోదం",
+        "భారత్"
       ]
     },
     "query_examples": {
       "english": [
-        "when my post gets only 3 likes"
+        "problems in life",
+        "need a drink",
+        "how to deal with stress",
+        "old monk vibes"
       ],
-      "hindi": [],
+      "hindi": [
+        "जिंदगी में टेंशन",
+        "ड्रिंक की जरूरत है",
+        "स्ट्रेस कैसे डील करें",
+        "ओल्ड मोंक वाला फील"
+      ],
       "hinglish": [
-        "mere post pe sirf 3 likes aaye"
+        "life mein tension aa gayi",
+        "drink karna hai",
+        "stress se kaise bachneka",
+        "old monk vibe chahiye"
       ],
       "tamil": [
-        "என் போஸ்டுக்கு லைக்குகள் பத்தவில்லை"
+        "வாழ்க்கையில் பிரச்சனைகள்",
+        "குடிக்க வேண்டும்",
+        "மன அழுத்தத்தை எப்படி சமாளிப்பது",
+        "old monk mood"
       ],
       "telugu": [
-        "నా పోస్టుకు లైక్‌లు రాలేదు"
+        "జీవితంలో సమస్యలు",
+        "డ్రింక్ కావాలి",
+        "ఒత్తిడిని ఎలా ఎదుర్కోవాలి",
+        "old monk vibe"
       ]
     },
     "emotion": [
       "sarcasm",
-      "disappointment"
+      "approval"
     ],
     "intent": [
-      "react_to_absurdity, show_disappointment"
+      "react_to_absurdity"
     ],
     "regions": [
       "pan_india"
     ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: A humorous commentary on receiving extremely low engagement or likes on social media content. Hindi: सोशल मीडिया पर बहुत कम लाइक्स या एंगेजमेंट मिलने पर मज़ाक में इस्तेमाल किया जाने वाला मीम। Hinglish: Used when someone receives very few likes or low engagement on their social media post. Tamil: சமூக ஊடகங்களில் மிகக் குறைந்த ஈடுபாடு அல்லது லைக்குகள் கிடைத்தபோது பயன்படுத்தப்படும் நகைச்சுவை. Telugu: సోషల్ మీడియా పోస్ట్‌కు చాలా తక్కువ లైక్‌లు లేదా ఎంగేజ్‌మెంట్ వచ్చినప్పుడు వాడుకునే జోక్. Queries: when my post gets only 3 likes, mere post pe sirf 3 likes aaye, என் போஸ்டுக்கு லைக்குகள் பத்தவில்லை, నా పోస్టుకు లైక్‌లు రాలేదు. Tags: social media, likes, engagement, disappointment, funny, memorial, इंस्टाग्राम, लाइक्स, मीम, कम एंगेजमेंट, मज़ाक, instagram, likes, meme, low engagement, funny, சமூக ஊடகம், லைக்குகள், நகைச்சுவை, குறைந்த ஈடுபாடு, ఇన్‌స్టాగ్రామ్, లైక్‌లు, మీమ్, తక్కువ ఎంగేజ్‌మెంట్. Emotion: sarcasm, disappointment | Intent: react_to_absurdity, show_disappointment | Region: pan_india",
-    "labeled_at": "2026-05-09T13:08:13.289Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332094290",
-    "image_path": "memes/162.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "hindi",
-      "hinglish",
-      "tamil",
-      "telugu"
-    ],
-    "caption": {
-      "original": "maths me physics chemistry",
-      "translations": {
-        "english": "Maths, Physics, Chemistry",
-        "hindi": "मैथ, फिजिक्स, केमिस्ट्री",
-        "hinglish": "Maths, Physics, Chemistry",
-        "tamil": "கணிதம், இயற்பியல், வேதியியல்",
-        "telugu": "గణితం, భౌతిక శాస్త్రం, రసాయన శాస్త్రం"
-      }
-    },
-    "meaning": {
-      "english": "The escalating difficulty and daunting complexity associated with academic subjects, particularly in the sciences (STEM).",
-      "hindi": "अकादमिक विषयों की बढ़ती कठिनाई और जटिलता, खासकर विज्ञान (STEM) में।",
-      "hinglish": "Academic subjects ki badhti difficulty aur complexity, khaaskar science (STEM) mein.",
-      "tamil": "அறிவியல் பாடங்களில் (STEM) உள்ள அதிகரித்து வரும் கடினம் மற்றும் சிக்கலை மையமாகக் கொண்டது.",
-      "telugu": "విద్యా శాస్త్రాలలో (STEM) పెరుగుతున్న కష్టం మరియు క్లిష్టత."
-    },
-    "tags": {
-      "english": [
-        "maths",
-        "science",
-        "students",
-        "difficulty",
-        "academic",
-        "chemistry"
-      ],
-      "hindi": [
-        "गणित",
-        "विज्ञान",
-        "विद्यार्थी",
-        "मुश्किल",
-        "पढ़ाई"
-      ],
-      "hinglish": [
-        "study",
-        "academic",
-        "science",
-        "difficulty"
-      ],
-      "tamil": [
-        "கணிதம்",
-        "அறிவியல்",
-        "கல்வி",
-        "கடினம்"
-      ],
-      "telugu": [
-        "విద్య",
-        "శాస్త్రాలు",
-        "కష్టాలు"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "Syllabus seems impossible."
-      ],
-      "hindi": [
-        "परीक्षा की तैयारी कैसे करते हैं?"
-      ],
-      "hinglish": [
-        "Maths/Science ke subjects kitne tough hain?"
-      ],
-      "tamil": [
-        "பாடங்கள் படிக்கும் போது எப்போது சோர்வடைகிறீர்கள்?"
-      ],
-      "telugu": [
-        "ఈ సబ్జెక్టులు చాలా కష్టంగా అనిపించినప్పుడు?"
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "stress",
-      "disappointment"
-    ],
-    "intent": [
-      "react_to_absurdity, exam_stress"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: The escalating difficulty and daunting complexity associated with academic subjects, particularly in the sciences (STEM). Hindi: अकादमिक विषयों की बढ़ती कठिनाई और जटिलता, खासकर विज्ञान (STEM) में। Hinglish: Academic subjects ki badhti difficulty aur complexity, khaaskar science (STEM) mein. Tamil: அறிவியல் பாடங்களில் (STEM) உள்ள அதிகரித்து வரும் கடினம் மற்றும் சிக்கலை மையமாகக் கொண்டது. Telugu: విద్యా శాస్త్రాలలో (STEM) పెరుగుతున్న కష్టం మరియు క్లిష్టత. Queries: When subjects get too difficult? Syllabus seems impossible. जब विषय बहुत मुश्किल लगें? परीक्षा की तैयारी कैसे करते हैं? Maths/Science ke subjects kitne tough hain? பாடங்கள் படிக்கும் போது எப்போது சோர்வடைகிறீர்கள்? ఈ సబ్జెక్టులు చాలా కష్టంగా అనిపించినప్పుడు? Tags: maths, science, students, difficulty, academic, chemistry, गणित, विज्ञान, विद्यार्थी, मुश्किल, पढ़ाई, study, academic, science, difficulty, கணிதம், அறிவியல், கல்வி, கடினம், telugu: విద్య, శాస్త్రాలు, కష్టాలు | Emotion: confusion, stress, disappointment | Intent: react_to_absurdity, exam_stress | Region: pan_india",
-    "labeled_at": "2026-05-09T13:09:22.898Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332163900",
-    "image_path": "memes/176.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "People discussing latest Netflix show",
-      "translations": {
-        "english": "People discussing latest Netflix show",
-        "hindi": "लोग लेटेस्ट नेटफ्लिक्स शो पर चर्चा कर रहे हैं",
-        "hinglish": "People discussing latest Netflix show",
-        "tamil": "சமீபத்திய நெட்ஃபிக்ஸ் শো பற்றி மக்கள் பேசுகிறார்கள்",
-        "telugu": "లేటెస్ట్ నెట్‌ఫ్లిక్స్ షో గురించి ప్రజలు చర్చించుకుంటున్నారు"
-      }
-    },
-    "meaning": {
-      "english": "The meme relates the feeling of being unable to afford streaming services like Netflix while observing others who are enthusiastically discussing it.",
-      "hindi": "यह मीम उस एहसास से जुड़ा है जब आप नेटफ्लिक्स जैसी स्ट्रीमिंग सेवाओं को वहन नहीं कर सकते, जबकि आप दूसरों को इसे उत्साहपूर्वक चर्चा करते हुए देखते हैं।",
-      "hinglish": "The meme relates the feeling of not being able to afford streaming services like Netflix while observing others discussing it.",
-      "tamil": "நெட்ஃபிக்ஸ் போன்ற स्ट्रीमिंग சேவைகளை வாங்க முடியாதபோது, அதைப் பற்றி உற்சாகமாகப் பேசும் மற்றவர்களைப் பார்ப்பதற்கான உணர்வு இந்த மீம் தொடர்பானது.",
-      "telugu": "నెట్‌ఫ్లిక్స్‌ను భరించలేనప్పుడు, దాని గురించి ఉత్సాహంగా చర్చిస్తున్న ఇతరులను చూసే అనుభూతిని ఈ మీమ్ వివరిస్తుంది."
-    },
-    "tags": {
-      "english": [
-        "netflix",
-        "affordability",
-        "comparison",
-        "poverty",
-        "streaming"
-      ],
-      "hindi": [
-        "नेटफ्लिक्स",
-        "सामर्थ्य",
-        "तुलना",
-        "पैसे की कमी",
-        "स्ट्रीमिंग"
-      ],
-      "hinglish": [
-        "netflix",
-        "affordability",
-        "comparison",
-        "gaadi",
-        "streaming"
-      ],
-      "tamil": [
-        "நெட்ஃபிக்ஸ்",
-        "செலவு",
-        "ஒப்பீடு",
-        "ஏழ்மை",
-        "ஒளிபரப்பு"
-      ],
-      "telugu": [
-        "నెట్‌ఫ్లిక్స్",
-        "సామర్థ్యం",
-        "పోలిక",
-        "పేదరికం",
-        "స్ట్రీమింగ్"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "when your friends are talking about the new show on Netflix but you can't afford it"
-      ],
-      "hindi": [
-        "जब आपके दोस्त नेटफ्लिक्स पर नए शो के बारे में बात कर रहे हैं",
-        "लेकिन आप इसे वहन नहीं कर सकते"
-      ],
-      "hinglish": [
-        "Jab dost Netflix pe naye show ki baat kar rahe hon aur aapko paisa na ho"
-      ],
-      "tamil": [
-        "நெட்ஃபிக்ஸ்-இல் புதிய ஷோ பற்றி நண்பர்கள் பேசும்போது",
-        "உங்களிடம் பணம் இல்லாதபோது"
-      ],
-      "telugu": [
-        "మీ స్నేహితులు నెట్‌ఫ్లిక్స్‌లోని కొత్త షో గురించి మాట్లాడుతున్నప్పుడు",
-        "కానీ మీకు డబ్బు లేనప్పుడు"
-      ]
-    },
-    "emotion": [
-      "disappointment",
-      "embarrassment",
-      "sadness"
-    ],
-    "intent": [
-      "show_disappointment, react_to_absurdity"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: The meme relates the feeling of being unable to afford streaming services like Netflix while observing others who are enthusiastically discussing it. Hindi: यह मीम उस एहसास से जुड़ा है जब आप नेटफ्लिक्स जैसी स्ट्रीमिंग सेवाओं को वहन नहीं कर सकते, जबकि आप दूसरों को इसे उत्साहपूर्वक चर्चा करते हुए देखते हैं। Hinglish: The meme relates the feeling of not being able to afford streaming services like Netflix while observing others discussing it. Tamil: நெட்ஃபிக்ஸ் போன்ற स्ट्रीमिंग சேவைகளை வாங்க முடியாதபோது, அதைப் பற்றி உற்சாகமாகப் பேசும் மற்றவர்களைப் பார்ப்பதற்கான உணர்வு இந்த மீம் தொடர்பானது. Telugu: నెట్‌ఫ్లిక్స్‌ను భరించలేనప్పుడు, దాని గురించి ఉత్సాహంగా చర్చిస్తున్న ఇతరులను చూసే అనుభూతిని ఈ మీమ్ వివరిస్తుంది. Queries: when your friends are talking about the new show on Netflix but you can't afford it, जब आपके दोस्त नेटफ्लिक्स पर नए शो के बारे में बात कर रहे हैं, लेकिन आप इसे वहन नहीं कर सकते, Jab dost Netflix pe naye show ki baat kar rahe hon aur aapko paisa na ho, நெட்ஃபிக்ஸ்-இல் புதிய ஷோ பற்றி நண்பர்கள் பேசும்போது, உங்களிடம் பணம் இல்லாதபோது, మీ స్నేహితులు నెట్‌ఫ్లిక్స్‌లోని కొత్త షో గురించి మాట్లాడుతున్నప్పుడు, కానీ మీకు డబ్బు లేనప్పుడు Tags: netflix, affordability, comparison, poverty, streaming, नेटफ्लिक्स, सामर्थ्य, तुलना, पैसे की कमी, स्ट्रीमिंग, netflix, affordability, comparison, gaadi, streaming, நெட்ஃபிக்ஸ், செலவு, ஒப்பீடு, ஏழ்மை, ஒளிபரப்பு, తెలుగు: నెట్‌ఫ్లిక్స్, సామర్థ్యం, పోలిక, పేదరికం, స్ట్రీమింగ్ Emotion: disappointment, embarrassment, sadness | Intent: show_disappointment, react_to_absurdity | Region: pan_india",
-    "labeled_at": "2026-05-09T13:10:13.062Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332214063",
-    "image_path": "memes/88.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "WE LIVE IN A SOCIETY",
-      "translations": {
-        "english": "WE LIVE IN A SOCIETY",
-        "hindi": "हम एक समाज में रहते हैं",
-        "hinglish": "hum ek society mein rehte hain",
-        "tamil": "நாம் ஒரு சமூகத்தில் வாழ்கிறோம்",
-        "telugu": "మేము ఒక సమాజంలో বাস చేస్తాము"
-      }
-    },
-    "meaning": {
-      "english": "The meme juxtaposes the Amazon Fire TV streaming service with the environmental disaster of the Amazon Rainforest Fire to make a humorous comment on how modern technology (or consumer habits) impacts global issues.",
-      "hindi": "यह मीम अमेज़न फायर टीवी स्ट्रीमिंग सेवा को अमेज़न वर्षावन आग की पर्यावरणीय आपदा के साथ जोड़ता है ताकि आधुनिक तकनीक (या उपभोक्ता आदतों) के वैश्विक मुद्दों पर हास्यप्रद टिप्पणी की जा सके।",
-      "hinglish": "Yeh meme Amazon Fire TV streaming service ko Amazon Rainforest Fire ki environmental disaster ke saath joddta hai taaki modern technology (ya consumer habits) ke global issues par humorous comment kiya ja sake.",
-      "tamil": "நாம் ஒரு சமூகத்தில் வாழ்கிறோம் என்ற தலைப்பில், அமேசான் ஃபயர் டிவி என்ற தொழில்நுட்பத்தை அமேசான் மழைக்காடு தீ விபத்து என்ற சுற்றுச்சூழல் பேரழிவுடன் இணைத்து, நவீன தொழில்நுட்பம் (அல்லது நுகர்வோர் பழக்கவழக்கங்கள்) உலக பிரச்சினைகளில் ஏற்படுத்தும் தாக்கத்தில் நகைச்சுவையான கருத்தை முன்வைக்கிறோம்.",
-      "telugu": "మనం ఒక సమాజంలో বাস చేస్తాము అనే శీర్షికతో, అమేజాన్ ఫైర్ டிவி అనే సాంకేతికతను అమేజాన్ వర్షారణ్య అగ్ని విపత్తుతో జోడించి, ఆధునిక సాంకేతికత (లేదా వినియోగ అలవాట్ల) ప్రపంచ సమస్యలపై చూపే ప్రభావాన్ని హాస్యాన్ని జోడిస్తాము."
-    },
-    "tags": {
-      "english": [
-        "amazon",
-        "technology",
-        "environment",
-        "satire",
-        "society",
-        "meme"
-      ],
-      "hindi": [
-        "अमेज़न",
-        "तकनीक",
-        "पर्यावरण",
-        "व्यंग्य"
-      ],
-      "hinglish": [
-        "amazon",
-        "technology",
-        "environment",
-        "satire",
-        "society"
-      ],
-      "tamil": [
-        "அமேசான்",
-        "தொழில்நுட்பம்",
-        "சுற்றுச்சூழல்",
-        "கேலி",
-        "சமூகம்"
-      ],
-      "telugu": [
-        "అమేజాన్",
-        "టెక్నాలజీ",
-        "పర్యావరణం",
-        "व्यंग್ಯ"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "Amazon Fire TV vs Amazon forest fire"
-      ],
-      "hindi": [],
-      "hinglish": [
-        "Amazon Fire TV aur forest fire ka kya connection hai?"
-      ],
-      "tamil": [
-        "Amazon Fire TV vs forest fire joke"
-      ],
-      "telugu": [
-        "Amazon Fire TV vs Amazon forest fire meme"
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "sarcasm"
-    ],
-    "intent": [
-      "react_to_absurdity, show_sarcasm"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: The meme juxtaposes the Amazon Fire TV streaming service with the environmental disaster of the Amazon Rainforest Fire to make a humorous comment on how modern technology (or consumer habits) impacts global issues. Hindi: यह मीम अमेज़न फायर टीवी स्ट्रीमिंग सेवा को अमेज़न वर्षावन आग की पर्यावरणीय आपदा के साथ जोड़ता है ताकि आधुनिक तकनीक (या उपभोक्ता आदतों) के वैश्विक मुद्दों पर हास्यप्रद टिप्पणी की जा सके। Hinglish: Yeh meme Amazon Fire TV streaming service ko Amazon Rainforest Fire ki environmental disaster ke saath joddta hai taaki modern technology (ya consumer habits) ke global issues par humorous comment kiya ja sake. Tamil: நாம் ஒரு சமூகத்தில் வாழ்கிறோம் என்ற தலைப்பில், அமேசான் ஃபயர் டிவி என்ற தொழில்நுட்பத்தை அமேசான் மழைக்காடு தீ விபத்து என்ற சுற்றுச்சூழல் பேரழிவுடன் இணைத்து, நவீன தொழில்நுட்பம் (அல்லது நுகர்வோர் பழக்கவழக்கங்கள்) உலக பிரச்சினைகளில் ஏற்படுத்தும் தாக்கத்தில் நகைச்சுவையான கருத்தை முன்வைக்கிறோம். Telugu: మనం ఒక సమాజంలో বাস చేస్తాము అనే శీర్షికతో, అమేజాన్ ఫైర్ டிவி అనే సాంకేతికతను అమేజాన్ వర్షారణ్య అగ్ని విపత్తుతో జోడించి, ఆధునిక సాంకేతికత (లేదా వినియోగ అలవాట్ల) ప్రపంచ సమస్యలపై చూపే ప్రభావాన్ని హాస్యాన్ని జోడిస్తాము. Queries: When does technology mess up the environment? Amazon Fire TV vs Amazon forest fire Tech ki vajah se environment ko kya damage hota hai? Amazon Fire TV aur forest fire ka kya connection hai? Technology எப்படி environment-ஐ காயப்படுத்துது? Amazon Fire TV vs forest fire joke Technology nenu nature ki emi damage chestundi? Amazon Fire TV vs Amazon forest fire meme Tags: amazon, technology, environment, satire, society, meme | Emotion: confusion, sarcasm | Intent: react_to_absurdity, show_sarcasm | Region: pan_india",
-    "labeled_at": "2026-05-09T13:11:03.543Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332264545",
-    "image_path": "memes/228.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish",
-      "hindi",
-      "malayalam",
-      "telugu"
-    ],
-    "caption": {
-      "original": "The nation wants to know the real news",
-      "translations": {
-        "english": "The nation wants to know the real news",
-        "hindi": "राष्ट्र को असली खबर जानने की जरूरत है",
-        "hinglish": "The nation wants to know the real news",
-        "tamil": "தேசம் உண்மையான செய்திகளை அறிய விரும்புகிறது",
-        "telugu": "దేశం నిజమైన వార్త తెలుసుకోవాలనుకుంటుంది"
-      }
-    },
-    "meaning": {
-      "english": "Implies that the public is waiting for the unfiltered truth, suggesting that current narratives are misleading or insufficient.",
-      "hindi": "इसका मतलब है कि लोग बिना फ़िल्टर की सच्चाई का इंतज़ार कर रहे हैं, यह बताते हुए कि मौजूदा कहानियाँ भ्रामक या अपर्याप्त हैं।",
-      "hinglish": "Iska matlab hai ki public unfiltered truth ka wait kar rahi hai, ki current narratives misleading hain.",
-      "tamil": "பொது மக்கள் வடிகட்டப்படாத உண்மைக்காக காத்திருப்பதை இது குறிக்கிறது, மேலும் தற்போதைய கதைகள் தவறாக வழிநடத்துகின்றன அல்லது போதுமானதாக இல்லை.",
-      "telugu": "ప్రజలు తినివేసిన నిజం కోసం ఎదురుచూస్తున్నారని ఇది సూచిస్తుంది, ప్రస్తుత కథనాలు తప్పుదారి పట్టిస్తున్నాయని."
-    },
-    "tags": {
-      "english": [
-        "truth",
-        "news",
-        "reality",
-        "skepticism",
-        "clickbait"
-      ],
-      "hindi": [
-        "सच",
-        "खबर",
-        "वास्तविकता",
-        "संदेह",
-        "भटकाव"
-      ],
-      "hinglish": [
-        "truth",
-        "news",
-        "reality",
-        "skepticism",
-        "clickbait"
-      ],
-      "tamil": [
-        "உண்மை",
-        "செய்தி",
-        "நிஜம்",
-        "சந்தேகம்",
-        "கிளிக்பெயிட்"
-      ],
-      "telugu": [
-        "truth",
-        "news",
-        "reality",
-        "skepticism",
-        "clickbait"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "I need the unbiased report on X."
-      ],
-      "hindi": [
-        "मुझे X पर निष्पक्ष रिपोर्ट चाहिए।"
-      ],
-      "hinglish": [
-        "Mujhe unbiased report chahiye."
-      ],
-      "tamil": [
-        "எனக்கு X பற்றிய பக்கச்சார்பற்ற அறிக்கை வேண்டும்."
-      ],
-      "telugu": [
-        "నాకు X పై పక్షపాతం లేని నివేదిక కావాలి."
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "disappointment",
-      "suspicion"
-    ],
-    "intent": [
-      "react_to_absurdity, show_suspicion, show_disappointment"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": true,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: Implies that the public is waiting for the unfiltered truth, suggesting that current narratives are misleading or insufficient. Hindi: इसका मतलब है कि लोग बिना फ़िल्टर की सच्चाई का इंतज़ार कर रहे हैं, यह बताते हुए कि मौजूदा कहानियाँ भ्रामक या अपर्याप्त हैं। Hinglish: Iska matlab hai ki public unfiltered truth ka wait kar rahi hai, ki current narratives misleading hain. Tamil: பொது மக்கள் வடிகட்டப்படாத உண்மைக்காக காத்திருப்பதை இது குறிக்கிறது, மேலும் தற்போதைய கதைகள் தவறாக வழிநடத்துகின்றன அல்லது போதுமானதாக இல்லை. Telugu: ప్రజలు తినివేసిన నిజం కోసం ఎదురుచూస్తున్నారని ఇది సూచిస్తుంది, ప్రస్తుత కథనాలు తప్పుదారి పట్టిస్తున్నాయని. Queries: When official sources give fake news, Spill the real tea on this issue, I need the unbiased report on X., जब आधिकारिक स्रोत फेक न्यूज़ देते हैं, इस मुद्दे पर सच्ची बात बताओ, मुझे X पर निष्पक्ष रिपोर्ट चाहिए।, Jab official sources fake news dete hain, Spill the real tea on this issue, Mujhe unbiased report chahiye., எப்போ அதிகாரிகள் பொய்யான செய்திகள் கொடுக்கிறார்களோ, இந்த பிரச்சினை பற்றிய உண்மையான விவரத்தை தெரிவியுங்கள், எனக்கு X பற்றிய பக்கச்சார்பற்ற அறிக்கை வேண்டும்।, ఆఫీసియల్ సోర్సులు ఫేక్ న్యూస్ ఇస్తే, ఈ సమస్యపై నిజం ఏంటి అని చెప్పు, నాకు X పై పక్షపాతం లేని నివేదిక కావాలి. Tags: truth, news, reality, skepticism, clickbait Hindi: सच, खबर, वास्तविकता, संदेह, भटकाव Hinglish: truth, news, reality, skepticism, clickbait Tamil: உண்மை, செய்தி, நிஜம், சந்தேகம், கிளிக்பெயிட் Telugu: truth, news, reality, skepticism, clickbait Emotion: confusion, disappointment, suspicion | Intent: react_to_absurdity, show_suspicion, show_disappointment | Region: pan_india",
-    "labeled_at": "2026-05-09T13:11:54.930Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332315932",
-    "image_path": "memes/214.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "You know, what kind of plan never fails? No plan at all",
-      "translations": {
-        "english": "You know, what kind of plan never fails? No plan at all",
-        "hindi": "पता है, ऐसा कौन सा प्लान है जो कभी फेल नहीं होता? कोई प्लान ही नहीं।",
-        "hinglish": "Yaar, kya plan hai jo kabhi fail nahi hota? No plan at all.",
-        "tamil": "உங்களுக்குத் தெரியுமா, எப்பொழுதும் தோல்வியடையாத திட்டம் என்ன? எந்தத் திட்டமும் இல்லை.",
-        "telugu": "మీకు తెలిసినంతవరకు, ఎప్పుడూ విఫలం కాని ప్రణాళిక ఏమిటి? ఏ ప్రణాళిక కూడా లేదు."
-      }
-    },
-    "meaning": {
-      "english": "The joke is that the safest/most reliable \"plan\" is actually having no plan, implying that spontaneity or simply doing nothing is often the best approach.",
-      "hindi": "मज़ाक यह है कि सबसे सुरक्षित/विश्वसनीय \"प्लान\" वास्तव में कोई प्लान न होना है, जिसका मतलब है कि सहजता या कुछ भी न करना अक्सर सबसे अच्छा तरीका होता है।",
-      "hinglish": "Iska matlab hai ki sabse safe/reliable 'plan' actualy कोई plan na hona hai, meaning ki spontaneity ya kuch nahi karna hi best approach hota hai.",
-      "tamil": "தோல்வியடையும் வாய்ப்பே இல்லாத சிறந்த திட்டம் என்பது உண்மையில் திட்டம் எதுவும் இல்லாதது என்பதைக் குறிக்கும் நகைச்சுவை.",
-      "telugu": "సరళమైన విషయమే విజయ రహస్యం, అంటే ప్రణాళిక లేకపోవడమే ఉత్తమమైన విధానం అని హాస్యం చెప్తోంది."
-    },
-    "tags": {
-      "english": [
-        "[no plan",
-        "life advice",
-        "success",
-        "procrastination]"
-      ],
-      "hindi": [
-        "[कोई प्लान नहीं",
-        "ज़िंदगी के सबक",
-        "सफलता",
-        "आलस]"
-      ],
-      "hinglish": [
-        "[no plan",
-        "life tips",
-        "strategy]"
-      ],
-      "tamil": [
-        "[திட்டமிடல்",
-        "வெற்றி",
-        "நகைச்சுவை]"
-      ],
-      "telugu": [
-        "[ప్రణాళిక",
-        "సరదా",
-        "జీవితం]"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "How do I succeed in life? What's the golden rule?"
-      ],
-      "hindi": [
-        "ज़िंदगी में सफल कैसे हो जाएँ? गोल्डन रूल क्या है?"
-      ],
-      "hinglish": [
-        "Life mein chill kaise rehna chahiye? Best strategy kya hai?"
-      ],
-      "tamil": [
-        "வாழ்க்கையில வெற்றி அடைய என்ன செய்யணும்?"
-      ],
-      "telugu": [
-        "జీవితంలో విజయం సాధించడానికి ఏమించాలి?"
-      ]
-    },
-    "emotion": [
-      "[amusement",
-      "confusion",
-      "approval]"
-    ],
-    "intent": [
-      "[react_to_absurdity, agree]"
-    ],
-    "regions": [
-      "[pan_india]"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: The joke is that the safest/most reliable \"plan\" is actually having no plan, implying that spontaneity or simply doing nothing is often the best approach. Hindi: मज़ाक यह है कि सबसे सुरक्षित/विश्वसनीय \"प्लान\" वास्तव में कोई प्लान न होना है, जिसका मतलब है कि सहजता या कुछ भी न करना अक्सर सबसे अच्छा तरीका होता है। Hinglish: Iska matlab hai ki sabse safe/reliable 'plan' actualy कोई plan na hona hai, meaning ki spontaneity ya kuch nahi karna hi best approach hota hai. Tamil: தோல்வியடையும் வாய்ப்பே இல்லாத சிறந்த திட்டம் என்பது உண்மையில் திட்டம் எதுவும் இல்லாதது என்பதைக் குறிக்கும் நகைச்சுவை. Telugu: సరళమైన విషయమే విజయ రహస్యం, అంటే ప్రణాళిక లేకపోవడమే ఉత్తమమైన విధానం అని హాస్యం చెప్తోంది. Queries: How do I succeed in life? What's the golden rule?. ज़िंदगी में सफल कैसे हो जाएँ? गोल्डन रूल क्या है?. Life mein chill kaise rehna chahiye? Best strategy kya hai?. வாழ்க்கையில வெற்றி அடைய என்ன செய்யணும்?. జీవితంలో విజయం సాధించడానికి ఏమించాలి?. Tags: no plan, life advice, success, procrastination, कोई प्लान नहीं, ज़िंदगी के सबक, सफलता, आलस, no plan, life tips, strategy | Emotion: amusement, confusion, approval | Intent: react_to_absurdity, agree | Region: pan_india",
-    "labeled_at": "2026-05-09T13:13:32.461Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332413463",
-    "image_path": "memes/200.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish",
-      "hindi"
-    ],
-    "caption": {
-      "original": "Indians using / Italians using / pornhub premium",
-      "translations": {
-        "english": "Indians using / Italians using / pornhub premium",
-        "hindi": "भारतीय यूज कर रहे / इटालियंस यूज कर रहे / पॉर्नहब प्रीमियम",
-        "hinglish": "Indians using / Italians using / pornhub premium",
-        "tamil": "",
-        "telugu": ""
-      }
-    },
-    "meaning": {
-      "english": "This meme uses satirical stereotypes based on nationality and online habits to make a joke. It implies that Indians and Italians are engaged in specific types of streaming or premium online content.",
-      "hindi": "यह मीम राष्ट्रीयता और ऑनलाइन आदतों पर आधारित व्यंग्यात्मक रूढ़िवादिता का उपयोग करके एक मजाक करता है। इसका तात्पर्य है कि भारतीय और इटालियंस विशिष्ट प्रकार की स्ट्रीमिंग या प्रीमियम ऑनलाइन सामग्री का उपयोग कर रहे हैं।",
-      "hinglish": "Ye meme national identity aur online habits pe based satirical stereotype use karke joke karta hai. Iska matlab hai ki Indians aur Italians specific tarah ki streaming ya premium online content use kar rahe hain.",
-      "tamil": "தேசப்பன்மையையும் ஆன்லைன் பழக்கங்களையும் அடிப்படையாகக் கொண்ட வேடிக்கையான ஸ்டீரியோடைப்களைப் பயன்படுத்தி இந்த மீம் ஒரு நகைச்சுவையை உருவாக்குகிறது.",
-      "telugu": "ఈ మీమ్ జాతీయత మరియు ఆన్‌లైన్ అలవాట్లు ఆధారంగా వ్యంగ్యమైన పక్షపాతాలను ఉపయోగించి జోక్ చేస్తుంది."
-    },
-    "tags": {
-      "english": [],
-      "hindi": [],
-      "hinglish": [],
-      "tamil": [],
-      "telugu": []
-    },
-    "query_examples": {
-      "english": [],
-      "hindi": [],
-      "hinglish": [],
-      "tamil": [],
-      "telugu": []
-    },
-    "emotion": [],
-    "intent": [
-      "roast_someone, tease"
-    ],
-    "regions": [],
     "safety": {
       "nsfw": true,
       "abusive": false,
@@ -1071,828 +377,922 @@
       "is_meme": true,
       "label_confidence": 0.95
     },
-    "multilingual_embedding_text": "English: This meme uses satirical stereotypes based on nationality and online habits to make a joke, implying Indians and Italians are engaging in specific online content. Hindi: यह मीम राष्ट्रीयता और ऑनलाइन आदतों पर आधारित व्यंग्यात्मक रूढ़िवादिता का उपयोग करके एक मजाक करता है। Hinglish: Ye meme national identity aur online habits pe based satirical stereotype use karke joke karta hai. Tamil: இது தேசியப்பண்பாடுகள் மற்றும் ஆன்லைன் பழக்கங்களைப் பயன்படுத்தி ஒரு நகைச்சுவையை உருவாக்குகிறது. Telugu: ఈ మీమ్ జాతీయత మరియు ఆన్‌లైన్ అలవాట్లు ఆధారంగా వ్యంగ్యమైన పక్షపాతాలను ఉపయోగించి జోక్ చేస్తుంది. Queries: National stereotypes meme, what are people doing online meme, internet culture joke. Tags: meme, humor, stereotypes, online, comedy, India. Emotion: sarcasm, cringe | Intent: roast_someone, tease | Region: pan_india, unknown",
-    "labeled_at": "2026-05-09T13:14:41.823Z",
+    "multilingual_embedding_text": "English: Old Monk rum as a funny solution to all problems. Hindi: ओल्ड मोंक रम सभी समस्याओं का हास्यप्रद समाधान है. Hinglish: Old Monk rum sabhi samasyaon ka mazedaar solution hai. Tamil: ஓல்ட் மாங்க் ரம் எல்லா பிரச்சனைகளுக்கும் ஒரு வேடிக்கையான தீர்வு. Telugu: ఓల్డ్ మాంక్ రమ్ అన్ని సమస్యలకు ఒక హాస్యపూరిత పరిష్కారం. Tags: old monk rum problems drinking solution humor india ओल्ड मोंक रम समस्या पीना समाधान हास्य भारत old monk rum samasya peena solution mazak india ஓல்ட் மாங்க் ரம் பிரச்சனைகள் குடி தீர்வு நகைச்சுவை இந்தியா ఓల్డ్ మాంక్ రం సమస్యలు తాగడం పరిష్కారం వినోదం భారత్. Queries: problems in life need a drink how to deal with stress old monk vibes जिंदगी में टेंशन ड्रिंक की जरूरत है स्ट्रेस कैसे डील करें ओल्ड मोंक वाला फील life mein tension aa gayi drink karna hai stress se kaise bachneka old monk vibe chahiye வாழ்க்கையில் பிரச்சனைகள் குடிக்க வேண்டும் மன அழுத்தத்தை எப்படி சமாளிப்பது old monk mood జీవితంలో సమస్యలు డ్రింక్ కావాలి ఒత్తిడిని ఎలా ఎదుర్కోవాలి old monk vibe. Emotion: sarcasm approval. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:02.195Z",
     "reviewed": false
   },
   {
-    "id": "meme_1778332482824",
-    "image_path": "memes/201.jpg",
+    "id": "meme_1778398623197",
+    "image_path": "memes/3.jpg",
     "primary_language": "english",
     "supported_languages": [
       "english",
       "hinglish"
     ],
     "caption": {
-      "original": "Super Bowl",
+      "original": "somewhere between '2 ke 10' and '10 ke 2' | we all grew up",
       "translations": {
-        "english": "Super Bowl",
-        "hindi": "सुपर बाउल",
-        "hinglish": "Super Bowl",
-        "tamil": "சூப்பர் பவுல்",
-        "telugu": "சூப்பர் பவுல்"
+        "english": "Somewhere between '2 for 10' and '10 for 2' we all grew up.",
+        "hindi": "'2 के 10' और '10 के 2' के बीच हम सब बड़े हो गए।",
+        "hinglish": "'2 ke 10' aur '10 ke 2' ke beech hum sab bade ho gaye.",
+        "tamil": "'2க்கு 10' மற்றும் '10க்கு 2' க்கு இடையில் நாம் அனைவரும் வளர்ந்தோம்",
+        "telugu": "'2 కి 10' మరియు '10 కి 2' మధ్య మనమందరం పెరిగాము"
       }
     },
     "meaning": {
-      "english": "Used to signify a sudden, obvious topic of discussion or attention that one is missing or suddenly remembers. The 'Super Bowl' sign and the Google logo are used as visual placeholders for specific, unexpected pop culture or technology topics.",
-      "hindi": "किसी अचानक, स्पष्ट विषय या ध्यान खींचने वाली चीज़ को दर्शाना, जिसके बारे में आप बात करना भूल गए हैं या अचानक याद किया है। 'सुपर बाउल' साइन और गूगल लोगो विशिष्ट, अप्रत्याशित पॉप कल्चर या तकनीकी विषयों के लिए विज़ुअल प्लेसहोल्डर हैं।",
-      "hinglish": "A sudden, obvious topic of discussion or attention that one has forgotten or suddenly remembers. The 'Super Bowl' sign and the Google logo are used as visual placeholders for specific, unexpected pop culture or technology topics.",
-      "tamil": "திடீரென, வெளிப்படையான விவாதம் அல்லது கவனக் கோரும் தலைப்பைக் குறிக்க. 'சூப்பர் பவுல்' சைகை மற்றும் கூகிள் லோகோ குறிப்பிட்ட, எதிர்பாராத பாப் கல்ச்சர் அல்லது தொழில்நுட்ப தலைப்புகளுக்கான காட்சி இடமாற்றங்களாகப் பயன்படுத்தப்படுகின்றன.",
-      "telugu": "అకస్మాత్తుగా, స్పష్టమైన చర్చా అంశం లేదా దృష్టిని ఆకర్షించే విషయాన్ని సూచించడానికి ఉపయోగిస్తారు. 'సూపర్ బౌల్' సైన్ మరియు గూగుల్ లోగో నిర్దిష్ట, ఊహించని పాప్ కల్చర్ లేదా టెక్నాలజీ అంశాలకు దృశ్య స్థాన సూచికలుగా ఉపయోగించబడతాయి."
+      "english": "The meme references a common childhood experience in India where prices were very low, and as one grew up, prices increased significantly, symbolizing the transition from childhood to adulthood and the associated economic realities.",
+      "hindi": "यह मीम भारत में बचपन के एक सामान्य अनुभव का संदर्भ देता है जहाँ कीमतें बहुत कम थीं, और जैसे-जैसे कोई बड़ा हुआ, कीमतें काफी बढ़ गईं, जो बचपन से वयस्कता और संबंधित आर्थिक वास्तविकताओं में संक्रमण का प्रतीक है।",
+      "hinglish": "Meme India mein bachpan ka ek common experience describe karta hai, jab prices bahut kam the ('2 mein 10 cheezein milti thi'), aur bade hokar prices badh gaye ('10 mein sirf 2 cheezein milti hain'). Ye childhood se adulthood mein transition aur mehngai ko represent karta hai.",
+      "tamil": "இந்த மீம் இந்தியாவில் சிறுவயதில் இருந்த ஒரு பொதுவான அனுபவத்தை குறிக்கிறது, அங்கு விலைகள் மிகக் குறைவாக இருந்தன, மேலும் ஒருவர் வளர்ந்தவுடன், விலைகள் கணிசமாக உயர்ந்தன. இது குழந்தைப் பருவத்திலிருந்து வாலிப பருவத்திற்கு மாறுவதையும் அதனுடன் தொடர்புடைய பொருளாதார உண்மைகளையும் குறிக்கிறது.",
+      "telugu": "ఈ మీమ్ భారతదేశంలో చిన్నతనం యొక్క సాధారణ అనుభవాన్ని సూచిస్తుంది, ఇక్కడ ధరలు చాలా తక్కువగా ఉండేవి, మరియు ఒకరు పెరిగే కొద్దీ, ధరలు గణనీయంగా పెరిగాయి, ఇది బాల్యం నుండి యుక్తవయస్సు మరియు సంబంధిత ఆర్థిక వాస్తవాలకు పరివర్తనను సూచిస్తుంది."
     },
     "tags": {
       "english": [
-        "meme",
-        "reaction",
-        "humor",
-        "super bowl",
-        "google",
-        "pointing"
+        "childhood",
+        "growing up",
+        "prices",
+        "inflation",
+        "india",
+        "nostalgia",
+        "economics",
+        "relatable"
       ],
       "hindi": [
-        "meme",
-        "reaction",
-        "funny",
-        "super bowl",
-        "google",
-        "pointing"
+        "बचपन",
+        "बड़े होना",
+        "कीमतें",
+        "महंगाई",
+        "भारत",
+        "यादें",
+        "अर्थशास्त्र",
+        "relatable"
       ],
       "hinglish": [
-        "meme",
-        "reaction",
-        "funny",
-        "super bowl",
-        "google",
-        "pointing"
-      ],
-      "tamil": [
-        "சூப்பர் பவுல்",
-        "நகைச்சுவை",
-        "விவாதம்",
-        "கூகிள்",
-        "மீம்"
-      ],
-      "telugu": [
-        "సూపర్ బౌల్",
-        "ఫన్నీ",
-        "రియాక్షన్",
-        "గూగుల్"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "what's the latest news to discuss?"
-      ],
-      "hindi": [
-        "woh trending kya tha?"
-      ],
-      "hinglish": [
-        "kya discuss karein",
-        "koi trending topic?"
-      ],
-      "tamil": [
-        "எந்த டாபிக்கப் பேசலாம்?"
-      ],
-      "telugu": [
-        "ఇప్పుడు ఏం టాపిక్ మాట్లాడాలి?"
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "shock",
-      "approval"
-    ],
-    "intent": [
-      "show_shock, react_to_absurdity"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: Used to signify a sudden, obvious topic of discussion or attention that one is missing or suddenly remembers. The 'Super Bowl' sign and the Google logo are used as visual placeholders for specific, unexpected pop culture or technology topics. Hindi: किसी अचानक, स्पष्ट विषय या ध्यान खींचने वाली चीज़ को दर्शाना, जिसके बारे में आप बात करना भूल गए हैं या अचानक याद किया है। 'सुपर बाउल' साइन और गूगल लोगो विशिष्ट, अप्रत्याशित पॉप कल्चर या तकनीकी विषयों के लिए विज़ुअल प्लेसहोल्डर हैं। Hinglish: A sudden, obvious topic of discussion or attention that one has forgotten or suddenly remembers. The 'Super Bowl' sign and the Google logo are used as visual placeholders for specific, unexpected pop culture or technology topics. Tamil: திடீரென, வெளிப்படையான விவாதம் அல்லது கவனக் கோரும் தலைப்பைக் குறிக்க. 'சூப்பர் பவுல்' சைகை மற்றும் கூகிள் லோகோ குறிப்பிட்ட, எதிர்பாராத பாப் கல்ச்சர் அல்லது தொழில்நுட்ப தலைப்புகளுக்கான காட்சி இடமாற்றங்களாகப் பயன்படுத்தப்படுகின்றன. Telugu: అకస్మాత్తుగా, స్పష్టమైన చర్చా అంశం లేదా దృష్టిని ఆకర్షించే విషయాన్ని సూచించడానికి ఉపయోగిస్తారు. 'సూపర్ బౌల్' సైన్ మరియు గూగుల్ లోగో నిర్దిష్ట, ఊహించని పాప్ కల్చర్ లేదా టెక్నాలజీ అంశాలకు దృశ్య స్థాన సూచికలుగా ఉపయోగించబడతాయి. Queries: when should we talk about the super bowl?, what's the latest news to discuss?, super bowl kya chal raha hai?, kya discuss karein, koi trending topic?, woh trending kya tha?, எந்த டாபிக்கப் பேசலாம்?, ఇప్పుడు ఏం టాపిక్ మాట్లాడాలి? Tags: meme, reaction, humor, super bowl, google, pointing English: Used to signify a sudden, obvious topic of discussion or attention that one is missing or suddenly remembers. Hindi: किसी अचानक, स्पष्ट विषय या ध्यान खींचने वाली चीज़ को दर्शाना, जिसके बारे में आप बात करना भूल गए हैं या अचानक याद किया है। Hinglish: A sudden, obvious topic of discussion or attention that one has forgotten or suddenly remembers. Tamil: திடீரென, வெளிப்படையான விவாதம் அல்லது கவனக் கோரும் தலைப்பைக் குறிக்க. Telugu: అకస్మాత్తుగా, స్పష్టమైన చర్చా అంశం లేదా దృష్టిని ఆకర్షించే విషయాన్ని సూచించడానికి ఉపయోగిస్తారు. Emotion: confusion, shock, approval | Intent: show_shock, react_to_absurdity | Region: pan_india",
-    "labeled_at": "2026-05-09T13:15:40.691Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332541693",
-    "image_path": "memes/215.jpg",
-    "primary_language": "hinglish",
-    "supported_languages": [
-      "hinglish",
-      "hindi"
-    ],
-    "caption": {
-      "original": "Apne ko kya hai, apne ko toh bas TRP nikalna hai",
-      "translations": {
-        "english": "What do they care about, they just want to increase TRP",
-        "hindi": "अपने को क्या है, अपने को तो बस टीआरपी निकालना है",
-        "hinglish": "What do they care, they just want TRP,",
-        "tamil": "எவர்களைப் பற்றி கவலை இல்லை, அவர்கள் கவலைப்படுவது TRP தான்",
-        "telugu": "వాళ్ళు ఎందుకు పట్టించుకోరు, వాళ్ళు కేవలం TRP కావాలి"
-      }
-    },
-    "meaning": {
-      "english": "They only care about getting high TRP (Television Rating Points), showing how media/media people are motivated by ratings.",
-      "hindi": "उन्हें बस टीआरपी (TRP) निकालनी है, मतलब मीडिया में लोगों का ध्यान सिर्फ रेटिंग्स से होता है।",
-      "hinglish": "Unko bas TRP nikalni hai, matlab media mein sab ka focus sirf ratings par hota hai.",
-      "tamil": "அவர்கள் தொலைக்காட்சியின் TRP (ரேட்டிங் பாயிண்ட்ஸ்) பற்றி தான் கவலைப்படுகிறார்கள்.",
-      "telugu": "వారు కేవలం టీఆర్‌పీ (TRP) పై మాత్రమే దృష్టి పెడతామని చూపించడం."
-    },
-    "tags": {
-      "english": [
-        "TRP",
-        "media",
-        "ratings",
-        "journalism",
-        "exaggerated",
-        "satire"
-      ],
-      "hindi": [
-        "टीआरपी",
-        "मीडिया",
-        "परदाफाश",
-        "व्यंग्य",
-        "मनोरंजन"
-      ],
-      "hinglish": [
-        "trp",
-        "media",
-        "news",
-        "satire",
-        "funny"
-      ],
-      "tamil": [],
-      "telugu": []
-    },
-    "query_examples": {
-      "english": [
-        "Media people only care about TRP"
-      ],
-      "hindi": [
-        "मीडिया का काम सिर्फ टीआरपी निकालना है"
-      ],
-      "hinglish": [
-        "Media walon ka maksad sirf TRP hai"
-      ],
-      "tamil": [],
-      "telugu": []
-    },
-    "emotion": [
-      "confusion",
-      "sarcasm",
-      "disappointment"
-    ],
-    "intent": [
-      "roast_someone, show_sarcasm"
-    ],
-    "regions": [
-      "pan_india",
-      "north_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: They only care about getting high TRP (Television Rating Points), showing how media/media people are motivated by ratings. Hindi: उन्हें बस टीआरपी (TRP) निकालनी है, मतलब मीडिया में लोगों का ध्यान सिर्फ रेटिंग्स से होता है। Hinglish: Unko bas TRP nikalni hai, matlab media mein sab ka focus sirf ratings par hota hai. Tamil: எவர்களைப் பற்றி கவலை இல்லை, அவர்கள் கவலைப்படுவது TRP தான். Telugu: వారు కేవలం టీఆర్‌పీ (TRP) పై మాత్రమే దృష్టి పెడతామని చూపించడం. Queries: When people only care about ratings and not the truth, Media people only care about TRP, जब लोगों को सिर्फ टीआरपी चाहिए, मीडिया का काम सिर्फ टीआरपी निकालना है, Jab sabko bas TRP chahiye, Media walon ka maksad sirf TRP hai, ஊடகங்கள் ரேட்டிங்கைப் பற்றி மட்டுமே கவலைப்படுகின்றன, వాళ్లు కేవలం టీఆర్పీ గురించి మాత్రమే ఆలోచిస్తారు. Tags: TRP, media, ratings, journalism, exaggerated, satire, टीआरपी, मीडिया, परदाफाश, व्यंग्य, मनोरंजन, trp, media, news, satire, funny Emotion: confusion, sarcasm, disappointment | Intent: roast_someone, show_sarcasm | Region: pan_india, north_india",
-    "labeled_at": "2026-05-09T13:16:21.807Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332582808",
-    "image_path": "memes/229.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "extroverts after a month of lockdown",
-      "translations": {
-        "english": "extroverts after a month of lockdown",
-        "hindi": "लॉकडाउन के एक महीने बाद एक्सट्रोवर्ट्स",
-        "hinglish": "extroverts after a month of lockdown",
-        "tamil": "பூட்டுதலில் ஒரு மாதத்திற்குப் பிறகு बहिर्मुக்குவர்கள்",
-        "telugu": "లాక్‌డౌన్ తర్వాత ఒక నెల అయిన తర్వాత బహిర్ముఖులు"
-      }
-    },
-    "meaning": {
-      "english": "This meme humorously relates to how extroverts behave after spending a long period in lockdown or isolation; they become overly enthusiastic about normal social interactions.",
-      "hindi": "यह मीम मज़ेदार ढंग से बताता है कि लॉकडाउन या अलगाव में लंबा समय बिताने के बाद एक्सट्रोवर्ट्स का व्यवहार कैसा होता है; वे सामान्य सामाजिक बातचीत के बारे में बहुत उत्साहित हो जाते हैं।",
-      "hinglish": "Yeh meme mazedaar tarike se batata hai ki lockdown ya isolation mein lamba samay bitane ke baad extroverts ka behavior kaisa hota hai; woh normal social interactions ke baare mein bahut excited ho jaate hain.",
-      "tamil": "நீண்ட கால பூட்டுதலில் அல்லது தனிமையில் இருந்த பிறகு बहिर्मुக்குவர்கள் எப்படி நடந்துகொள்வார்கள் என்பதைக் கலகலப்பாக நகைச்சுவையாகக் கூறுகிறது.",
-      "telugu": "లాక్‌డౌన్ లేదా ఏకాంతంలో ఎక్కువ సమయం గడిపిన తర్వాత బహిర్ముఖులు ఎలా ప్రవర్తిస్తారనే దాని గురించి హాస్యాస్పదంగా చెబుతుంది."
-    },
-    "tags": {
-      "english": [
-        "lockdown memes",
-        "extrovert life",
-        "social anxiety",
-        "post-lockdown",
-        "funny memes"
-      ],
-      "hindi": [
-        "lockdown memes",
-        "extrovert ki zindagi",
-        "masti",
-        "social life"
-      ],
-      "hinglish": [
-        "loakdown memes",
-        "extrovert life",
-        "social life",
-        "relatable comedy"
-      ],
-      "tamil": [
-        "lockdown memes",
-        "बहिर्मुக்குவர்கள் நகைச்சுவை",
-        "சமூக வாழ்க்கை"
-      ],
-      "telugu": [
-        "lockdown memes",
-        "extrovert funny",
-        "social life"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "Me after a month away from people."
-      ],
-      "hindi": [
-        "दोस्तों से मिलने के बाद कैसा फील होगा?"
-      ],
-      "hinglish": [
-        "Friends se milke kya hoga after lockdown?"
-      ],
-      "tamil": [
-        "பூட்டுதலுக்குப் பிறகு extroverts எப்படி நடந்து கொள்வார்கள்?"
-      ],
-      "telugu": [
-        "లాక్‌డౌన్ తర్వాత మనుషుల రద్దీ అంటే ఎలా ఉంటుంది?"
-      ]
-    },
-    "emotion": [
-      "joy",
-      "excitement",
-      "playful",
-      "cringe"
-    ],
-    "intent": [
-      "react_to_absurdity, celebrate, tease"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: This meme humorously relates to how extroverts behave after spending a long period in lockdown or isolation; they become overly enthusiastic about normal social interactions. Hindi: यह मीम मज़ेदार ढंग से बताता है कि लॉकडाउन या अलगाव में लंबा समय बिताने के बाद एक्सट्रोवर्ट्स का व्यवहार कैसा होता है; वे सामान्य सामाजिक बातचीत के बारे में बहुत उत्साहित हो जाते हैं। Hinglish: Yeh meme mazedaar tarike se batata hai ki lockdown ya isolation mein lamba samay bitane ke baad extroverts ka behavior kaisa hota hai; woh normal social interactions ke baare mein bahut excited ho jaate hain. Tamil: நீண்ட கால பூட்டுதலில் அல்லது தனிமையில் இருந்த பிறகு बहिर्मुக்குவர்கள் எப்படி நடந்துகொள்வார்கள் என்பதைக் கலகலப்பாக நகைச்சுவையாகக் கூறுகிறது. Telugu: లాక్‌డౌన్ లేదా ఏకాంతంలో ఎక్కువ సమయం గడిపిన తర్వాత బహిర్ముఖులు ఎలా ప్రవర్తిస్తారనే దాని గురించి హాస్యాస్పదంగా చెబుతుంది. Queries: What do extroverts do after lockdown?, Me after a month away from people., लॉकडाउन के बाद एक्सट्रोवर्ट्स क्या करते हैं?, दोस्तों से मिलने के बाद कैसा फील होगा?, Friends se milke kya hoga after lockdown?, பூட்டுதலுக்குப் பிறகு extroverts எப்படி நடந்து கொள்வார்கள்?, लॉकडाउन తర్వాత మనుషుల రద్దీ అంటే ఎలా ఉంటుంది? Tags: lockdown memes, extrovert life, social anxiety, post-lockdown, funny memes, extrovert ki zindagi, social life, loakdown memes, relatable comedy, बहिर्मुக்குவர்கள் நகைச்சுவை, சமூக வாழ்க்கை Emotion: joy, excitement, playful, cringe | Intent: react_to_absurdity, celebrate, tease | Region: pan_india",
-    "labeled_at": "2026-05-09T13:17:33.449Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332654450",
-    "image_path": "memes/177.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish",
-      "tamil",
-      "telugu"
-    ],
-    "caption": {
-      "original": "days left for exams vs syllabus left",
-      "translations": {
-        "english": "days left for exams vs syllabus left",
-        "hindi": "परीक्षा के लिए बचे दिन बनाम पूरा सिलेबस बचा",
-        "hinglish": "days left for exams vs syllabus left",
-        "tamil": "தேர்வுக்கு மீதமுள்ள நாட்கள் மற்றும் மீதமுள்ளபாடத்திட்டம்",
-        "telugu": "పరీక్షలకు మిగిలిన రోజులు Vs మిగిలిన సిలబస్"
-      }
-    },
-    "meaning": {
-      "english": "The meme describes the overwhelming amount of syllabus material left compared to the limited number of days remaining before exams.",
-      "hindi": "यह मीम परीक्षाओं से पहले बचे हुए सीमित दिनों की तुलना में बचे हुए सिलेबस की भारी मात्रा को दर्शाता है।",
-      "hinglish": "This meme shows the massive amount of syllabus remaining compared to the few days left before the exams.",
-      "tamil": "தேர்வுக்கு மீதமுள்ள நாட்களுடன் ஒப்பிடும்போது மீதமுள்ள பாடத்திட்டத்தின் அளவைக் காட்டுகிறது.",
-      "telugu": "పరీక్షలకు మిగిలిన రోజులతో పోలిస్తే మిగిలిపోయిన సిలబస్ పరిమాణాన్ని ఈ मीम వివరిస్తుంది."
-    },
-    "tags": {
-      "english": [
-        "exams",
-        "studies",
-        "syllabus",
-        "time_management",
-        "studentlife"
-      ],
-      "hindi": [
-        "परीक्षा",
-        "पढ़ाई",
-        "सिलेबस",
-        "समय",
-        "छात्रजीवन"
-      ],
-      "hinglish": [
-        "exams",
-        "study",
-        "syllabus",
-        "time",
-        "studentlife"
-      ],
-      "tamil": [
-        "exam",
-        "padai",
-        "syllabus",
-        "nerri",
-        "kallasippu"
-      ],
-      "telugu": [
-        "pariksha",
-        "padaniki",
-        "syllabus",
-        "samayam",
-        "vidhyarthudu"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "exams aa rahe hain",
-        "kya karu?"
-      ],
-      "hindi": [
-        "syllabus bahut zyada hai aur din kam"
-      ],
-      "hinglish": [
-        "feels like syllabus > days left"
-      ],
-      "tamil": [
-        "எனக்கு எத்தனை நாள் இருக்கு",
-        "பாடத்திட்டம் எவ்வளவு இருக்கு?"
-      ],
-      "telugu": [
-        "exam mundu time antha kotha syllabus mariyu nenu entalo plan cheyali?"
-      ]
-    },
-    "emotion": [
-      "stress",
-      "confusion",
-      "disappointment"
-    ],
-    "intent": [
-      "react_to_absurdity,exam_stress"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: The meme describes the overwhelming amount of syllabus material left compared to the limited number of days remaining before exams. Hindi: यह मीम परीक्षाओं से पहले बचे हुए सीमित दिनों की तुलना में बचे हुए सिलेबस की भारी मात्रा को दर्शाता है। Hinglish: This meme shows the massive amount of syllabus remaining compared to the few days left before the exams. Tamil: தேர்வுக்கு மீதமுள்ள நாட்களுடன் ஒப்பிடும்போது மீதமுள்ள பாடத்திட்டத்தின் அளவைக் காட்டுகிறது. Telugu: పరీక్షలకు మిగిలిన రోజులతో పోలిస్తే మిగిలిపోయిన సిలబస్ పరిమాణాన్ని ఈ मीम వివరిస్తుంది. Queries: syllabus ke hisaab se time bahut kam hai, exams aa rahe hain, kya karu?, syllabus bahut zyada hai aur din kam, feels like syllabus > days left, எனக்கு எத்தனை நாள் இருக்கு, பாடத்திட்டம் எவ்வளவு இருக்கு?, exam mundu time antha kotha syllabus mariyu nenu entalo plan cheyali?. Tags: exams,studies,syllabus,time_management,studentlife,परीक्षा,पढ़ाई,सिलेबस,समय,छात्रजीवन,exam,padai,syllabus,nerri,kallasippu,telugu: pariksha,padaniki,syllabus,samayam,vidhyarthudu. Emotion: stress,confusion,disappointment | Intent: react_to_absurdity,exam_stress | Region: pan_india",
-    "labeled_at": "2026-05-09T13:18:27.190Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332708191",
-    "image_path": "memes/89.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish",
-      "hindi",
-      "tamil",
-      "telugu"
-    ],
-    "caption": {
-      "original": "Winter is coming",
-      "translations": {
-        "english": "Winter is coming",
-        "hindi": "सर्दी आ रही है",
-        "hinglish": "Winter is coming",
-        "tamil": "குளிர் வருகிறது",
-        "telugu": "శీతాకాలం వస్తుంది"
-      }
-    },
-    "meaning": {
-      "english": "A humorous reference to the popular TV show Game of Thrones, suggesting that a difficult or challenging time (like the onset of winter/a tough situation) is approaching, using the well-known phrase \"Winter is Coming.\"",
-      "hindi": "यह लोकप्रिय टीवी शो 'गेम ऑफ थ्रोंस' का एक हास्यप्रद संदर्भ है, जो यह संकेत देता है कि एक कठिन या चुनौतीपूर्ण समय (जैसे सर्दी का आगमन/एक कठिन स्थिति) आ रहा है, और इसके लिए प्रसिद्ध वाक्यांश \"Winter is Coming\" का उपयोग करता है।",
-      "hinglish": "Yeh popular TV show 'Game of Thrones' ka ek humorous reference hai, jo suggest karta hai ki ek difficult ya challenging time (jaise sardi ka aana/a tough situation) aa raha hai, \"Winter is Coming\" phrase ka use karke.",
-      "tamil": "பிரபலமான தொலைக்காட்சித் தொடரான 'கேம் ஆஃப் த்ரோன்ஸ்' பற்றிய நகைச்சுவையான குறிப்பு இது. கடினமான அல்லது சவாலான நேரம் (குளிரின் வருகை/கடினமான சூழ்நிலை) வரப்போகிறது என்பதைக் குறிக்க, \"Winter is Coming\" என்ற பிரபலமான சொற்றொடரைப் பயன்படுத்துகிறது.",
-      "telugu": "ఇది ప్రముఖ టీవీ షో 'గేమ్ ఆఫ్ థ్రోన్స్'కి సంబంధించిన ఒక హాస్యభరితమైన సూచన. కష్టమైన లేదా సవాలుగా ఉండే సమయం (겨ంత mùa రాక/కష్టమైన పరిస్థితి) రాబోతోందని సూచించడానికి, \"Winter is Coming\" అనే ప్రసిద్ధ పదబంధాన్ని ఉపయోగిస్తుంది."
-    },
-    "tags": {
-      "english": [
-        "Game of Thrones",
-        "winter is coming",
-        "meme",
-        "rum",
-        "pop culture",
-        "dramatic"
-      ],
-      "hindi": [
-        "गेम ऑफ थ्रोंस",
-        "विंटर इज कमिंग",
-        "मीम",
-        "शराब",
-        "पॉप कल्चर",
-        "नाटकीय"
-      ],
-      "hinglish": [
-        "game of thrones",
-        "winter is coming",
-        "meme",
-        "rum",
-        "pop culture",
-        "dramatic"
-      ],
-      "tamil": [
-        "Game of Thrones",
-        "குளிர் வருகை",
-        "மீம்",
-        "ரம்",
-        "பாப் கல்ச்சர்",
-        "நாடகம்"
-      ],
-      "telugu": [
-        "గేమ్ ఆఫ్ థ్రోన్స్",
-        "వింటర్ ఈజ్ కమింగ్",
-        "మీమ్",
-        "రమ్",
-        "పాప్ కల్చర్",
-        "నాటకం"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "Feeling like something drastic is approaching."
-      ],
-      "hindi": [
-        "आने वाले मुश्किल समय के लिए कोई जेस्चर।"
-      ],
-      "hinglish": [
-        "What's the sign of a hard time getting near?"
-      ],
-      "tamil": [
-        "அடுத்து என்ன வருகிறது என்று சிக்னல்?"
-      ],
-      "telugu": [
-        "ఏదో పెద్ద మార్పు రాబోతోందా?"
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "anticipation"
-    ],
-    "intent": [
-      "react_to_absurdity, show_confusion"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: A humorous reference to the popular TV show Game of Thrones, suggesting that a difficult or challenging time (like the onset of winter/a tough situation) is approaching, using the well-known phrase \"Winter is Coming.\" Hindi: Yeh popular TV show 'Game of Thrones' ka ek humorous reference hai, jo suggest karta hai ki ek difficult ya challenging time (jaise sardi ka aana/a tough situation) aa raha hai, \"Winter is Coming\" phrase ka use karke. Hinglish: Yeh popular TV show 'Game of Thrones' ka ek humorous reference hai, jo suggest karta hai ki ek difficult ya challenging time (jaise sardi ka aana/a tough situation) aa raha hai, \"Winter is Coming\" phrase ka use karke. Tamil: பிரபலமான தொலைக்காட்சித் தொடரான 'கேம் ஆஃப் த்ரோன்ஸ்' பற்றிய நகைச்சுவையான குறிப்பு இது. கடினமான அல்லது சவாலான நேரம் (குளிரின் வருகை/கடினமான சூழ்நிலை) வரப்போகிறது என்பதைக் குறிக்க, \"Winter is Coming\" என்ற பிரபலமான சொற்றொடரைப் பயன்படுத்துகிறது. Telugu: ఇది ప్రముఖ టీవీ షో 'గేమ్ ఆఫ్ థ్రోన్స్'కి సంబంధించిన ఒక హాస్యభరితమైన సూచన. కష్టమైన లేదా సవాలుగా ఉండే సమయం (겨ంత mùa రాక/కష్టమైన పరిస్థితి) రాబోతోందని సూచించడానికి, \"Winter is Coming\" అనే ప్రసిద్ధ పదబంధాన్ని ఉపయోగిస్తుంది. Queries: When are bad times coming?, What's next?, Feeling like something drastic is approaching. कब बुरे वक़्त आ रहे हैं? कुछ बड़ा होने वाला है क्या? आने वाले मुश्किल समय के लिए कोई जेस्चर। Jab lage ki koi problem aane wali hai kya? What's the sign of a hard time getting near? ఎப்போது மோசமான நேரம் வருகிறது? அடுத்து என்ன வருகிறது என்று சிக்னல்? ఎప్పుడు కష్టమైన సమయం వస్తుంది? ఏదో పెద్ద మార్పు రాబోతోందా? Tags: Game of Thrones, winter is coming, meme, rum, pop culture, dramatic | Emotion: confusion, anticipation | Intent: react_to_absurdity, show_confusion | Region: pan_india | Types: movie_reference, relatable, absurd",
-    "labeled_at": "2026-05-09T13:19:29.186Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332770188",
-    "image_path": "memes/163.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish"
-    ],
-    "caption": {
-      "original": "maths, me, physics, chemistry",
-      "translations": {
-        "english": "maths, me, physics, chemistry",
-        "hindi": "गणित्स, मैं, फिजिक्स, केमिस्ट्री",
-        "hinglish": "maths, me, physics, chemistry",
-        "tamil": "unknown",
-        "telugu": "unknown"
-      }
-    },
-    "meaning": {
-      "english": "The meme exaggerates the difficulty or distinct nature of academic subjects, showing how different and sometimes confusing they are, especially related to STEM fields.",
-      "hindi": "यह मीम शैक्षणिक विषयों की कठिनाई या अलग-अलग प्रकृति को अतिशयोक्तिपूर्ण तरीके से दिखाता है, विशेष रूप से STEM क्षेत्रों से संबंधित।",
-      "hinglish": "Ye meme academic subjects ki difficulty ya alag-alag nature ko over-exaggerate karke dikhata hai, especially STEM fields se related.",
-      "tamil": "unknown",
-      "telugu": "unknown"
-    },
-    "tags": {
-      "english": [
-        "math",
-        "physics",
-        "chemistry",
-        "study",
-        "academic",
-        "science",
-        "difficult",
-        "relatable",
-        "memes"
-      ],
-      "hindi": [
-        "maths",
-        "physics",
-        "chemistry",
-        "padhai",
-        "padhai_karna",
-        "padhai_ke_topics",
-        "mushkil",
-        "relatable",
-        "meme"
-      ],
-      "hinglish": [
-        "maths",
-        "physics",
-        "chemistry",
-        "study",
-        "academic",
-        "science",
-        "difficult",
-        "relatable",
-        "meme",
-        "pahelwani"
-      ],
-      "tamil": [
-        "unknown"
-      ],
-      "telugu": [
-        "unknown"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "I hate studying science subjects."
-      ],
-      "hindi": [
-        "मुझे पढ़ाई में दिक्कत आ रही है।"
-      ],
-      "hinglish": [
-        "Mujhe saare subjects samajh nahi aa rahe."
-      ],
-      "tamil": [
-        "unknown"
-      ],
-      "telugu": [
-        "unknown"
-      ]
-    },
-    "emotion": [
-      "confusion",
-      "stress"
-    ],
-    "intent": [
-      "react_to_absurdity, exam_stress"
-    ],
-    "regions": [
-      "pan_india",
-      "unknown"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.95
-    },
-    "multilingual_embedding_text": "English: The meme exaggerates the difficulty or distinct nature of academic subjects, showing how different and sometimes confusing they are, especially related to STEM fields. Hindi: यह मीम शैक्षणिक विषयों की कठिनाई या अलग-अलग प्रकृति को अतिशयोक्तिपूर्ण तरीके से दिखाता है, विशेष रूप से STEM क्षेत्रों से संबंधित। Hinglish: Ye meme academic subjects ki difficulty ya alag-alag nature ko over-exaggerate karke dikhata hai, especially STEM fields se related. Tamil: unknown Telugu: unknown Queries: I feel confused about all these subjects., Can you explain the difference between math and physics?, I hate studying science subjects., ये सब सब्जेक्ट देखकर दिमाग घूम जाता है।, गणित और विज्ञान कौन सा ज़्यादा मुश्किल होता है?, मुझे पढ़ाई में दिक्कत आ रही है।, Boss, yeh subjects ka kya scene hai?, Mujhe saare subjects samajh nahi aa rahe. Tags: math, physics, chemistry, study, academic, science, difficult, relatable, memes, maths, physics, chemistry, padhai, padhai_karna, padhai_ke_topics, mushkil, relatable, meme, pahelwani | Emotion: confusion, stress | Intent: react_to_absurdity, exam_stress | Region: pan_india, unknown",
-    "labeled_at": "2026-05-09T13:20:10.079Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332811081",
-    "image_path": "memes/188.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hinglish",
-      "hindi",
-      "malayalam",
-      "telugu"
-    ],
-    "caption": {
-      "original": "when everyone is working from home but you have no job",
-      "translations": {
-        "english": "when everyone is working from home but you have no job",
-        "hindi": "जब हर कोई घर से काम कर रहा होता है लेकिन आपके पास कोई नौकरी नहीं होती",
-        "hinglish": "jab everyone is working from home but you have no job",
-        "tamil": "எல்லாரும் வீட்டில் இருந்து வேலை செய்யும்போது ஆனால் உங்களுக்கு வேலை இல்லை என்றால்",
-        "telugu": "అందరూ ఇల్లు నుండి పని చేస్తుంటే కానీ మీ దగ్గర ఉద్యోగం లేకపోతే"
-      }
-    },
-    "meaning": {
-      "english": "This meme depicts the realization that while most people are working from home, you are unemployed and have nothing to do.",
-      "hindi": "यह मीम दिखाता है कि जब हर कोई घर से काम कर रहा होता है, लेकिन आप बेरोजगार होते हैं और आपके पास करने के लिए कुछ नहीं होता।",
-      "hinglish": "yeh meme dikhata hai ki jab sab log work from home kar rahe hote hain, lekin aap unemployed ho aur karne ke liye kuch nahi hai.",
-      "tamil": "எல்லோரும் வீட்டில் இருந்து வேலை செய்யும்போது, உங்களிடம் வேலை இல்லாதபோது இது சித்தரிக்கிறது.",
-      "telugu": "అందరూ ఇంట్లో నుండి పని చేస్తుంటే, మీకు ఉద్యోగం లేనప్పుడు ఇది సూచిస్తుంది."
-    },
-    "tags": {
-      "english": [
-        "work from home",
-        "no job",
-        "unemployment",
-        "relatable meme"
-      ],
-      "hindi": [
-        "घर से काम",
-        "नौकरी नहीं",
-        "बेरोज़गारी",
-        "relatable meme"
-      ],
-      "hinglish": [
-        "wrfh",
-        "no job",
-        "unemployed",
+        "bachpan",
+        "bade hona",
+        "daam",
+        "mehngai",
+        "india",
+        "nostalgia",
+        "economics",
         "relatable"
       ],
       "tamil": [
-        "வீட்டில் இருந்து வேலை",
-        "வேலை இல்லை",
-        "வேலை இல்லாமை"
+        "குழந்தைப் பருவம்",
+        "வளர்வது",
+        "விலைகள்",
+        "பணவீக்கம்",
+        "இந்தியா",
+        "ஏக்கம்",
+        "பொருளாதாரம்",
+        "relatable"
       ],
       "telugu": [
-        "wrfh",
-        "ఉద్యోగం లేదు",
-        "నిరుద్యోగం"
+        "బాల్యం",
+        "పెరుగుదల",
+        "ధరలు",
+        "ద్రవ్యోల్బణం",
+        "భారతదేశం",
+        "గతస్మృతి",
+        "ఆర్థికశాస్త్రం",
+        "relatable"
       ]
     },
     "query_examples": {
       "english": [
-        "Me when my friends are WFH and I am jobless"
+        "remember when things were cheap",
+        "prices are crazy now",
+        "childhood memories",
+        "growing up is expensive",
+        "indian childhood"
       ],
       "hindi": [
-        "जब मेरे दोस्त घर से काम कर रहे होते हैं और मैं बेरोजगार होता हूं"
+        "बचपन में सब सस्ता था",
+        "अब महंगाई बहुत है",
+        "बचपन की यादें",
+        "बड़े होना महंगा है",
+        "भारतीय बचपन"
       ],
       "hinglish": [
-        "friends wrfh aur mai jobless"
+        "jab cheezein sasti thi",
+        "mehngai bahut ho gayi hai",
+        "bachpan ki yaadein",
+        "bade hone ka kharcha",
+        "indian childhood"
       ],
       "tamil": [
-        "என் நண்பர்கள் வீட்டில் இருந்து வேலை செய்யும்போது நான் வேலை செய்யாதபோது"
+        "பொருட்கள் மலிவாக இருந்தபோது",
+        "விலைகள் அதிகம்",
+        "சிறுவயது நினைவுகள்",
+        "வளர்வது விலை உயர்ந்தது",
+        "இந்திய சிறுவயது"
       ],
       "telugu": [
-        "నా స్నేహితులు wrfh అయినప్పుడు నేను ఉద్యోగం లేనప్పుడు"
+        "వస్తువులు చౌకగా ఉన్నప్పుడు",
+        "ధరలు విపరీతంగా ఉన్నాయి",
+        "బాల్య జ్ఞాపకాలు",
+        "పెరగడం ఖరీదైనది",
+        "భారతీయ బాల్యం"
+      ]
+    },
+    "emotion": [
+      "nostalgia",
+      "sarcasm"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india",
+      "north_india",
+      "west_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.95
+    },
+    "multilingual_embedding_text": "English: The meme references a common childhood experience in India where prices were very low, and as one grew up, prices increased significantly, symbolizing the transition from childhood to adulthood and the associated economic realities.. Hindi: यह मीम भारत में बचपन के एक सामान्य अनुभव का संदर्भ देता है जहाँ कीमतें बहुत कम थीं, और जैसे-जैसे कोई बड़ा हुआ, कीमतें काफी बढ़ गईं, जो बचपन से वयस्कता और संबंधित आर्थिक वास्तविकताओं में संक्रमण का प्रतीक है।. Hinglish: Meme India mein bachpan ka ek common experience describe karta hai, jab prices bahut kam the ('2 mein 10 cheezein milti thi'), aur bade hokar prices badh gaye ('10 mein sirf 2 cheezein milti hain'). Ye childhood se adulthood mein transition aur mehngai ko represent karta hai.. Tamil: இந்த மீம் இந்தியாவில் சிறுவயதில் இருந்த ஒரு பொதுவான அனுபவத்தை குறிக்கிறது, அங்கு விலைகள் மிகக் குறைவாக இருந்தன, மேலும் ஒருவர் வளர்ந்தவுடன், விலைகள் கணிசமாக உயர்ந்தன. இது குழந்தைப் பருவத்திலிருந்து வாலிப பருவத்திற்கு மாறுவதையும் அதனுடன் தொடர்புடைய பொருளாதார உண்மைகளையும் குறிக்கிறது.. Telugu: ఈ మీమ్ భారతదేశంలో చిన్నతనం యొక్క సాధారణ అనుభవాన్ని సూచిస్తుంది, ఇక్కడ ధరలు చాలా తక్కువగా ఉండేవి, మరియు ఒకరు పెరిగే కొద్దీ, ధరలు గణనీయంగా పెరిగాయి, ఇది బాల్యం నుండి యుక్తవయస్సు మరియు సంబంధిత ఆర్థిక వాస్తవాలకు పరివర్తనను సూచిస్తుంది.. Tags: childhood growing up prices inflation india nostalgia economics relatable बचपन बड़े होना कीमतें महंगाई भारत यादें अर्थशास्त्र relatable bachpan bade hona daam mehngai india nostalgia economics relatable குழந்தைப் பருவம் வளர்வது விலைகள் பணவீக்கம் இந்தியா ஏக்கம் பொருளாதாரம் relatable బాల్యం పెరుగుదల ధరలు ద్రవ్యోల్బణం భారతదేశం గతస్మృతి ఆర్థికశాస్త్రం relatable. Queries: remember when things were cheap prices are crazy now childhood memories growing up is expensive indian childhood बचपन में सब सस्ता था अब महंगाई बहुत है बचपन की यादें बड़े होना महंगा है भारतीय बचपन jab cheezein sasti thi mehngai bahut ho gayi hai bachpan ki yaadein bade hone ka kharcha indian childhood பொருட்கள் மலிவாக இருந்தபோது விலைகள் அதிகம் சிறுவயது நினைவுகள் வளர்வது விலை உயர்ந்தது இந்திய சிறுவயது వస్తువులు చౌకగా ఉన్నప్పుడు ధరలు విపరీతంగా ఉన్నాయి బాల్య జ్ఞాపకాలు పెరగడం ఖరీదైనది భారతీయ బాల్యం. Emotion: nostalgia sarcasm. Intent: react_to_absurdity. Region: pan_india,north_india,west_india.",
+    "labeled_at": "2026-05-10T07:37:10.383Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398631383",
+    "image_path": "memes/4.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hinglish"
+    ],
+    "caption": {
+      "original": "thank god we grew up watching | this | Shaka Laka BOOM BOOM | not this | BIGG BOSS",
+      "translations": {
+        "english": "Thank God we grew up watching this, not this",
+        "hindi": "शुक्र है हम ये देखते हुए बड़े हुए, ये नहीं",
+        "hinglish": "Thank God hum ye dekhte hue bade hue, yeh nahi",
+        "tamil": "நாங்கள் இதை பார்த்து வளர்ந்த கடவுளுக்கு நன்றி, இதை அல்ல",
+        "telugu": "మేము దీన్ని చూస్తూ పెరిగిన దేవుడికి ధన్యవాదాలు, ఇది కాదు"
+      }
+    },
+    "meaning": {
+      "english": "Expresses nostalgia and preference for older, more innocent children's shows over modern reality television.",
+      "hindi": "पुरानी, ​​मासूमियत वाली बच्चों की सीरियलों के लिए आधुनिक रियलिटी टीवी पर प्राथमिकता और पुरानी यादों को व्यक्त करता है।",
+      "hinglish": "Old time bachchon ke shows ko modern reality shows ke upar prefer karne ka nostalgia aur choice dikhata hai.",
+      "tamil": "பழைய, அப்பாவி குழந்தைகளின் நிகழ்ச்சிகளுக்கு நவீன ரியாலிட்டி டிவியை விட விருப்பம் தெரிவிக்கிறது.",
+      "telugu": "పాత, అమాయక పిల్లల షోలకు ఆధునిక రియాలిటీ టీవీ కంటే ప్రాధాన్యతను, గతాన్ని గుర్తు చేసుకుంటుంది."
+    },
+    "tags": {
+      "english": [
+        "shaka laka boom boom",
+        "bigg boss",
+        "nostalgia",
+        "childhood",
+        "tv shows",
+        "indian tv"
+      ],
+      "hindi": [
+        "शाका लाका बूम बूम",
+        "बिग बॉस",
+        "बचपन",
+        "टीवी शो",
+        "पुरानी यादें",
+        "भारतीय टीवी"
+      ],
+      "hinglish": [
+        "shaka laka boom boom",
+        "bigg boss",
+        "bachpan",
+        "childhood",
+        "tv show"
+      ],
+      "tamil": [
+        "ஷாகா லாக்கா பூம் பூம்",
+        "பிக் பாஸ்",
+        "குழந்தை பருவம்",
+        "தொலைக்காட்சி நிகழ்ச்சிகள்",
+        "கடந்த காலம்",
+        "இந்திய தொலைக்காட்சி"
+      ],
+      "telugu": [
+        "షాకా లాకా బూమ్ బూమ్",
+        "బిగ్ బాస్",
+        "బాల్యం",
+        "టీవీ షోలు",
+        "గతం",
+        "భారతీయ టీవీ"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "remember shaka laka boom boom",
+        "childhood cartoons",
+        "only 90s kids will understand",
+        "bigg boss is trash",
+        "indian tv shows then and now"
+      ],
+      "hindi": [
+        "शाका लाका बूम बूम याद है",
+        "बचपन के कार्टून",
+        "सिर्फ 90 के दशक के बच्चे समझेंगे",
+        "बिग बॉस बेकार है",
+        "तब और अब के इंडियन टीवी शो"
+      ],
+      "hinglish": [
+        "Shaka Laka yaad hai",
+        "bachpan ke shows",
+        "90s kids only",
+        "Bigg Boss bakwas hai",
+        "old vs new Indian TV"
+      ],
+      "tamil": [
+        "ஷாகா லாக்கா ஞாபகம் இருக்கா",
+        "குழந்தை பருவ நிகழ்ச்சிகள்",
+        "90ஸ் கிட்ஸ் மட்டும்",
+        "பிக் பாஸ் குப்பை",
+        "இப்போதைய தமிழ் டிவி ஷோக்கள்"
+      ],
+      "telugu": [
+        "షాకా లాకా గుర్తుందా",
+        "బాల్యపు కార్యక్రమాలు",
+        "90ల పిల్లలు మాత్రమే",
+        "బిగ్ బాస్ చెత్త",
+        "ఇప్పటి తెలుగు టీవీ షోలు"
+      ]
+    },
+    "emotion": [
+      "nostalgia",
+      "approval",
+      "disappointment"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.95
+    },
+    "multilingual_embedding_text": "English: Nostalgia and preference for older children's shows like Shaka Laka Boom Boom over modern reality TV like Bigg Boss. Hindi: शाका लाका बूम बूम जैसे पुराने बच्चों के शो के लिए बिग बॉस जैसे आधुनिक रियलिटी टीवी पर पुरानी यादें और प्राथमिकता. Hinglish: Shaka Laka Boom Boom jaise purane bachchon ke shows ko Bigg Boss jaise modern reality TV se zyada pasand karne ka nostalgia. Tamil: பிக் பாஸ் போன்ற நவீன ரியாலிட்டி டிவியை விட ஷாகா லாக்கா பூம் பூம் போன்ற பழைய குழந்தைகளுக்கான நிகழ்ச்சிகளுக்கு ஏக்கம் மற்றும் விருப்பம். Telugu: బిగ్ బాస్ వంటి ఆధునిక రియాలిటీ టీవీ కంటే షాకా లాకా బూమ్ బూమ్ వంటి పాత పిల్లల కార్యక్రమాలకు గతాన్ని గుర్తుచేసుకోవడం మరియు ప్రాధాన్యత. Tags: shaka laka boom boom bigg boss nostalgia childhood tv shows indian tv शाका लाका बूम बूम बिग बॉस बचपन टीवी शो पुरानी यादें भारतीय टीवी shaka laka boom boom bigg boss bachpan childhood tv show ஷாகா லாக்கா பூம் பூம் பிக் பாஸ் குழந்தை பருவம் தொலைக்காட்சி நிகழ்ச்சிகள் கடந்த காலம் இந்திய தொலைக்காட்சி షాకా లాకా బూమ్ బూమ్ బిగ్ బాస్ బాల్యం టీవీ షోలు గతం భారతీయ టీవీ. Queries: remember shaka laka boom boom childhood cartoons only 90s kids will understand Shaka Laka yaad hai bachpan ke shows 90s kids only ஷாகா லாக்கா ஞாபகம் இருக்கா குழந்தை பருவ நிகழ்ச்சிகள் 90ஸ் கிட்ஸ் மட்டும் షాకా లాకా గుర్తుందా బాల్యపు కార్యక్రమాలు 90ల పిల్లలు మాత్రమే. Emotion: nostalgia approval disappointment. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:20.203Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398641205",
+    "image_path": "memes/5.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hindi",
+      "hinglish",
+      "tamil",
+      "telugu"
+    ],
+    "caption": {
+      "original": "hi | hiiiiiiiiiiii | iiiiiiiiiiiiii | iiiiiiiiiiiiii",
+      "translations": {
+        "english": "hi | helloooooooo | oooooooooo | oooooooooo",
+        "hindi": "हाय | हॅलओओओओओओओओ | ओओओओओओओओ | ओओओओओओओओ",
+        "hinglish": "hi | heloooooooo | oooooooooo | oooooooooo",
+        "tamil": "ஹாய் | ஹாஹாஹாஹாஹா | ஹாஹாஹா | ஹாஹாஹா",
+        "telugu": "హాయ్ | హలోooooooooooo | oooooooooooo | oooooooooooo"
+      }
+    },
+    "meaning": {
+      "english": "This meme uses the increasing number of whiskey glasses to represent getting progressively drunk. The \"hi\" becoming a long string of \"i\"s signifies this intoxication, where speech becomes slurred and elongated. It's used to show someone's state after consuming a lot of alcohol.",
+      "hindi": "यह मीम दिखाता है कि व्हिस्की के गिलासों की बढ़ती संख्या नशे में धुत होने का प्रतिनिधित्व करती है। \"हाय\" का लंबी \"आई\" स्ट्रिंग में बदलना इस नशे को दर्शाता है, जहाँ बोला गया शब्द लड़खड़ाने लगता है। इसका उपयोग बहुत अधिक शराब पीने के बाद किसी की स्थिति को दर्शाने के लिए किया जाता है।",
+      "hinglish": "Yeh meme dikhata hai ki whiskey ke glasses badhne se koi kaise nashe mein aa jaata hai. 'Hi' ka bahut lambe 'i' mein badal jaana nashe ki wajah se ladkhadati hui zubaan ko represent karta hai. Alcohol peene ke baad ki condition dikhane ke liye use hota hai.",
+      "tamil": "இந்த மீம், விஸ்கி கிளாஸ்களின் எண்ணிக்கை அதிகரிப்பது படிப்படியாக குடிபோதையில் செல்வதைக் குறிக்கிறது. \"ஹாய்\" என்பது நீண்ட \"ஐ\" சரமாக மாறுவது இந்த போதையைக் குறிக்கிறது, அங்கு பேச்சு குழறலாகவும் நீளமாகவும் மாறும். இது அதிக மது அருந்திய பிறகு ஒருவரின் நிலையை காட்ட பயன்படுகிறது.",
+      "telugu": "ఈ మీమ్, విస్కీ గ్లాసుల సంఖ్య పెరగడం క్రమంగా తాగినట్లు సూచిస్తుంది. \"హాయ్\" అనేది పొడవైన \"i\" స్ట్రింగ్‌గా మారడం ఈ తాగిన స్థితిని సూచిస్తుంది, ఇక్కడ మాట తడబడుతుంది మరియు పొడవుగా మారుతుంది. ఇది ఎక్కువ మద్యం తాగిన తర్వాత ఒకరి స్థితిని చూపించడానికి ఉపయోగిస్తారు."
+    },
+    "tags": {
+      "english": [
+        "alcohol",
+        "drunk",
+        "whiskey",
+        "hi",
+        "funny",
+        "relatable",
+        "meme"
+      ],
+      "hindi": [
+        "शराब",
+        "नशे में",
+        "व्हिस्की",
+        "हाय",
+        "मजेदार",
+        "relatable",
+        "मीम"
+      ],
+      "hinglish": [
+        "alcohol",
+        "drunk",
+        "whiskey",
+        "hi",
+        "funny",
+        "relatable",
+        "meme"
+      ],
+      "tamil": [
+        "மது",
+        "குடிபோதை",
+        "விஸ்கி",
+        "ஹாய்",
+        "ஃபன்னி",
+        "relatable",
+        "மீம்"
+      ],
+      "telugu": [
+        "మద్యం",
+        "మత్తు",
+        "విస్కీ",
+        "హాయ్",
+        "ఫన్నీ",
+        "relatable",
+        "మీమ్"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "when you've had too much to drink",
+        "me after a few drinks",
+        "how i feel after vodka",
+        "celebrating friday night",
+        "my speech after one more shot"
+      ],
+      "hindi": [
+        "जब बहुत ज्यादा पी ली हो",
+        "कुछ ड्रिंक्स के बाद मैं",
+        "वोदका के बाद मेरी हालत",
+        "फ्राइडे नाइट सेलिब्रेशन",
+        "एक और शॉट के बाद मेरी जुबान"
+      ],
+      "hinglish": [
+        "jab zyada pee li ho",
+        "kuch drinks ke baad mai",
+        "vodka peene ke baad mera haal",
+        "friday night celebration",
+        "ek aur shot ke baad meri speech"
+      ],
+      "tamil": [
+        "நிறைய குடித்த பிறகு",
+        "சில ட்ரிங்க்ஸ் குடித்த பிறகு நான்",
+        "வோட்கா குடித்த பிறகு என் நிலை",
+        "வெள்ளிக்கிழமை இரவு கொண்டாட்டம்",
+        "இன்னொரு ஷாட் குடித்த பிறகு என் பேச்சு"
+      ],
+      "telugu": [
+        "ఎక్కువ తాగిన తర్వాత",
+        "కొన్ని డ్రింక్స్ తర్వాత నేను",
+        "వోడ్కా తాగిన తర్వాత నా పరిస్థితి",
+        "శుక్రవారం రాత్రి వేడుక",
+        "ఇంకో షాట్ తర్వాత నా మాట"
+      ]
+    },
+    "emotion": [
+      "cringe",
+      "sarcasm"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.9
+    },
+    "multilingual_embedding_text": "English: Meme showing increasing alcohol consumption and slurred speech. Hindi: बढ़ती शराब की खपत और लड़खड़ाती जुबान को दर्शाता मीम। Hinglish: Badhti sharab ki khapat aur ladkhadati zubaan dikhata meme. Tamil: அதிகரிக்கும் மதுபான நுகர்வு மற்றும் தடுமாறும் பேச்சைக் காட்டும் ஒரு மீம். Telugu: పెరుగుతున్న మద్యపాన వినియోగం మరియు తడబడే మాటలను చూపే మీమ్. Tags: alcohol drunk whiskey hi funny relatable meme शराब नशे में व्हिस्की हाय मजेदार relatable मीम alcohol drunk whiskey hi funny relatable meme மது குடிபோதை விஸ்கி ஹாய் ஃபன்னி relatable மீம் మద్యం మత్తు విస్కీ హాయ్ ఫన్నీ relatable మీమ్. Queries: when you've had too much to drink me after a few drinks how i feel after vodka celebrating friday night my speech after one next shot jab zyada pee li ho kuch drinks ke baad mai vodka peene ke baad mera haal friday night celebration ek aur shot ke baad meri speech enna kuditha piragu sila drinks kuditha piragu naan vodka kuditha piragu en nilai veli kizhama iravu kondatam innoru shot kuditha piragu en pechu ekkuva thagina tharuvatha konni drinks thagina tharuvatha nenu vodka thagina tharuvatha na paristhithi shukravaram rathri vedukalu inkoka shot thagina tharuvatha na mata. Emotion: cringe sarcasm. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:28.370Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398649372",
+    "image_path": "memes/6.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hindi",
+      "hinglish",
+      "tamil",
+      "telugu",
+      "kannada"
+    ],
+    "caption": {
+      "original": "to everyone out there",
+      "translations": {
+        "english": "To everyone out there",
+        "hindi": "वहां मौजूद हर किसी के लिए",
+        "hinglish": "To everyone out there",
+        "tamil": "அங்கே இருக்கும் அனைவருக்கும்",
+        "telugu": "అక్కడ ఉన్న అందరికీ"
+      }
+    },
+    "meaning": {
+      "english": "This meme is used to point out or address a group of people, often sarcastically or dismissively, and then show a subsequent reaction of either indifference, annoyance, or looking away.",
+      "hindi": "इस मीम का इस्तेमाल लोगों के एक समूह को इंगित करने या संबोधित करने के लिए किया जाता है, अक्सर व्यंग्यात्मक या तिरस्कारपूर्ण तरीके से, और फिर उदासीनता, झुंझलाहट या नज़र फेरने की प्रतिक्रिया दिखाई जाती है।",
+      "hinglish": "Ye meme logo ko target karne ke liye use hota hai, often taunt karne ke liye, aur phir ek reaction dikhata hai - ya toh ignore karna, ya chid jaana, ya phir dekhna band kar dena.",
+      "tamil": "இந்த மீம் ஒரு குழுவினரைக் குறிப்பிடுவதற்கு அல்லது அவர்களை விளித்துப் பேசுவதற்குப் பயன்படுத்தப்படுகிறது, பெரும்பாலும் கிண்டலாக அல்லது அலட்சியமாக, பின்னர் அலட்சியம், எரிச்சல் அல்லது வேறு பக்கம் பார்க்கும் ஒரு பின்னடையைக் காட்டுகிறது.",
+      "telugu": "ఈ మీమ్ తరచుగా వ్యంగ్యంగా లేదా చులకనగా ఒక సమూహాన్ని సూచించడానికి లేదా ఉద్దేశించి మాట్లాడటానికి ఉపయోగించబడుతుంది, ఆపై ఉదాసీనత, చిరాకు లేదా పక్కకు చూసే ప్రతిచర్యను చూపుతుంది."
+    },
+    "tags": {
+      "english": [
+        "cricket",
+        "rohit sharma",
+        "india",
+        "meme",
+        "reaction",
+        "sarcasm",
+        "pointing"
+      ],
+      "hindi": [
+        "क्रिकेट",
+        "रोहित शर्मा",
+        "भारत",
+        "मीम",
+        "प्रतिक्रिया",
+        "व्यंग्य",
+        "इशारा"
+      ],
+      "hinglish": [
+        "cricket",
+        "rohit sharma",
+        "india",
+        "meme",
+        "reaction",
+        "sarcasm",
+        "pointing"
+      ],
+      "tamil": [
+        "கிரிக்கெட்",
+        "ரோஹித் சர்மா",
+        "இந்தியா",
+        "மீம்",
+        "வினை",
+        "கிண்டல்",
+        "சுட்டிக்காட்டுதல்"
+      ],
+      "telugu": [
+        "క్రికెట్",
+        "రోహిత్ శర్మ",
+        "భారత్",
+        "మీమ్",
+        "ప్రతిచర్య",
+        "వ్యంగ్యం",
+        "సూచించడం"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "when someone says something dumb",
+        "when you point out something obvious",
+        "that feeling when you call someone out",
+        "when you finally have a retort",
+        "when someone is being annoying"
+      ],
+      "hindi": [
+        "जब कोई बेवकूफी भरी बात कहे",
+        "जब आप कुछ स्पष्ट बात बताएं",
+        "वो एहसास जब आप किसी को जवाब दें",
+        "जब आपके पास आखिर में कोई जवाब हो",
+        "जब कोई परेशान कर रहा हो"
+      ],
+      "hinglish": [
+        "jab koi faltu baat kare",
+        "jab kuch obvious point out karo",
+        "wo feeling jab kisi ko pakad lo",
+        "jab ekdum se reply soojhe",
+        "jab koi tang kar raha ho"
+      ],
+      "tamil": [
+        "யாராவது முட்டாள்தனமாக பேசும்போது",
+        "நீங்கள் எதையாவது சுட்டிக்காட்டும்போது",
+        "யாரையாவது அழைக்கும்போது அந்த உணர்வு",
+        "இறுதியாக பதிலளிக்கும்போது",
+        "யாராவது எரிச்சலூட்டும்போது"
+      ],
+      "telugu": [
+        "ఎవరైనా తెలివితక్కువగా ఏదైనా చెప్పినప్పుడు",
+        "మీరు ఏదైనా స్పష్టమైన విషయం చెప్పినప్పుడు",
+        "ఎవరైనా పిలిచినప్పుడు ఆ భావన",
+        "చివరకు ప్రత్యుత్తరం చెప్పినప్పుడు",
+        "ఎవరైనా చికాకు పెడుతున్నప్పుడు"
+      ]
+    },
+    "emotion": [
+      "sarcasm",
+      "disappointment",
+      "anger",
+      "awkward"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.9
+    },
+    "multilingual_embedding_text": "English: Meme showing Rohit Sharma pointing then looking away, used to sarcastically address a group. Hindi: रोहित शर्मा इशारा करते हुए फिर दूसरी ओर देखते हुए, व्यंग्यात्मक रूप से एक समूह को संबोधित करने के लिए इस्तेमाल किया जाने वाला मीम। Hinglish: Rohit Sharma ka meme jisme woh point karta hai aur phir ignore kar deta hai, sarcastic tarike se logo ko address karne ke liye. Tamil: ரோஹித் சர்மா யாரையும் சுட்டிக்காட்டி பின்னர் புறக்கணிக்கும் மீம், கிண்டலாக ஒரு குழுவை விளித்துப் பேசப் பயன்படுகிறது. Telugu: రోహిత్ శర్మ వేలెత్తి చూపించి, ఆపై పట్టించుకోకుండా చూసే మీమ్, వ్యంగ్యంగా ఒక సమూహాన్ని ఉద్దేశించి మాట్లాడటానికి. Tags: cricket rohit sharma india meme reaction sarcasm pointing क्रिकेट रोहित शर्मा भारत मीम प्रतिक्रिया व्यंग्य इशारा cricket rohit sharma india meme reaction sarcasm pointing கிரிக்கெட் ரோஹித் சர்மா இந்தியா மீம் வினை கிண்டல் சுட்டிக்காட்டுதல் క్రికెట్ రోహిత్ శర్మ భారత్ మీమ్ ప్రతిచర్య వ్యంగ్యం సూచించడం. Queries: when someone says something dumb when you point out something obvious that feeling when you call someone out jab koi faltu baat kare jab kuch obvious point out karo யாராவது முட்டாள்தனமாக பேசும்போது நீங்கள் எதையாவது சுட்டிக்காட்டும்போது ఎవరైనా తెలివితక్కువగా ఏదైనా చెప్పినప్పుడు మీరు ఏదైనా స్పష్టమైన విషయం చెప్పినప్పుడు. Emotion: sarcasm disappointment anger awkward. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:35.972Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398656974",
+    "image_path": "memes/7.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hindi",
+      "hinglish",
+      "tamil",
+      "telugu"
+    ],
+    "caption": {
+      "original": "Mona Lisa with Mask and Dettol Hand Sanitizer | Scoopwhoop.com",
+      "translations": {
+        "english": "Mona Lisa with Mask and Dettol Hand Sanitizer | Scoopwhoop.com",
+        "hindi": "मास्क और डेटॉल हैंड सैनिटाइजर के साथ मोना लिसा | Scoopwhoop.com",
+        "hinglish": "Mask aur Dettol Hand Sanitizer ke saath Mona Lisa | Scoopwhoop.com",
+        "tamil": "மாஸ்க் மற்றும் டெட்ால் கை சுத்திகரிப்பானுடன் மோனா லிசா | Scoopwhoop.com",
+        "telugu": "మాస్క్ మరియు డెట్టాల్ హ్యాండ్ శానిటైజర్‌తో మోనా లీసా | Scoopwhoop.com"
+      }
+    },
+    "meaning": {
+      "english": "This meme humorously overlays contemporary pandemic safety measures (mask and hand sanitizer) onto a classic work of art, the Mona Lisa, highlighting how these items have become commonplace.",
+      "hindi": "यह मीम मजाकिया ढंग से मोना लिसा, एक उत्कृष्ट कृति, पर समकालीन महामारी सुरक्षा उपायों (मास्क और हैंड सैनिटाइजर) को ओवरले करता है, जो बताता है कि ये चीजें कितनी आम हो गई हैं।",
+      "hinglish": "Yeh meme mazakiya dhang se Mona Lisa, ek classic painting, par aajkal ke pandemic safety measures (mask aur hand sanitizer) ko dikhata hai, yeh bataate hue ki yeh cheezein kitni aam ho gayi hain.",
+      "tamil": "இந்த மீம், மோனா லிசா ஓவியத்தில் சமகால தொற்றுநோய் பாதுகாப்பு நடவடிக்கைகளை (முகக்கவசம் மற்றும் கை சுத்திகரிப்பான்) நகைச்சுவையாக பொருத்தி, இந்த பொருட்கள் எவ்வளவு பொதுவானதாகிவிட்டன என்பதை எடுத்துக்காட்டுகிறது.",
+      "telugu": "ఈ మీమ్, మోనా లీసా అనే క్లాసిక్ కళాఖండంపై మాస్క్ మరియు హ్యాండ్ శానిటైజర్ వంటి సమకాలీన మహమ్మారి భద్రతా చర్యలను హాస్యంగా అతికించి, ఇవి ఎంత సాధారణం అయ్యాయో చూపుతుంది."
+    },
+    "tags": {
+      "english": [
+        "mona lisa",
+        "mask",
+        "hand sanitizer",
+        "dettol",
+        "pandemic",
+        "covid"
+      ],
+      "hindi": [
+        "मोना लिसा",
+        "मास्क",
+        "हैंड सैनिटाइजर",
+        "डेटॉल",
+        "महामारी",
+        "कोविड"
+      ],
+      "hinglish": [
+        "mona lisa",
+        "mask",
+        "hand sanitizer",
+        "dettol",
+        "pandemic",
+        "covid"
+      ],
+      "tamil": [
+        "மோனா லிசா",
+        "மாஸ்க்",
+        "கை சுத்திகரிப்பான்",
+        "டெட்ால்",
+        "தொற்றுநோய்",
+        "கோவிட்"
+      ],
+      "telugu": [
+        "మోనా లీసా",
+        "మాస్క్",
+        "హ్యాండ్ శానిటైజర్",
+        "డెట్టాల్",
+        "మహమ్మారి",
+        "కోవిడ్"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "mona lisa wearing mask",
+        "covid art",
+        "pandemic meem",
+        "mona lisa with sanitizer"
+      ],
+      "hindi": [
+        "मास्क वाली मोना लिसा",
+        "कोविड कला",
+        "महामारी मीम",
+        "सैनिटाइजर वाली मोना लिसा"
+      ],
+      "hinglish": [
+        "mask pehni hui Mona Lisa",
+        "covid ka art",
+        "pandemic meme",
+        "Mona Lisa with sanitizer"
+      ],
+      "tamil": [
+        "மாஸ்க் அணிந்த மோனா லிசா",
+        "கோவிட் கலை",
+        "தொற்றுநோய் மீம்",
+        "சானிடைசருடன் மோனா லிசா"
+      ],
+      "telugu": [
+        "మాస్క్ ధరించిన మోనా లీసా",
+        "కోవిడ్ కళ",
+        "మహమ్మారి మీమ్",
+        "శానిటైజర్‌తో మోనా లీసా"
+      ]
+    },
+    "emotion": [
+      "approval",
+      "sarcasm"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.95
+    },
+    "multilingual_embedding_text": "English: Mona Lisa humorously updated with a mask and hand sanitizer, reflecting pandemic commonplace items. Hindi: मोना लिसा को मजाकिया ढंग से मास्क और हैंड सैनिटाइजर के साथ अपडेट किया गया, जो महामारी में आम वस्तुओं को दर्शाता है। Hinglish: Mona Lisa ko mask aur hand sanitizer ke saath mazakiya tarike se update kiya gaya, jo pandemic mein common cheezein dikhata hai. Tamil: மோனா லிசா, முகக்கவசம் மற்றும் கை சுத்திகரிப்பானுடன் நகைச்சுவையாக புதுப்பிக்கப்பட்டார், தொற்றுநோய் பொதுவான பொருட்களை பிரதிபலிக்கிறது. Telugu: మాస్క్ మరియు హ్యాండ్ శానిటైజర్‌తో మోనా లీసాను హాస్యంగా అప్‌డేట్ చేశారు, ఇది మహమ్మారిలో సాధారణ వస్తువులను ప్రతిబింబిస్తుంది. Tags: mona lisa mask hand sanitizer dettol pandemic covid मोना लिसा मास्क हैंड सैनिटाइजर डेटॉल महामारी कोविड mona lisa mask hand sanitizer dettol pandemic covid மோனா லிசா மாஸ்க் கை சுத்திகரிப்பான் டெட்ால் தொற்றுநோய் கோவிட் మోనా లీసా మాస్క్ హ్యాండ్ శానిటైజర్ డెట్టాల్ మహమ్మారి కోవిడ్. Queries: mona lisa wearing mask covid art pandemic meem mona lisa with sanitizer मास्क वाली मोना लिसा कोविड कला महामारी मीम सैनिटाइजर वाली मोना लिसा mask pehni hui Mona Lisa covid ka art Pandemic meme Mona Lisa with sanitizer மாஸ்க் அணிந்த மோனா லிசா கோவிட் கலை தொற்றுநோய் மீம் சானிடைசருடன் மோனா லிசா మాస్క్ ధరించిన మోనా లీసా కోవిడ్ కళ మహమ్మారి మీమ్ శానిటైజర్‌తో మోనా లీసా. Emotion: approval sarcasm. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:43.908Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398664910",
+    "image_path": "memes/8.jpg",
+    "primary_language": "hinglish",
+    "supported_languages": [
+      "hinglish",
+      "english",
+      "hindi",
+      "telugu"
+    ],
+    "caption": {
+      "original": "\"Gaadi ka tank full kar do | Kitne rupaye huye?\" | ek | crore",
+      "translations": {
+        "english": "\"Fill the car's tank | How much is it?\" | one | crore",
+        "hindi": "\"गाड़ी का टैंक फुल कर दो | कितने रुपये हुए?\" | एक | करोड़",
+        "hinglish": "\"Gaadi ka tank full kar do | Kitne rupaye hue?\" | ek | crore",
+        "tamil": "\"வண்டியின் டேங்க்கை நிரப்புங்கள் | எவ்வளவு ஆனது?\" | ஒன்று | கோடி",
+        "telugu": "\"గాడి కా ట్యాంక్ ఫుల్ కర్ దో | కిట్నే రూపాయే హుయే?\" | ఏక్ | క్రోర్"
+      }
+    },
+    "meaning": {
+      "english": "This meme contrasts the mundane request of filling a car's gas tank with the grand prize of a game show, implying that the cost of filling the tank feels like earning a crore rupees. It's used to express that something unexpectedly expensive feels like a huge financial burden or a significant achievement.",
+      "hindi": "यह मीम गाड़ी का पेट्रोल भरवाने के सामान्य अनुरोध की तुलना गेम शो के बड़े पुरस्कार से करता है, यह दर्शाता है कि टैंक भरने की लागत एक करोड़ रुपये के बराबर महसूस होती है। इसका इस्तेमाल यह व्यक्त करने के लिए किया जाता है कि कोई अप्रत्याशित रूप से महंगी चीज़ एक बड़ा वित्तीय बोझ या एक महत्वपूर्ण उपलब्धि लगती है।",
+      "hinglish": "Yeh meme gaadi ka petrol bharwaane ke normal sawaal ko game show ke bade prize se compare karta hai, matlab gaadi ka tank full karwaana ek crore jeetne jaisa mehnga lag raha hai. Iska use tab karte hain jab koi cheez bahot mehengi ho to usse ek crore jeetne ka feeling compare karte hain.",
+      "tamil": "இந்த மீம் ஒரு காரின் எரிபொருள் நிரப்பும் சாதாரண கோரிக்கையை ஒரு கேம் ஷோவின் பெரிய பரிசுடன் ஒப்பிடுகிறது, இது எரிபொருள் நிரப்பும் செலவு ஒரு கோடி ரூபாய் போல் உணர்வதாகக் குறிக்கிறது. எதிர்பாராத விதமாக விலை உயர்ந்த ஏதோவொன்று ஒரு பெரிய நிதிச் சுமையாக அல்லது குறிப்பிடத்தக்க சாதனையாக உணர்த்தும் போது இது பயன்படுத்தப்படுகிறது.",
+      "telugu": "ఈ మీమ్ కారు ట్యాంకును నింపమని అడిగే సాధారణ అభ్యర్థనను, ఒక గేమ్ షో యొక్క భారీ బహుమతితో పోలుస్తుంది, దీనితో ట్యాంకును నింపడానికి అయ్యే ఖర్చు ఒక కోటి రూపాయలు అయినట్లు అనిపిస్తుంది. అనుకోకుండా ఏదైనా చాలా ఖరీదైనదిగా అనిపించినప్పుడు, అది పెద్ద ఆర్థిక భారంగా లేదా గణనీయమైన విజయంగా భావించినప్పుడు దీనిని ఉపయోగిస్తారు."
+    },
+    "tags": {
+      "english": [
+        "filling petrol",
+        "car",
+        "expensive",
+        "crore",
+        "game show",
+        "amitabh bachchan",
+        "kaun banega crorepati"
+      ],
+      "hindi": [
+        "पेट्रोल",
+        "गाड़ी",
+        "महंगा",
+        "करोड़",
+        "गेम शो",
+        "अमिताभ बच्चन",
+        "कौन बनेगा करोड़पति"
+      ],
+      "hinglish": [
+        "petrol",
+        "gaadi",
+        "mehenga",
+        "crore",
+        "game show",
+        "amitabh bachchan",
+        "kbc"
+      ],
+      "tamil": [
+        "பெட்ரோல்",
+        "கார்",
+        "விலை உயர்ந்த",
+        "கோடி",
+        "கேம் ஷோ",
+        "அமிதாப் பச்சன்",
+        "கவுன் பனேகா கரோர்பதி"
+      ],
+      "telugu": [
+        "పెట్రోల్",
+        "కారు",
+        "ఖరీదైన",
+        "కోటి",
+        "గేమ్ షో",
+        "అమితాబ్ బచ్చన్",
+        "కౌన్ బనేగా కరోర్పతి"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "petrol price is too high",
+        "my wallet is crying",
+        "filling tank feels like winning lottery",
+        "filling gas today",
+        "how much is it?"
+      ],
+      "hindi": [
+        "पेट्रोल बहुत महंगा है",
+        "मेरी जेब रो रही है",
+        "टैंक फुल करवाना लॉटरी जीतने जैसा है",
+        "आज पेट्रोल भरवाने का",
+        "कितने हुए?"
+      ],
+      "hinglish": [
+        "petrol price bohot high hai",
+        "meri jeb mein paise nahi hain",
+        "tank full karwana matlab crore jeetna",
+        "gas fill karwana",
+        "kitne rupaye huye?"
+      ],
+      "tamil": [
+        "பெட்ரோல் விலை ரொம்ப அதிகம்",
+        "என் வாலட் அழுகிறது",
+        "டேங்க் நிரப்புவது லாட்டரி அடித்த மாதிரி இருக்கு",
+        "இன்று எரிபொருள் நிரப்ப",
+        "எவ்வளவு ஆனது?"
+      ],
+      "telugu": [
+        "పెట్రోల్ ధర చాలా ఎక్కువ",
+        "నా పర్సు ఏడుస్తుంది",
+        "ట్యాంక్ నింపడం అంటే లాటరీ గెలుచుకున్నట్లే",
+        "ఈ రోజు పెట్రోల్ నింపడం",
+        "ఎంత అయింది?"
+      ]
+    },
+    "emotion": [
+      "shock",
+      "excitement",
+      "sarcasm"
+    ],
+    "intent": [
+      "react_to_absurdity"
+    ],
+    "regions": [
+      "pan_india"
+    ],
+    "safety": {
+      "nsfw": false,
+      "abusive": false,
+      "hate": false,
+      "political": false,
+      "religious": false
+    },
+    "quality": {
+      "is_meme": true,
+      "label_confidence": 0.95
+    },
+    "multilingual_embedding_text": "English: This meme contrasts the mundane request of filling a car's gas tank with the grand prize of a game show, implying that the cost of filling the tank feels like earning a crore rupees. It's used to express that something unexpectedly expensive feels like a huge financial burden or a significant achievement. Hindi: यह मीम गाड़ी का पेट्रोल भरवाने के सामान्य अनुरोध की तुलना गेम शो के बड़े पुरस्कार से करता है, यह दर्शाता है कि टैंक भरने की लागत एक करोड़ रुपये के बराबर महसूस होती है। इसका इस्तेमाल यह व्यक्त करने के लिए किया जाता है कि कोई अप्रत्याशित रूप से महंगी चीज़ एक बड़ा वित्तीय बोझ या एक महत्वपूर्ण उपलब्धि लगती है। Hinglish: Yeh meme gaadi ka petrol bharwaane ke normal sawaal ko game show ke bade prize se compare karta hai, matlab gaadi ka tank full karwaana ek crore jeetne jaisa mehnga lag raha hai. Iska use tab karte hain jab koi cheez bahot mehengi ho to usse ek crore jeetne ka feeling compare karte hain. Tamil: இந்த மீம் ஒரு காரின் எரிபொருள் நிரப்பும் சாதாரண கோரிக்கையை ஒரு கேம் ஷோவின் பெரிய பரிசுடன் ஒப்பிடுகிறது, இது எரிபொருள் நிரப்பும் செலவு ஒரு கோடி ரூபாய் போல் உணர்வதாகக் குறிக்கிறது. எதிர்பாராத விதமாக விலை உயர்ந்த ஏதோவொன்று ஒரு பெரிய நிதிச் சுமையாக அல்லது குறிப்பிடத்தக்க சாதனையாக உணர்த்தும் போது இது பயன்படுத்தப்படுகிறது. Telugu: ఈ మీమ్ కారు ట్యాంకును నింపమని అడిగే సాధారణ అభ్యర్థనను, ఒక గేమ్ షో యొక్క భారీ బహుమతితో పోలుస్తుంది, దీనితో ట్యాంకును నింపడానికి అయ్యే ఖర్చు ఒక కోటి రూపాయలు అయినట్లు అనిపిస్తుంది. అనుకోకుండా ఏదైనా చాలా ఖరీదైనదిగా అనిపించినప్పుడు, అది పెద్ద ఆర్థిక భారంగా లేదా గణనీయమైన విజయంగా భావించినప్పుడు దీనిని ఉపయోగిస్తారు. Tags: petrol car expensive crore game show amitabh bachchan kaun banega crorepati पेट्रोल गाड़ी महंगा करोड़ गेम शो अमिताभ बच्चन कौन बनेगा करोड़पति petrol gaadi mehenga crore game show amitabh bachchan kbc பெட்ரோல் கார் விலை உயர்ந்த கோடி கேம் ஷோ அமிதாப் பச்சன் கவுன் பனேகா கரோர்பதி పెట్రోల్ కారు ఖరీదైన కోటి గేమ్ షో అమితాబ్ బచ్చన్ కౌన్ బనేగా కరోర్పతి. Queries: petrol price is too high my wallet is crying filling tank feels like winning lottery filling gas today how much is it? पेट्रोल बहुत महंगा है मेरी जेब रो रही है टैंक फुल करवाना लॉटरी जीतने जैसा है आज पेट्रोल भरवाने का कितने हुए? petrol price bohot high hai meri jeb mein paise nahi hain tank full karwana matlab crore jeetna gas fill karwana kitne rupaye huye? பெட்ரோல் விலை ரொம்ப அதிகம் என் வாலட் அழுகிறது டேங்க் நிரப்புவது லாட்டரி அடித்த மாதிரி இருக்கு இன்று எரிபொருள் நிரப்ப எவ்வளவு ஆனது? పెట్రోల్ ధర చాలా ఎక్కువ నా పర్సు ఏడుస్తుంది ట్యాంక్ నింపడం అంటే లాటరీ గెలుచుకున్నట్లే ఈ రోజు పెట్రోల్ నింపడం ఎంత అయింది?. Emotion: shock excitement sarcasm. Intent: react_to_absurdity. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:37:54.736Z",
+    "reviewed": false
+  },
+  {
+    "id": "meme_1778398675738",
+    "image_path": "memes/9.jpg",
+    "primary_language": "english",
+    "supported_languages": [
+      "english",
+      "hinglish"
+    ],
+    "caption": {
+      "original": "me trying to find a good news | on the internet",
+      "translations": {
+        "english": "me trying to find good news on the internet",
+        "hindi": "इंटरनेट पर अच्छी खबर ढूंढने की कोशिश में मैं",
+        "hinglish": "Interned pe good news dhundhne ki koshish mein main",
+        "tamil": "இணையத்தில் நல்ல செய்தியைக் கண்டுபிடிக்க முயற்சிப்பது",
+        "telugu": "ఇంటర్నెట్‌లో మంచి వార్తలను కనుగొనడానికి నేను ప్రయత్నిస్తున్నాను"
+      }
+    },
+    "meaning": {
+      "english": "This meme represents the difficulty of finding positive news online amidst a flood of negative or mundane information.",
+      "hindi": "यह मीम ऑनलाइन सकारात्मक समाचार खोजने की कठिनाई को दर्शाता है, जबकि नकारात्मक या सामान्य जानकारी का प्रवाह होता है।",
+      "hinglish": "Ye meme represent karta hai ki internet pe acha news dhundhna kitna mushkil hai jab galat aur boring news bhari padi hai.",
+      "tamil": "இந்த மீம், இணையத்தில் நேர்மறையான செய்திகளைக் கண்டுபிடிப்பதிலுள்ள சிரமத்தைக் குறிக்கிறது, ஏனெனில் எதிர்மறை அல்லது சாதாரண தகவல்கள் நிறைந்துள்ளன.",
+      "telugu": "ఈ మీమ్, ప్రతికూల లేదా సాధారణ సమాచారం ఎక్కువగా ఉన్నప్పటికీ, ఆన్‌లైన్‌లో సానుకూల వార్తలను కనుగొనడంలో ఉన్న కష్టాన్ని సూచిస్తుంది."
+    },
+    "tags": {
+      "english": [
+        "news",
+        "internet",
+        "search",
+        "difficulty",
+        "relatable",
+        "frustration"
+      ],
+      "hindi": [
+        "खबर",
+        "इंटरनेट",
+        "खोज",
+        "मुश्किल",
+        "relatable",
+        "निराशा"
+      ],
+      "hinglish": [
+        "news",
+        "internet",
+        "search",
+        "mushkil",
+        "relatable",
+        "frustration"
+      ],
+      "tamil": [
+        "செய்தி",
+        "இணையம்",
+        "தேடல்",
+        "கடினம்",
+        "relatable",
+        "ஏமாற்றம்"
+      ],
+      "telugu": [
+        "వార్తలు",
+        "ఇంటర్నెట్",
+        "శోధన",
+        "కష్టం",
+        "relatable",
+        "నిరాశ"
+      ]
+    },
+    "query_examples": {
+      "english": [
+        "cant find good news anywhere",
+        "is there any good news?",
+        "me searching"
+      ],
+      "hindi": [
+        "कहीं अच्छी खबर नहीं मिल रही",
+        "कोई अच्छी खबर है क्या?",
+        "मैं ढूंढ रहा हूँ"
+      ],
+      "hinglish": [
+        "yaar koi good news mil hi nahi rahi",
+        "kuch positive hai kya?",
+        "search kar raha hu"
+      ],
+      "tamil": [
+        "ஒரு நல்ல செய்தியைக் கண்டுபிடிக்க முடியவில்லை",
+        "நல்ல செய்தி ஏதாவது இருக்கிறதா?",
+        "நான் தேடுகிறேன்"
+      ],
+      "telugu": [
+        "మంచి వార్త దొరకడం లేదు",
+        "ఏదైనా మంచి వార్త ఉందా?",
+        "నేను వెతుకుతున్నాను"
       ]
     },
     "emotion": [
       "confusion",
       "disappointment",
-      "boredom",
       "stress"
     ],
     "intent": [
-      "react_to_absurdity, show_disappointment, stress"
-    ],
-    "regions": [
-      "pan_india"
-    ],
-    "safety": {
-      "nsfw": false,
-      "abusive": false,
-      "hate": false,
-      "political": false,
-      "religious": false
-    },
-    "quality": {
-      "is_meme": true,
-      "label_confidence": 0.98
-    },
-    "multilingual_embedding_text": "English: This meme depicts the realization that while most people are working from home, you are unemployed and have nothing to do. Hindi: यह मीम दिखाता है कि जब हर कोई घर से काम कर रहा होता है, लेकिन आप बेरोजगार होते हैं और आपके पास करने के लिए कुछ नहीं होता। Hinglish: yeh meme dikhata hai ki jab sab log work from home kar rahe hote hain, lekin aap unemployed ho aur karne ke liye kuch nahi hai. Tamil: எல்லோரும் வீட்டில் இருந்து வேலை செய்யும்போது, உங்களிடம் வேலை இல்லாதபோது இது சித்தரிக்கிறது. Telugu: అందరూ ఇంట్లో నుండి పని చేస్తుంటే, మీకు ఉద్యోగం లేనప్పుడు ఇది సూచిస్తుంది. Queries: Me when my friends are WFH and I am jobless, जब मेरे दोस्त घर से काम कर रहे होते हैं और मैं बेरोजगार होता हूं, friends wrfh aur mai jobless, என் நண்பர்கள் வீட்டில் இருந்து வேலை செய்யும்போது நான் வேலை செய்யாதபோது, నా స్నేహితులు wrfh అయినప్పుడు నేను ఉద్యోగం లేనప్పుడు. Tags: work from home, no job, unemployment, relatable meme, घर से काम, नौकरी नहीं, बेरोज़गारी, relatable meme, wrfh, no job, unemployed, relatable, வீட்டில் இருந்து வேலை, வேலை இல்லை, வேலை இல்லாமை, wrfh, ఉద్యోగం లేదు, నిరుద్యోగం. Emotion: confusion | Intent: react_to_absurdity | Region: pan_india",
-    "labeled_at": "2026-05-09T13:20:54.301Z",
-    "reviewed": false
-  },
-  {
-    "id": "meme_1778332855302",
-    "image_path": "memes/76.jpg",
-    "primary_language": "english",
-    "supported_languages": [
-      "english",
-      "hindi",
-      "hinglish",
-      "tamil",
-      "telugu"
-    ],
-    "caption": {
-      "original": "*sends a text to crush* / they start talking about their crush",
-      "translations": {
-        "english": "*sends a text to crush* / they start talking about their crush",
-        "hindi": "*crush ko text bhejna* / woh apne crush ki baat shuru karte hain",
-        "hinglish": "*crush ko text bhejna* / woh apne crush ke baare mein baat karna shuru karte hain",
-        "tamil": "க்ரஷ்에게 செய்தி அனுப்புவது / அவர்கள் தங்கள் க்ரஷ் பற்றிப் பேசுவது",
-        "telugu": "క్రష్‌కి టెక్స్ట్ చేయడం / వారు తమ క్రష్ గురించి మాట్లాడటం"
-      }
-    },
-    "meaning": {
-      "english": "The relatable and often awkward progression from sending a text message to a romantic interest (a crush) to discussing that interest in conversation.",
-      "hindi": "यह वह स्थिति है जब आप अपने क्रश को टेक्स्ट भेजते हैं और फिर बात अपने क्रश के बारे में ही होने लगती है।",
-      "hinglish": "Yeh woh relatable moment hai jab aap crush ko text karte ho aur fir baat sirf uske baare mein hi reh jaati hai.",
-      "tamil": "க்ரஷ்에게 செய்தி அனுப்புவது மற்றும் 그 அவர்களைப் பற்றிப் பேசுவது என்ற மிகவும் இயல்பான சூழல்.",
-      "telugu": "ప్రియమైన వ్యక్తికి మెసేజ్ చేయడం, ఆ తర్వాత ఆ వ్యక్తి గురించి మళ్ళీ మాట్లాడటం అనే విషయం."
-    },
-    "tags": {
-      "english": [
-        "crush",
-        "texting",
-        "awkward",
-        "relationship",
-        "comedy"
-      ],
-      "hindi": [
-        "क्रश",
-        "मैसेज",
-        "रिश्ते",
-        "कॉमेडी"
-      ],
-      "hinglish": [
-        "crush",
-        "texting",
-        "date",
-        "reel"
-      ],
-      "tamil": [
-        "காதல்",
-        "க்ரஷ்",
-        "நகைச்சுவை"
-      ],
-      "telugu": [
-        "క్రష్",
-        "ప్రేమ",
-        "కామెడీ"
-      ]
-    },
-    "query_examples": {
-      "english": [
-        "What to say when you first text your crush? The moment conversation shifts to your crush."
-      ],
-      "hindi": [
-        "Crush ko kya text karein? Jab crush ki baat shuru ho jati hai toh kya karen?"
-      ],
-      "hinglish": [
-        "Crush ko first message kaise de? Ye crush ki baat kab chalti hai?"
-      ],
-      "tamil": [
-        "க்ரஷ் கிட்ட பேச ஆரம்பிப்பது எப்படி? காதல் பற்றிப் பேசத் துவங்குவது."
-      ],
-      "telugu": [
-        "క్రష్‌కి ఏ మెసేజ్ 보내ాలి? క్రష్ గురించి మాట్లాడటం ఎప్పుడు జరుగుతుంది?"
-      ]
-    },
-    "emotion": [
-      "excitement",
-      "cringe",
-      "awkward"
-    ],
-    "intent": [
-      "tease, relationship_drama, react_to_absurdity"
+      "show_disappointment"
     ],
     "regions": [
       "pan_india"
@@ -1908,8 +1308,8 @@
       "is_meme": true,
       "label_confidence": 0.95
     },
-    "multilingual_embedding_text": "English: The relatable and often awkward progression from sending a text message to a romantic interest (a crush) to discussing that interest in conversation. Hindi: यह वह स्थिति है जब आप अपने क्रश को टेक्स्ट भेजते हैं और फिर बात अपने क्रश के बारे में ही होने लगती है। Hinglish: Yeh woh relatable moment hai jab aap crush ko text karte ho aur fir baat sirf uske baare mein hi reh jaati hai. Tamil: க்ரஷ்에게 செய்தி அனுப்புவது மற்றும் 그 அவர்களைப் பற்றிப் பேசுவது என்ற மிகவும் இயல்பான சூழல். Telugu: ప్రియమైన వ్యక్తికి మెసేజ్ చేయడం, ఆ తర్వాత ఆ వ్యక్తి గురించి మళ్ళీ మాట్లాడటం అనే విషయం. Queries: What to say when you first text your crush? The moment conversation shifts to your crush. / Crush ko kya text karein? Jab crush ki baat shuru ho jati hai toh kya karen? / Crush ko first message kaise de? Ye crush ki baat kab chalti hai? / க்ரஷ் கிட்ட பேச ஆரம்பிப்பது எப்படி? காதல் பற்றிப் பேசத் துவங்குவது. / క్రష్‌కి ఏ మెసేజ్ 보내ాలి? క్రష్ గురించి మాట్లాడటం ఎప్పుడు జరుగుతుంది? Tags: crush, texting, awkward, relationship, comedy / क्रश, मैसेज, रिश्ते, कॉमेडी / crush, texting, date, reel / காதல், க்ரஷ், நகைச்சுவை / క్రష్, ప్రేమ, కామెడీ Emotion: excitement, cringe, awkward | Intent: tease, relationship_drama, react_to_absurdity | Region: pan_india",
-    "labeled_at": "2026-05-09T13:22:27.141Z",
+    "multilingual_embedding_text": "English: Difficulty finding positive news online. Hindi: ऑनलाइन सकारात्मक समाचार खोजने में कठिनाई। Hinglish: Internet pe positive news dhundne mein mushkil. Tamil: இணையத்தில் நேர்மறையான செய்திகளைக் கண்டுபிடிப்பதில் சிரமம். Telugu: ఆన్‌లైన్‌లో సానుకూల వార్తలను కనుగొనడంలో ఇబ్బంది. Tags: news internet search difficulty relatable frustration खबर इंटरनेट खोज मुश्किल निराशा news internet search mushkil frustration செய்தி இணையம் தேடல் கடினம் ஏமாற்றம் వార్తలు ఇంటర్నెట్ శోధన కష్టం నిరాశ. Queries: cant find good news anywhere is there any good news me searching कहीं अच्छी खबर नहीं मिल रही कोई अच्छी खबर है क्या मैं ढूंढ रहा हूँ yaar koi good news mil hi nahi rahi kuch positive hai kya search kar raha hu ஒரு நல்ல செய்தியைக் கண்டுபிடிக்க முடியவில்லை நல்ல செய்தி ஏதாவது இருக்கிறதா நான் தேடுகிறேன் మంచి వార్త దొరకడం లేదు ఏదైనా మంచి వార్త ఉందా నేను వెతుకుతున్నాను. Emotion: confusion disappointment stress. Intent: show_disappointment. Region: pan_india.",
+    "labeled_at": "2026-05-10T07:38:01.426Z",
     "reviewed": false
   }
 ]

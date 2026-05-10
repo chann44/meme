@@ -1,9 +1,56 @@
-import { join } from "path";
-import { readdirSync, writeFileSync } from "fs";
+import { join, resolve } from "path";
+import { existsSync, readdirSync, statSync, writeFileSync } from "fs";
 import db from "./db/index.ts";
 import { MemeLabel, type MemeLabel as MemeLabelType } from "./types.ts";
 import { LABELING_PROMPT } from "./prompts.ts";
-import { OLLAMA_URL, OLLAMA_MODEL } from "./ai.ts";
+import {
+  OPENROUTER_CHAT_URL,
+  OPENROUTER_LABEL_MODEL,
+  getOpenRouterApiKey,
+} from "./ai.ts";
+
+const IMAGE_FILE_RE = /\.(jpg|jpeg|png|webp)$/i;
+
+function isImageFilePath(p: string): boolean {
+  if (!IMAGE_FILE_RE.test(p)) return false;
+  try {
+    return existsSync(p) && statSync(p).isFile();
+  } catch {
+    return false;
+  }
+}
+
+function assistantTextFromChatResponse(data: unknown): string {
+  const d = data as {
+    choices?: { message?: { content?: string | null | Array<{ type?: string; text?: string }> } }[];
+  };
+  const raw = d.choices?.[0]?.message?.content;
+  if (raw == null) return "";
+  if (typeof raw === "string") return raw;
+  if (Array.isArray(raw)) {
+    return raw
+      .map((part) => {
+        if (typeof part === "object" && part && "text" in part && typeof part.text === "string") {
+          return part.text;
+        }
+        return "";
+      })
+      .join("");
+  }
+  return String(raw);
+}
+
+function openRouterHeaders(apiKey: string): Record<string, string> {
+  const h: Record<string, string> = {
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${apiKey}`,
+  };
+  const referer = process.env.OPENROUTER_HTTP_REFERER?.trim();
+  if (referer) h["HTTP-Referer"] = referer;
+  const title = process.env.OPENROUTER_APP_TITLE?.trim();
+  if (title) h["X-Title"] = title;
+  return h;
+}
 
 function parseTOONToJSON(toonText: string): any {
   const lines = toonText.trim().split('\n');
@@ -131,16 +178,22 @@ function parseValue(value: string): any {
 
 const MAX_RETRIES = 3;
 
-async function callOllama(imagePath: string, memeId: string): Promise<string> {
+async function callOpenRouterVision(imagePath: string, memeId: string): Promise<string> {
+  const apiKey = getOpenRouterApiKey();
+  if (!apiKey) {
+    throw new Error("OPENROUTER_API_KEY is not set (add it to .env)");
+  }
+
   const file = Bun.file(imagePath);
   const base64Image = Buffer.from(await file.arrayBuffer()).toString("base64");
   const mimeType = file.type || (imagePath.endsWith(".png") ? "image/png" : "image/jpeg");
 
-  const response = await fetch(OLLAMA_URL, {
+  const t0 = performance.now();
+  const response = await fetch(OPENROUTER_CHAT_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: openRouterHeaders(apiKey),
     body: JSON.stringify({
-      model: OLLAMA_MODEL,
+      model: OPENROUTER_LABEL_MODEL,
       max_tokens: 16384,
       messages: [
         { role: "system", content: LABELING_PROMPT },
@@ -157,18 +210,29 @@ async function callOllama(imagePath: string, memeId: string): Promise<string> {
 
   if (!response.ok) {
     const err = await response.text();
-    throw new Error(`Ollama API error: ${response.status} ${err}`);
+    const ms = Math.round(performance.now() - t0);
+    console.log(`[openrouter] ${ms}ms (failed HTTP ${response.status})`);
+    throw new Error(`OpenRouter error: ${response.status} ${err}`);
   }
 
-  const data = (await response.json()) as { choices: { message: { content: string } }[] };
-  return data.choices[0]!.message.content;
+  const data = await response.json();
+  const text = assistantTextFromChatResponse(data);
+  const ms = Math.round(performance.now() - t0);
+  console.log(`[openrouter] ${ms}ms (AI)`);
+
+  if (!text.trim()) {
+    throw new Error("OpenRouter returned empty assistant content");
+  }
+  return text;
 }
 
 export async function labelMeme(imagePath: string, memeId: string): Promise<MemeLabelType> {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    console.log(`[ollama] Sending request for ${memeId} (attempt ${attempt}/${MAX_RETRIES})...`);
-    const text = await callOllama(imagePath, memeId);
-    console.log(`[ollama] Response length: ${text.length} chars`);
+    console.log(
+      `[openrouter] model=${OPENROUTER_LABEL_MODEL} ${memeId} (attempt ${attempt}/${MAX_RETRIES})...`
+    );
+    const text = await callOpenRouterVision(imagePath, memeId);
+    console.log(`[openrouter] Response length: ${text.length} chars`);
 
     if (!text.trim().includes('multilingual_embedding_text:')) {
       console.error(`[parse] Response appears truncated (missing multilingual_embedding_text), retrying...`);
@@ -201,6 +265,24 @@ export async function labelMeme(imagePath: string, memeId: string): Promise<Meme
   throw new Error("Max retries exceeded");
 }
 
+/** Label a single image file (one OpenRouter call path). Useful for manual testing. */
+export async function labelOneImageFile(imagePathAbs: string): Promise<{
+  label: MemeLabelType;
+  imagePath: string;
+}> {
+  const resolved = resolve(imagePathAbs);
+  if (!isImageFilePath(resolved)) {
+    throw new Error(`Not a readable image file: ${resolved}`);
+  }
+  const memeId = `meme_${Date.now()}`;
+  console.log(`\n=== single image ===`);
+  console.log(resolved);
+  const label = await labelMeme(resolved, memeId);
+  saveMemeLabel(label, resolved);
+  console.log(`✓ Saved to DB: ${resolved}`);
+  return { label, imagePath: resolved };
+}
+
 export function saveMemeLabel(label: MemeLabelType, imagePath: string) {
   const stmt = db.prepare(`
     INSERT INTO memes (
@@ -230,10 +312,23 @@ export function saveMemeLabel(label: MemeLabelType, imagePath: string) {
   );
 }
 
-export async function labelFolder(folderPath: string) {
-  const allFiles = readdirSync(folderPath).filter((f) =>
+export type LabelFolderOptions = {
+  /** Process at most this many images (after sort). Omit = all. */
+  limit?: number;
+};
+
+export async function labelFolder(folderPath: string, options: LabelFolderOptions = {}) {
+  const { limit } = options;
+  let allFiles = readdirSync(folderPath).filter((f) =>
     /\.(jpg|jpeg|png|webp)$/i.test(f)
   );
+
+  allFiles.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+
+  if (limit !== undefined && limit > 0 && allFiles.length > limit) {
+    console.log(`Using first ${limit} of ${allFiles.length} images (sorted by filename)`);
+    allFiles = allFiles.slice(0, limit);
+  }
 
   console.log(`Found ${allFiles.length} images`);
 
@@ -262,6 +357,20 @@ export async function labelFolder(folderPath: string) {
 }
 
 if (import.meta.main) {
-  const folder = process.argv[2] || "./memes";
-  labelFolder(folder);
+  const arg = process.argv[2] || "./memes";
+  const asFile = resolve(arg);
+  if (isImageFilePath(asFile)) {
+    labelOneImageFile(asFile).catch((err) => {
+      console.error(err);
+      process.exit(1);
+    });
+  } else {
+    const maybeLimit = process.argv[3];
+    const limit =
+      maybeLimit && /^\d+$/.test(maybeLimit) ? parseInt(maybeLimit, 10) : undefined;
+    labelFolder(arg, { limit }).catch((err) => {
+      console.error(err);
+      process.exit(1);
+    });
+  }
 }

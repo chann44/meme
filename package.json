@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "bun run src/index.ts",
     "label": "bun run src/label.ts",
+    "export:labels": "bun run scripts/export-labels.ts labels.json",
+    "db:reset": "bun run scripts/reset-db.ts",
     "embed": "bun run src/embed.ts",
     "test": "bun test",
     "test:embed": "bun test src/embed.labels.stress.test.ts",
