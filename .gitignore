@@ -42,3 +42,9 @@ sqlite.db
 memes.db
 memes.db-shm
 memes.db-wal
+
+# Mobile app
+apps/mobile/node_modules
+apps/mobile/.expo
+apps/mobile/dist
+apps/mobile/build
