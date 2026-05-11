@@ -11,7 +11,8 @@
     "test": "bun test",
     "test:embed": "bun test src/embed.labels.stress.test.ts",
     "pipeline": "bun run src/pipeline.ts",
-    "pipeline:remote": "SERVER_URL=$SERVER_URL bun run src/pipeline.ts"
+    "pipeline:remote": "SERVER_URL=$SERVER_URL bun run src/pipeline.ts",
+    "compare:rerank": "bun run scripts/compare-rerank-hinglish.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^0.0.50",
