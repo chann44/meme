@@ -1,0 +1,54 @@
+{
+  "image": "images/funny-text-memes-1.jpg",
+  "width": 500,
+  "height": 500,
+  "panels": [
+    {
+      "id": 0,
+      "bbox": [
+        0,
+        0,
+        500,
+        500
+      ],
+      "text_blocks": [
+        {
+          "bbox": [
+            75,
+            7,
+            349,
+            43
+          ],
+          "text": "WHEN PEOPLE SAY",
+          "lines": 1,
+          "font_px": 43,
+          "position": "top"
+        },
+        {
+          "bbox": [
+            273,
+            210,
+            9,
+            39
+          ],
+          "text": "1",
+          "lines": 1,
+          "font_px": 38,
+          "position": "middle"
+        },
+        {
+          "bbox": [
+            5,
+            405,
+            488,
+            95
+          ],
+          "text": "THEY WILL KEEP\nTHEIR NEW YEAR RESOLUTIONS",
+          "lines": 2,
+          "font_px": 57,
+          "position": "bottom"
+        }
+      ]
+    }
+  ]
+}
